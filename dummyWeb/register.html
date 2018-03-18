@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+  		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>DummyWeb</title>
+		
+		
+		 <!-- Custom styles and Javascript -->
+		<script type="text/javascript" src="./fichero_js.js"></script> 
+		<link href="./fichero_css.css" rel="stylesheet">
+		
+		<link rel="stylesheet" type="text/css "href="bootstrap-4.0.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="./bootstrap-4.0.0/js/bootstrap.js"></script>
+		
+		<!-- Custom icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+
+	</head>
+
+	<body> 
+	
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+		  <div class="container">
+			<a class="navbar-brand js-scroll-trigger" href="#page-top">Dummy Web</a>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+			  <ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+				  <a class="nav-link js-scroll-trigger" href="#register">Registro</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link js-scroll-trigger" href="#contacto">Contacto</a>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+
+		<!-- Header -->
+		<header class="bg-primary text-white">
+		  <div class="container text-center">
+			<br /><br /><br /><br />
+			<h1>Bienvenido a Dummy Web</h1>
+			<p class="lead">P&aacute;gina web utilizado como proyecto de fin de grado</p>
+			<br /><br />
+		  </div>
+		</header>
+	
+		<br/><br/>
+		
+		<!-- Login -->
+		<section id="register">
+		  <div class="container">
+				<div class="row">	
+					<div class="col-lg-8 mx-auto">
+					<h2>Registro</h2>
+					<br />
+					 <form data-validate="true" data-toggle="validator" role="form" id="formulario1" action="./listado.html" class="form-horizontal" style="margin:0 auto">
+					  <div class="form-group">
+					  <i class="fa fa-user" style="font-size:24px"></i>
+						<label class="control-label" for="usuario">Usuario:</label>
+						<input type="text" class="form-control" id="usuario" placeholder="Escribe aqu&iacute; tu usuario" required>
+					  </div>
+					    <div class="form-group">
+						<i class="fa fa-lock" style="font-size:24px"></i>
+						<label class="control-label" for="pwd" >Contrase&ntilde;a:</label>
+						<input type="password" class="form-control" id="pwd" placeholder="Escribe aqu&iacute; tu Contrase&ntilde;a" required>
+					  </div>
+					  <div class="form-group">
+						<i class="fa fa-lock" style="font-size:24px"></i>
+						<label class="control-label" for="pwd2">Confirmar Contrase&ntilde;a:</label>
+						<input type="password" class="form-control" id="pwd2" placeholder="Escribe aqu&iacute; tu Contrase&ntilde;a" required/>
+					  </div>
+					   <div class="form-group">
+						<i class="fa fa-envelope" style="font-size:24px"></i>
+						<label class="control-label" for="email">Email:</label>
+						<input type="email" class="form-control" id="email" name="email" placeholder="Escribe aqu&iacute; tu email" required/>
+					  </div>
+					    <div class="form-group">
+						<i class="fa fa-envelope" style="font-size:24px"></i>
+						<label class="control-label" for="email2">Confirmar Email:</label>
+						<input type="email" class="form-control" id="email2" placeholder="Escribe aqu&iacute; tu email" required>
+					  </div>
+					  <div class="form-group">
+						<div class="input-group">
+							<i class="fa fa-venus-mars" style="font-size:24px"></i>
+							<label class="control-label" for="sexo">Sexo:&nbsp;&nbsp;</label>
+							<label><input type="radio" name="sexo" id="boy" value="male">&nbsp;&nbsp;Masculino&nbsp;&nbsp;</label>
+							<label><input type="radio" name="sexo" id="girl" value="female">&nbsp;&nbsp;Femenino&nbsp;&nbsp;</label>
+						</div>
+					  </div>
+					   <div class="form-group">
+						<i class="fa fa-home" style="font-size:24px"></i>
+						<label class="control-label" for="localidad">Localidad:</label>
+						<input type="text" class="form-control" id="localidad" placeholder="Escribe aqu&iacute; tu localidad" required>
+					  </div>
+					   <div class="form-group">
+						<i class="fa fa-bank" style="font-size:24px"></i>
+						<label class="control-label" for="Provincia">Provincia:</label>
+						<input type="text" class="form-control" id="provincia" placeholder="Escribe aqu&iacute; tu provincia" required>
+					  </div>
+					   <div class="form-group">
+						<i class="fa fa-globe" style="font-size:24px"></i>
+						<label class="control-label" for="pais">Pa&iacute;s:</label>
+						  <select class="form-control" id="pais">
+								<option value="">Seleccione un pa&iacute;s</option>
+								<option value="ES">Espa&ntilde;a</option>
+								<option value="PT">Portugal</option>
+								<option value="FR">Francia</option>
+								<option value="AN">Andorra</option>
+							</select>
+						  </select>
+					  </div>
+					  <br/>
+					  
+					  <div class="col-md-8" align="center">
+						<input class="center-block btn-success" type="submit" onClick="./valida_envia();" value="Enviar mensaje"> 
+						<a href="./index.html">
+							<input class="center-block btn-info" type="button" value="Volver"> 		
+						</a>
+						<br/>
+					  </div>
+					</form> 
+						
+					</div>
+				</div>
+		  </div>
+		</section>
+
+
+		<!-- Contacto -->
+		<section id="contacto">
+		  <div class="container">
+			<div class="row">
+			  <div class="col-lg-8 mx-auto">
+				<br><h2>Contacto</h2>
+				<br />
+				<p class="lead">Para ponerse en contacto con el creador de esta web es necesario ponerse en contacto con la Universidad Internacional de la Rioja. (UNIR) </p>
+				<br /><br />
+			  </div>
+			</div>
+		  </div>
+		</section>
+	
+	
+	<!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">P&aacute;gina protegida por Copyright © 2018</p>
+      </div>
+    </footer>
+		
+		
+	</body>
+</html>
+
+		
+

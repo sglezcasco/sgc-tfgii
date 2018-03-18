@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+  		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>DummyWeb</title>
+		
+		
+		 <!-- Custom styles and Javascript -->
+		 <script type="text/javascript" src="./fichero_js.js"></script> 
+		<link href="./fichero_css.css" rel="stylesheet">
+		
+		<link rel="stylesheet" type="text/css "href="bootstrap-4.0.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="./bootstrap-4.0.0/js/bootstrap.js"></script>
+		
+		<!-- Custom icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+
+	</head>
+
+	<body> 
+	
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+		  <div class="container">
+			<a class="navbar-brand js-scroll-trigger" href="#page-top">Dummy Web</a>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+			  <ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+				  <a class="nav-link js-scroll-trigger" href="#login">Login</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link js-scroll-trigger" href="#contacto">Contacto</a>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+
+		<!-- Header -->
+		<header class="bg-primary text-white">
+		  <div class="container text-center">
+			<br /><br /><br /><br />
+			<h1>Bienvenido a Dummy Web</h1>
+			<p class="lead">P&aacute;gina web utilizado como proyecto de fin de grado</p>
+			<br /><br />
+		  </div>
+		</header>
+	
+		<br/><br/>
+		
+		<!-- Login -->
+		<section id="login">
+		  <div class="container">
+				<div class="row">	
+					<div class="col-lg-8 mx-auto">
+					<h2>Login</h2>
+					<br />
+						 <form data-validate="true" data-toggle="validator" action="./listado.html" role="form" id="formulario1" class="form-horizontal" style="margin:0 auto">
+							<div class="form-group">
+								<i class="fa fa-user" style="font-size:24px"></i>
+								<label class="control-label" for="usuario">Usuario:</label>
+								<input type="text" class="form-control" id="usuario" placeholder="Escribe aqu&iacute; tu usuario" required>
+							</div>
+							<div class="form-group">
+								<i class="fa fa-lock" style="font-size:24px"></i>
+								<label class="control-label" for="pwd" >Contrase&ntilde;a:</label>
+								<input type="password" class="form-control" id="pwd" placeholder="Escribe aqu&iacute; tu Contrase&ntilde;a" required>
+							</div>
+							<div class="col-lg-8" align="center">
+								<br />
+								<input class="btn-success" type="submit" onClick="./valida_login()" value="Entrar">
+								<a href="./register.html">
+									<input class="btn-success" type="button" value="Registrarse"> 		
+								</a>
+								<br />
+							</div>
+						</form> 
+						
+					</div>
+				</div>
+		  </div>
+		</section>
+
+
+		<!-- Contacto -->
+		<section id="contacto">
+		  <div class="container">
+			<div class="row">
+			  <div class="col-lg-8 mx-auto">
+				<br><h2>Contacto</h2>
+				<br />
+				<p class="lead">Para ponerse en contacto con el creador de esta web es necesario ponerse en contacto con la Universidad Internacional de la Rioja. (UNIR) </p>
+				<br /><br />
+			  </div>
+			</div>
+		  </div>
+		</section>
+	
+	
+	<!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">P&aacute;gina protegida por Copyright © 2018</p>
+      </div>
+    </footer>
+		
+		
+	</body>
+</html>
