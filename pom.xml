@@ -10,7 +10,7 @@
 	
 
   <properties>
-    <selenium.version>3.9.1</selenium.version>
+    <selenium.version>3.7.1</selenium.version>
     <testng.version>6.8</testng.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.version>4.11</junit.version>
