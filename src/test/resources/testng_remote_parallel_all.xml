@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
  <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
- 	<suite name="Suite" parallel="tests">
+ 	<suite thread-count="5" name="Suite" parallel="tests">
  		<test name="FirefoxTest">
  			<parameter name="driverProvider" value="MozillaFirefoxDriver" />  
- 			<parameter name="execution" value="remote" /> 
+ 			<parameter name="execution" value="local" /> 
  				<classes>
  					<class name="unir.net.tfgii.selenium.tests.Login" />
+ 					<class name="unir.net.tfgii.selenium.tests.Registro" />
  				</classes>
 		</test>
  		<test name="ChromeTest">
  			<parameter name="driverProvider" value="GoogleChromeDriver" /> 
- 			<parameter name="execution" value="remote" /> 
+ 			<parameter name="execution" value="local" /> 
  				<classes>
  					<class name="unir.net.tfgii.selenium.tests.Login" />
+ 					<class name="unir.net.tfgii.selenium.tests.Registro" />
+ 				</classes>
+ 		</test>
+ 		<test name="EdgeTest">
+ 			<parameter name="driverProvider" value="MicrosoftEdgeDriver" /> 
+ 			<parameter name="execution" value="local" /> 
+ 				<classes>
+ 					<class name="unir.net.tfgii.selenium.tests.Login" />
+ 					<class name="unir.net.tfgii.selenium.tests.Registro" />
+ 				</classes>
+ 		</test>
+ 		<test name="PhantomJSTest">
+ 			<parameter name="driverProvider" value="PhantomJSDriver" /> 
+ 			<parameter name="execution" value="local" /> 
+ 				<classes>
+ 					<class name="unir.net.tfgii.selenium.tests.Login" />
+ 					<class name="unir.net.tfgii.selenium.tests.Registro" />
  				</classes>
  		</test>
  	</suite>
