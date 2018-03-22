@@ -3,7 +3,8 @@
  	<suite thread-count="5" name="Suite" parallel="tests">
  		<test name="FirefoxTest">
  			<parameter name="driverProvider" value="MozillaFirefoxDriver" />  
- 			<parameter name="execution" value="local" /> 
+ 			<parameter name="execution" value="remote" /> 
+ 			<parameter name="host" value="192.168.1.1" /> 
  				<classes>
  					<class name="unir.net.tfgii.selenium.tests.Login" />
  					<class name="unir.net.tfgii.selenium.tests.Registro" />
@@ -11,7 +12,8 @@
 		</test>
  		<test name="ChromeTest">
  			<parameter name="driverProvider" value="GoogleChromeDriver" /> 
- 			<parameter name="execution" value="local" /> 
+ 			<parameter name="execution" value="remote" /> 
+ 			<parameter name="host" value="192.168.1.1" /> 
  				<classes>
  					<class name="unir.net.tfgii.selenium.tests.Login" />
  					<class name="unir.net.tfgii.selenium.tests.Registro" />
@@ -19,7 +21,8 @@
  		</test>
  		<test name="EdgeTest">
  			<parameter name="driverProvider" value="MicrosoftEdgeDriver" /> 
- 			<parameter name="execution" value="local" /> 
+ 			<parameter name="execution" value="remote" />
+ 			<parameter name="host" value="192.168.1.1" />  
  				<classes>
  					<class name="unir.net.tfgii.selenium.tests.Login" />
  					<class name="unir.net.tfgii.selenium.tests.Registro" />
@@ -27,7 +30,8 @@
  		</test>
  		<test name="PhantomJSTest">
  			<parameter name="driverProvider" value="PhantomJSDriver" /> 
- 			<parameter name="execution" value="local" /> 
+ 			<parameter name="execution" value="remote" /> 
+ 			<parameter name="host" value="192.168.1.1" /> 
  				<classes>
  					<class name="unir.net.tfgii.selenium.tests.Login" />
  					<class name="unir.net.tfgii.selenium.tests.Registro" />

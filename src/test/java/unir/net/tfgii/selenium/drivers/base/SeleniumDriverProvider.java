@@ -10,5 +10,5 @@ import unir.net.tfgii.selenium.exception.TestAutomatizacionException;
  * Proveedor de drivers de Selenium.
  */
 public interface SeleniumDriverProvider {
-	WebDriver initDriver(String execution) throws TestAutomatizacionException, MalformedURLException;
+	WebDriver initDriver(String execution,String host) throws TestAutomatizacionException, MalformedURLException;
 }

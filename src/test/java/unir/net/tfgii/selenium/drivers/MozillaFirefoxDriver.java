@@ -22,7 +22,7 @@ public class MozillaFirefoxDriver implements SeleniumDriverProvider {
 	
 	private static final Logger LOG = Logger.getLogger(MozillaFirefoxDriver.class);
 	
-	public WebDriver initDriver(String execution) throws TestAutomatizacionException,MalformedURLException {
+	public WebDriver initDriver(String execution,String host) throws TestAutomatizacionException,MalformedURLException {
 		
 		WebDriver driver;
 		
@@ -46,7 +46,7 @@ public class MozillaFirefoxDriver implements SeleniumDriverProvider {
 			FirefoxOptions ffoptions = new FirefoxOptions();
 			ffoptions.setHeadless(true);
 					
-			driver=new RemoteWebDriver(new URL("http://192.168.43.247:4444/wd/hub"), ffoptions);
+			driver=new RemoteWebDriver(new URL("http://"+host+":4444/wd/hub"), ffoptions);
 		
 		}
 		

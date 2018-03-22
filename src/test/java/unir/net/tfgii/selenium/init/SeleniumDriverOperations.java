@@ -34,9 +34,9 @@ public abstract class SeleniumDriverOperations  {
 	 */
 
 	@BeforeClass
-	@Parameters({"driverProvider","execution"})
+	@Parameters({"driverProvider","execution","host"})
 	@SuppressWarnings("unchecked")
-	public void testBeforeClass(String driverProvider,String execution) {
+	public void testBeforeClass(String driverProvider,String execution,String host) {
 		
 			final String driverProviderClassName = DRIVER_PROVIDERS_DEFAULT_PACKAGE + "." + driverProvider;
 		
@@ -51,7 +51,7 @@ public abstract class SeleniumDriverOperations  {
 						
 						/**inicializa el driver*/
 						try {
-							setDriver(provider.initDriver(execution));
+							setDriver(provider.initDriver(execution,host));
 							LOG.debug("Driver inicializado correctamente");
 						} catch (TestAutomatizacionException e) {
 							LOG.error(e.getLocalizedMessage(), e);

@@ -24,7 +24,7 @@ public class MicrosoftEdgeDriver  implements SeleniumDriverProvider{
 	
 	private static final Logger LOG = Logger.getLogger(MicrosoftEdgeDriver.class);
 	
-	public WebDriver initDriver(String execution) throws TestAutomatizacionException,MalformedURLException {
+	public WebDriver initDriver(String execution,String host) throws TestAutomatizacionException,MalformedURLException {
 		
 		WebDriver driver;
 		
@@ -45,7 +45,7 @@ public class MicrosoftEdgeDriver  implements SeleniumDriverProvider{
 			DesiredCapabilities dc = DesiredCapabilities.edge();
 			dc.setPlatform(Platform.WINDOWS);
 
-			driver=new RemoteWebDriver(new URL("http://172.30.141.59:4444/wd/hub"), dc);
+			driver=new RemoteWebDriver(new URL("http://"+host+":4444/wd/hub"), dc);
 				
 		}
 		

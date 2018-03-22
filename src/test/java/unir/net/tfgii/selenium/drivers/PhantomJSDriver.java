@@ -23,7 +23,7 @@ public class PhantomJSDriver  implements SeleniumDriverProvider  {
 	
 	private static final Logger LOG = Logger.getLogger(PhantomJSDriver.class);
 	
-	public WebDriver initDriver(String execution) throws TestAutomatizacionException,MalformedURLException {
+	public WebDriver initDriver(String execution,String host) throws TestAutomatizacionException,MalformedURLException {
 		
 		WebDriver driver;
 		
@@ -57,7 +57,7 @@ public class PhantomJSDriver  implements SeleniumDriverProvider  {
 			dc.setCapability("takesScreenshot", false);
 		    
 			LOG.debug("Inicializando driver PhantomJS Remoto");
-			driver=new RemoteWebDriver(new URL("http://192.168.43.247:4444/wd/hub"), dc);
+			driver=new RemoteWebDriver(new URL("http://"+host+":4444/wd/hub"), dc);
 
 		}
 		
