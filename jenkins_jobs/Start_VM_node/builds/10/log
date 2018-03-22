@@ -1,0 +1,233 @@
+Lanzada por el usuario [8mha:////4ASAjq7C/sSB4sIzq+4BVAAZsrwMTV3jKz30sL1zmxUIAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Ejecutando.en el espacio de trabajo C:\Users\sergiog\.jenkins\workspace\Start_VM_node@4
+Cloning the remote Git repository
+Cloning repository https://github.com/sglezcasco/sgc-tfgii.git
+ > git.exe init C:\Users\sergiog\.jenkins\workspace\Start_VM_node@4 # timeout=10
+Fetching upstream changes from https://github.com/sglezcasco/sgc-tfgii.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://github.com/sglezcasco/sgc-tfgii.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe config remote.origin.url https://github.com/sglezcasco/sgc-tfgii.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/sglezcasco/sgc-tfgii.git # timeout=10
+Fetching upstream changes from https://github.com/sglezcasco/sgc-tfgii.git
+ > git.exe fetch --tags --progress https://github.com/sglezcasco/sgc-tfgii.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 82875a017b1715bca35760eec2c87a27d23ba747 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 82875a017b1715bca35760eec2c87a27d23ba747
+Commit message: "changes to include new attribute test"
+ > git.exe rev-list --no-walk 82875a017b1715bca35760eec2c87a27d23ba747 # timeout=10
+Run condition [Boolean condition] enabling prebuild for step [Windows PowerShell]
+Run condition [Boolean condition] enabling prebuild for step [Windows PowerShell]
+Run condition [Boolean condition] enabling prebuild for step [Windows PowerShell]
+[Boolean condition] checking [false] against [^(1|y|yes|t|true|on|run)$] (origin token: ${W10_firefox_node})
+Run condition [Boolean condition] preventing perform for step [Windows PowerShell]
+[Boolean condition] checking [false] against [^(1|y|yes|t|true|on|run)$] (origin token: ${W10_chrome_node})
+Run condition [Boolean condition] preventing perform for step [Windows PowerShell]
+[Boolean condition] checking [true] against [^(1|y|yes|t|true|on|run)$] (origin token: ${W10_edge_node})
+Run condition [Boolean condition] enabling perform for step [Windows PowerShell]
+[Start_VM_node@4] $ powershell.exe -NonInteractive -ExecutionPolicy ByPass "& 'C:\Users\sergiog\AppData\Local\Temp\jenkins4931682912446663676.ps1'"
+System.Security.SecureString
+
+ Id Name            ComputerName    ComputerType    State         ConfigurationName     Availability
+ -- ----            ------------    ------------    -----         -----------------     ------------
+  1 WinRM1          W10_edge_node   VirtualMachine  Opened                                 Available
+  1 WinRM1          W10_edge_node   VirtualMachine  Opened                                 Available
+openjdk version "1.8.0_162"
+    + CategoryInfo          : NotSpecified: (openjdk version "1.8.0_162":String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+    + PSComputerName        : W10_edge_node
+ 
+OpenJDK Runtime Environment (Zulu 8.27.0.7-win64) (build 1.8.0_162-b01)
+OpenJDK 64-Bit Server VM (Zulu 8.27.0.7-win64) (build 25.162-b01, mixed mode)
+20:52:06.055 INFO - Selenium build info: version: '3.7.1', revision: '8a0099a'
+    + CategoryInfo          : NotSpecified: (20:52:06.055 IN...sion: '8a0099a':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+    + PSComputerName        : W10_edge_node
+ 
+20:52:06.070 INFO - Launching a Selenium Grid node
+2018-03-22 20:52:06.992:INFO::main: Logging initialized @1396ms to org.seleniumhq.jetty9.util.log.StdErrLog
+NotSpecified: (:) [], RemoteException
+20:52:07.149 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+20:52:07.180 INFO - Driver provider class org.openqa.selenium.safari.SafariDriver registration is skipped:
+ registration capabilities Capabilities {browserName: safari, platform: MAC, version: } does not match the current 
+platform WIN10
+20:52:07.258 INFO - Using the passthrough mode handler
+2018-03-22 20:52:07.289:INFO:osjs.Server:main: jetty-9.4.5.v20170502
+NotSpecified: (:) [], RemoteException
+2018-03-22 20:52:07.336:WARN:osjs.SecurityHandler:main: 
+ServletContext@o.s.j.s.ServletContextHandler@1aafa419{/,null,STARTING} has uncovered http methods for path: /
+NotSpecified: (:) [], RemoteException
+2018-03-22 20:52:07.352:INFO:osjsh.ContextHandler:main: Started 
+o.s.j.s.ServletContextHandler@1aafa419{/,null,AVAILABLE}
+NotSpecified: (:) [], RemoteException
+Usage: <main class> [options]
+  Options:
+    --version, -version
+       Displays the version and exits.
+       Default: false
+    -browserTimeout
+       <Integer> in seconds : number of seconds a browser session is allowed to
+       hang while a WebDriver command is running (example: driver.get(url)). If the
+       timeout is reached while a WebDriver command is still processing, the session
+       will quit. Minimum value is 60. An unspecified, zero, or negative value means
+       wait indefinitely.
+       Default: 0
+    -capabilities, -browser
+       <String> : comma separated Capability values. Example: -capabilities
+       browserName=firefox,platform=linux -capabilities browserName=chrome,platform=linux
+       Default: [Capabilities {browserName: edge, maxInstances: 1, platform: WINDOWS, seleniumProtocol: WebDriver}]
+    -cleanUpCycle
+       <Integer> in ms : specifies how often the hub will poll running proxies
+       for timed-out (i.e. hung) threads. Must also specify "timeout" option
+    -custom
+       <String> : comma separated key=value pairs for custom grid extensions.
+       NOT RECOMMENDED -- may be deprecated in a future revision. Example: -custom
+       myParamA=Value1,myParamB=Value2
+       Default: {}
+    -debug
+       <Boolean> : enables LogLevel.FINE.
+       Default: false
+    -downPollingLimit
+       <Integer> : node is marked as "down" if the node hasn't responded after
+       the number of checks specified in [downPollingLimit].
+       Default: 2
+    -enablePassThrough
+       <Boolean>: Whether or not to use the experimental passthrough mode.
+       Defaults to true.
+       Default: true
+    -host
+       <String> IP or hostname : usually determined automatically. Most commonly
+       useful in exotic network configurations (e.g. network with VPN)
+       Default: 169.254.152.198
+    -hub
+       <String> : the url that will be used to post the registration request.
+       This option takes precedence over -hubHost and -hubPort options.
+       Default: http://192.168.43.247:4444/grid/register
+    -hubHost
+       <String> IP or hostname : the host address of the hub we're attempting to
+       register with. If -hub is specified the -hubHost is determined from it.
+       Default: 192.168.43.247
+    -hubPort
+       <Integer> : the port of the hub we're attempting to register with. If
+       -hub is specified the -hubPort is determined from it.
+       Default: 4444
+    -id
+       <String> : optional unique identifier for the node. Defaults to the url
+       of the remoteHost, when not specified.
+    -jettyThreads, -jettyMaxThreads
+       <Integer> : max number of threads for Jetty. An unspecified, zero, or
+       negative value means the Jetty default value (200) will be used.
+    -log
+       <String> filename : the filename to use for logging. If omitted, will log
+       to STDOUT
+    -maxSession
+       <Integer> max number of tests that can run at the same time on the node,
+       irrespective of the browser used
+       Default: 5
+    -nodeConfig
+       <String> filename : JSON configuration file for the node. Overrides
+       default values
+    -nodePolling
+       <Integer> in ms : specifies how often the hub will poll to see if the
+       node is still responding.
+       Default: 5000
+    -nodeStatusCheckTimeout
+       <Integer> in ms : connection/socket timeout, used for node "nodePolling"
+       check.
+       Default: 5000
+    -port
+       <Integer> : the port number the server will use.
+       Default: 5555
+    -proxy
+       <String> : the class used to represent the node proxy. Default is
+       [org.openqa.grid.selenium.proxy.DefaultRemoteProxy].
+       Default: org.openqa.grid.selenium.proxy.DefaultRemoteProxy
+    -register
+       if specified, node will attempt to re-register itself automatically with
+       its known grid hub if the hub becomes unavailable.
+       Default: true
+    -registerCycle
+       <Integer> in ms : specifies how often the node will try to register
+       itself again. Allows administrator to restart the hub without restarting (or
+       risk orphaning) registered nodes. Must be specified with the "-register"
+       option.
+       Default: 5000
+    -remoteHost
+       <String> URL: Address to report to the hub. Used to override default
+       (http://<host>:<port>).
+    -role
+       <String> options are [hub], [node], or [standalone].
+       Default: node
+    -servlet, -servlets
+       <String> : list of extra servlets the grid (hub or node) will make
+       available. Specify multiple on the command line: -servlet tld.company.ServletA
+       -servlet tld.company.ServletB. The servlet must exist in the path:
+       /grid/admin/ServletA /grid/admin/ServletB
+       Default: []
+    -timeout, -sessionTimeout
+       <Integer> in seconds : Specifies the timeout before the server
+       automatically kills a session that hasn't had any activity in the last X seconds. The
+       test slot will then be released for another test to use. This is typically
+       used to take care of client crashes. For grid hub/node roles, cleanUpCycle
+       must also be set.
+       Default: 1800
+    -unregisterIfStillDownAfter
+       <Integer> in ms : if the node remains down for more than
+       [unregisterIfStillDownAfter] ms, it will stop attempting to re-register from the hub.
+       Default: 60000
+    -withoutServlet, -withoutServlets
+       <String> : list of default (hub or node) servlets to disable. Advanced
+       use cases only. Not all default servlets can be disabled. Specify multiple on
+       the command line: -withoutServlet tld.company.ServletA -withoutServlet
+       tld.company.ServletB
+       Default: []
+
+java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+NotSpecified: (:) [], RemoteException
+	at org.openqa.selenium.remote.server.SeleniumServer.boot(SeleniumServer.java:191)
+NotSpecified: (:) [], RemoteException
+	at org.openqa.grid.internal.utils.SelfRegisteringRemote.startRemoteServer(SelfRegisteringRemote.java:135)
+NotSpecified: (:) [], RemoteException
+	at org.openqa.grid.selenium.GridLauncherV3$3.launch(GridLauncherV3.java:287)
+NotSpecified: (:) [], RemoteException
+	at org.openqa.grid.selenium.GridLauncherV3.main(GridLauncherV3.java:99)
+NotSpecified: (:) [], RemoteException
+Caused by: java.net.BindException: Address already in use: bind
+NotSpecified: (:) [], RemoteException
+	at sun.nio.ch.Net.bind0(Native Method)
+NotSpecified: (:) [], RemoteException
+	at sun.nio.ch.Net.bind(Net.java:433)
+NotSpecified: (:) [], RemoteException
+	at sun.nio.ch.Net.bind(Net.java:425)
+NotSpecified: (:) [], RemoteException
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+NotSpecified: (:) [], RemoteException
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+NotSpecified: (:) [], RemoteException
+	at org.seleniumhq.jetty9.server.ServerConnector.open(ServerConnector.java:298)
+NotSpecified: (:) [], RemoteException
+	at org.seleniumhq.jetty9.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+NotSpecified: (:) [], RemoteException
+	at org.seleniumhq.jetty9.server.ServerConnector.doStart(ServerConnector.java:236)
+NotSpecified: (:) [], RemoteException
+	at org.seleniumhq.jetty9.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+NotSpecified: (:) [], RemoteException
+	at org.seleniumhq.jetty9.server.Server.doStart(Server.java:431)
+NotSpecified: (:) [], RemoteException
+	at org.seleniumhq.jetty9.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+NotSpecified: (:) [], RemoteException
+	at org.openqa.selenium.remote.server.SeleniumServer.boot(SeleniumServer.java:189)
+NotSpecified: (:) [], RemoteException
+	... 3 more
+NotSpecified: (:) [], RemoteException
+El proceso en segundo plano notific¢ un error con el siguiente mensaje: "El proceso de destino de socket de Hyper-V ha 
+terminado"..
+    + CategoryInfo          : OperationStopped: (W10_edge_node:String) [], PSRemotingTransportException
+    + FullyQualifiedErrorId : JobFailure
+    + PSComputerName        : W10_edge_node
+ 
+
+
+Finished: SUCCESS

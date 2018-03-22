@@ -1,0 +1,65 @@
+Lanzada por el usuario [8mha:////4ASAjq7C/sSB4sIzq+4BVAAZsrwMTV3jKz30sL1zmxUIAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Ejecutando.en el espacio de trabajo C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes
+Cloning the remote Git repository
+Cloning repository https://github.com/sglezcasco/sgc-tfgii.git
+ > git.exe init C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes # timeout=10
+Fetching upstream changes from https://github.com/sglezcasco/sgc-tfgii.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://github.com/sglezcasco/sgc-tfgii.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe config remote.origin.url https://github.com/sglezcasco/sgc-tfgii.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/sglezcasco/sgc-tfgii.git # timeout=10
+Fetching upstream changes from https://github.com/sglezcasco/sgc-tfgii.git
+ > git.exe fetch --tags --progress https://github.com/sglezcasco/sgc-tfgii.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision e63db0eb75e1a383376692dd6f4b1f9ada2e6b3e (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f e63db0eb75e1a383376692dd6f4b1f9ada2e6b3e
+Commit message: "Scripts for  build , start and stop docker windows"
+First time build. Skipping changelog.
+[Stop_Docker_nodes] $ cmd /c call C:\Users\sergiog\AppData\Local\Temp\jenkins622449176981154375.bat
+
+C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes>docker -v 
+Docker version 17.09.0-ce, build afdb6d4
+
+C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes>docker-compose -v 
+docker-compose version 1.16.1, build 6d1ac219
+
+C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes>docker images 
+REPOSITORY                    TAG                 IMAGE ID            CREATED             SIZE
+phantomjs_servernode          latest              8fcfced9b93f        29 hours ago        10.9GB
+hub_server                    latest              1b57c8a04c41        2 days ago          10.9GB
+base_server                   latest              aa30122e19a6        2 days ago          10.8GB
+microsoft/windowsservercore   latest              8d57c0984795        5 days ago          10.5GB
+
+C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes>cd Scripts_DockerWindows 
+
+C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes\Scripts_DockerWindows>docker ps -a 
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+
+C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes\Scripts_DockerWindows>docker-compose ps 
+Name   Command   State   Ports
+------------------------------
+
+C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes\Scripts_DockerWindows>docker-compose down 
+Removing network scriptsdockerwindows_default
+Network scriptsdockerwindows_default not found.
+
+C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes\Scripts_DockerWindows>docker-compose ps 
+Name   Command   State   Ports
+------------------------------
+
+C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes\Scripts_DockerWindows>docker stop selenium-hub selenium-phantomjs 
+Error response from daemon: No such container: selenium-hub
+Error response from daemon: No such container: selenium-phantomjs
+
+C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes\Scripts_DockerWindows>docker rm selenium-hub selenium-phantomjs 
+Error response from daemon: No such container: selenium-hub
+Error response from daemon: No such container: selenium-phantomjs
+
+C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes\Scripts_DockerWindows>docker ps -a 
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+
+C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes\Scripts_DockerWindows>exit 0 
+Finished: SUCCESS

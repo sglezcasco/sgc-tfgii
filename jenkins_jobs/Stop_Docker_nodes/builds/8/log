@@ -1,0 +1,68 @@
+Lanzada por el usuario [8mha:////4ASAjq7C/sSB4sIzq+4BVAAZsrwMTV3jKz30sL1zmxUIAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Ejecutando.en el espacio de trabajo C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/sglezcasco/sgc-tfgii.git # timeout=10
+Fetching upstream changes from https://github.com/sglezcasco/sgc-tfgii.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://github.com/sglezcasco/sgc-tfgii.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 82875a017b1715bca35760eec2c87a27d23ba747 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 82875a017b1715bca35760eec2c87a27d23ba747
+Commit message: "changes to include new attribute test"
+ > git.exe rev-list --no-walk 82875a017b1715bca35760eec2c87a27d23ba747 # timeout=10
+[Stop_Docker_nodes] $ cmd /c call C:\Users\sergiog\AppData\Local\Temp\jenkins4788169084473945120.bat
+
+C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes>docker -v 
+Docker version 17.09.0-ce, build afdb6d4
+
+C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes>docker-compose -v 
+docker-compose version 1.16.1, build 6d1ac219
+
+C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes>docker images 
+REPOSITORY                    TAG                 IMAGE ID            CREATED             SIZE
+phantomjs_servernode          latest              8fcfced9b93f        5 days ago          10.9GB
+hub_server                    latest              1b57c8a04c41        6 days ago          10.9GB
+base_server                   latest              aa30122e19a6        6 days ago          10.8GB
+microsoft/windowsservercore   latest              8d57c0984795        9 days ago          10.5GB
+portainer/portainer           latest              27e35cea6796        11 days ago         1.13GB
+
+C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes>cd Scripts_DockerWindows 
+
+C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes\Scripts_DockerWindows>docker ps -a 
+CONTAINER ID        IMAGE                  COMMAND                  CREATED             STATUS              PORTS                    NAMES
+6361ae437f53        hub_server             "powershell -Comma..."   2 hours ago         Up 2 hours          0.0.0.0:4444->4444/tcp   selenium-hub
+6981551a6bd3        phantomjs_servernode   "powershell -Comma..."   2 hours ago         Up 2 hours          8083/tcp                 selenium-phantomjs
+
+C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes\Scripts_DockerWindows>docker-compose ps 
+       Name                     Command               State           Ports         
+------------------------------------------------------------------------------------
+selenium-hub         powershell -Command $Error ...   Up      0.0.0.0:4444->4444/tcp
+selenium-phantomjs   powershell -Command $Error ...   Up      8083/tcp              
+
+C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes\Scripts_DockerWindows>docker-compose down 
+Stopping selenium-hub       ... 
+Stopping selenium-phantomjs ... 
+[1A[2KStopping selenium-phantomjs ... [32mdone[0m[1B[2A[2KStopping selenium-hub       ... [32mdone[0m[2BRemoving selenium-hub       ... 
+Removing selenium-phantomjs ... 
+[1A[2KRemoving selenium-phantomjs ... [32mdone[0m[1B[2A[2KRemoving selenium-hub       ... [32mdone[0m[2BRemoving network scriptsdockerwindows_default
+
+C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes\Scripts_DockerWindows>docker-compose ps 
+Name   Command   State   Ports
+------------------------------
+
+C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes\Scripts_DockerWindows>docker stop selenium-hub selenium-phantomjs 
+Error response from daemon: No such container: selenium-hub
+Error response from daemon: No such container: selenium-phantomjs
+
+C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes\Scripts_DockerWindows>docker rm selenium-hub selenium-phantomjs 
+Error response from daemon: No such container: selenium-hub
+Error response from daemon: No such container: selenium-phantomjs
+
+C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes\Scripts_DockerWindows>docker ps -a 
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+
+C:\Users\sergiog\.jenkins\workspace\Stop_Docker_nodes\Scripts_DockerWindows>exit 0 
+Finished: SUCCESS

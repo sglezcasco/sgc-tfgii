@@ -1,0 +1,116 @@
+Lanzada por el usuario [8mha:////4ASAjq7C/sSB4sIzq+4BVAAZsrwMTV3jKz30sL1zmxUIAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Ejecutando.en el espacio de trabajo C:\Users\sergiog\.jenkins\workspace\Build_Docker_images
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/sglezcasco/sgc-tfgii.git # timeout=10
+Fetching upstream changes from https://github.com/sglezcasco/sgc-tfgii.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://github.com/sglezcasco/sgc-tfgii.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 60dbe4dac106ecd2ff6e7d63b83f303fb9b4f003 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 60dbe4dac106ecd2ff6e7d63b83f303fb9b4f003
+Commit message: "Merge branch 'master' of https://github.com/sglezcasco/sgc-tfgii"
+ > git.exe rev-list --no-walk 60dbe4dac106ecd2ff6e7d63b83f303fb9b4f003 # timeout=10
+[Build_Docker_images] $ cmd /c call C:\Users\sergiog\AppData\Local\Temp\jenkins5052688042139866991.bat
+
+C:\Users\sergiog\.jenkins\workspace\Build_Docker_images>cd C:\Users\sergiog\.jenkins\workspace\Build_Docker_images/Scripts_DockerWindows/base 
+
+C:\Users\sergiog\.jenkins\workspace\Build_Docker_images\Scripts_DockerWindows\base>docker build -t base_server . 
+Sending build context to Docker daemon   2.56kB
+Step 1/5 : FROM microsoft/windowsservercore:latest
+ ---> 8d57c0984795
+Step 2/5 : SHELL powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';
+ ---> Using cache
+ ---> 06198abe163f
+Step 3/5 : ENV JAVA_VERSION 8.27.0.7-jdk8.0.162
+ ---> Using cache
+ ---> dd95414a43d6
+Step 4/5 : ENV JAVA_HOME C:\\zulu${JAVA_VERSION}-win_x64
+ ---> Using cache
+ ---> 2b39a67a9bbf
+Step 5/5 : RUN Invoke-WebRequest $('https://cdn.azul.com/zulu/bin/zulu{0}-win_x64.zip' -f $env:JAVA_VERSION) -OutFile 'openjdk.zip' -UseBasicParsing ;     Expand-Archive C:\openjdk.zip  -DestinationPath C:\ ;     $env:PATH = '{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH ;     Set-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Environment\' -Name Path -Value $env:PATH ;
+ ---> Using cache
+ ---> aa30122e19a6
+Successfully built aa30122e19a6
+Successfully tagged base_server:latest
+
+C:\Users\sergiog\.jenkins\workspace\Build_Docker_images\Scripts_DockerWindows\base>cd C:\Users\sergiog\.jenkins\workspace\Build_Docker_images/Scripts_DockerWindows/hub 
+
+C:\Users\sergiog\.jenkins\workspace\Build_Docker_images\Scripts_DockerWindows\hub>docker build -t hub_server . 
+Sending build context to Docker daemon  2.048kB
+Step 1/8 : FROM base_server:latest
+ ---> aa30122e19a6
+Step 2/8 : SHELL powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';
+ ---> Using cache
+ ---> 8a7cb3b38417
+Step 3/8 : RUN Invoke-WebRequest $('https://selenium-release.storage.googleapis.com/3.7/selenium-server-standalone-3.7.1.jar') -OutFile 'C:/selenium-server-standalone-3_7_1.jar' -UseBasicParsing ;
+ ---> Using cache
+ ---> afb12d3881a3
+Step 4/8 : RUN java -version
+ ---> Using cache
+ ---> 0896488fa912
+Step 5/8 : RUN cd C:/
+ ---> Using cache
+ ---> abcdc014ee76
+Step 6/8 : RUN dir
+ ---> Using cache
+ ---> 13d846237888
+Step 7/8 : EXPOSE 4444
+ ---> Using cache
+ ---> 4f69e7b0a785
+Step 8/8 : ENTRYPOINT java -jar c:\\selenium-server-standalone-3_7_1.jar -role hub -port 4444
+ ---> Using cache
+ ---> 1b57c8a04c41
+Successfully built 1b57c8a04c41
+Successfully tagged hub_server:latest
+
+C:\Users\sergiog\.jenkins\workspace\Build_Docker_images\Scripts_DockerWindows\hub>cd C:\Users\sergiog\.jenkins\workspace\Build_Docker_images/Scripts_DockerWindows/phantomjs 
+
+C:\Users\sergiog\.jenkins\workspace\Build_Docker_images\Scripts_DockerWindows\phantomjs>docker build -t phantomjs_servernode . 
+Sending build context to Docker daemon  3.072kB
+Step 1/10 : FROM base_server:latest
+ ---> aa30122e19a6
+Step 2/10 : SHELL powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';
+ ---> Using cache
+ ---> 8a7cb3b38417
+Step 3/10 : ADD https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.7-windows.zip C:/SoftDesarrollo/SeleniumWebdriver/phantomjs-1_9_7-windows.zip
+
+ ---> Using cache
+ ---> b266307714f3
+Step 4/10 : ADD https://selenium-release.storage.googleapis.com/3.7/selenium-server-standalone-3.7.1.jar C:/selenium-server-standalone-3_7_1.jar
+
+
+ ---> Using cache
+ ---> 4871a09f035f
+Step 5/10 : RUN java -version
+ ---> Using cache
+ ---> be2382fcf791
+Step 6/10 : RUN Expand-Archive C:/SoftDesarrollo/SeleniumWebdriver/phantomjs-1_9_7-windows.zip  -DestinationPath C:/SoftDesarrollo/SeleniumWebdriver ;
+ ---> Using cache
+ ---> 14e91f7644d7
+Step 7/10 : RUN Get-Package
+ ---> Using cache
+ ---> 64b6c53a56b3
+Step 8/10 : RUN Set-Location -Path C:/SoftDesarrollo/SeleniumWebdriver/phantomjs-1.9.7-windows/
+ ---> Using cache
+ ---> e7034f743c0b
+Step 9/10 : EXPOSE 8083
+ ---> Using cache
+ ---> 099c30756c73
+Step 10/10 : ENTRYPOINT $hostname =  hostname ; 	$ipV4 = Test-Connection -ComputerName $hostname -Count 1 | Select -ExpandProperty IPv4Address ; 	$ip= $ipv4.IPAddressToString ; 	$ip= $ip+":8083" ; 	C:/SoftDesarrollo/SeleniumWebdriver/phantomjs-1.9.7-windows/phantomjs --webdriver=$ip --webdriver-selenium-grid-hub=http://192.168.43.247:4444
+ ---> Using cache
+ ---> 8fcfced9b93f
+Successfully built 8fcfced9b93f
+Successfully tagged phantomjs_servernode:latest
+
+C:\Users\sergiog\.jenkins\workspace\Build_Docker_images\Scripts_DockerWindows\phantomjs>docker images 
+REPOSITORY                    TAG                 IMAGE ID            CREATED             SIZE
+phantomjs_servernode          latest              8fcfced9b93f        5 days ago          10.9GB
+hub_server                    latest              1b57c8a04c41        5 days ago          10.9GB
+base_server                   latest              aa30122e19a6        5 days ago          10.8GB
+microsoft/windowsservercore   latest              8d57c0984795        9 days ago          10.5GB
+
+C:\Users\sergiog\.jenkins\workspace\Build_Docker_images\Scripts_DockerWindows\phantomjs>exit 0 
+Finished: SUCCESS

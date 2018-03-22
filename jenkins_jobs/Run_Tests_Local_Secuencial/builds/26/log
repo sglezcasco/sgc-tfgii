@@ -1,0 +1,476 @@
+Lanzada por el usuario [8mha:////4ASAjq7C/sSB4sIzq+4BVAAZsrwMTV3jKz30sL1zmxUIAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Ejecutando.en el espacio de trabajo C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/sglezcasco/sgc-tfgii.git # timeout=10
+Fetching upstream changes from https://github.com/sglezcasco/sgc-tfgii.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://github.com/sglezcasco/sgc-tfgii.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 82875a017b1715bca35760eec2c87a27d23ba747 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 82875a017b1715bca35760eec2c87a27d23ba747
+Commit message: "changes to include new attribute test"
+ > git.exe rev-list --no-walk 82875a017b1715bca35760eec2c87a27d23ba747 # timeout=10
+Run condition [Boolean condition] enabling prebuild for step [Ejecutar un comando de Windows]
+Run condition [Boolean condition] enabling prebuild for step [Ejecutar un comando de Windows]
+Run condition [Boolean condition] enabling prebuild for step [Ejecutar un comando de Windows]
+Run condition [Boolean condition] enabling prebuild for step [Ejecutar un comando de Windows]
+[Run_Tests_Local_Secuencial] $ cmd /c call C:\Users\sergiog\AppData\Local\Temp\jenkins5576705643207864950.bat
+
+C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial>mvn eclipse:eclipse 
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Selenium Tests 1.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> maven-eclipse-plugin:2.10:eclipse (default-cli) > generate-resources @ pruebas-selenium >>>
+[INFO] 
+[INFO] <<< maven-eclipse-plugin:2.10:eclipse (default-cli) < generate-resources @ pruebas-selenium <<<
+[INFO] 
+[INFO] --- maven-eclipse-plugin:2.10:eclipse (default-cli) @ pruebas-selenium ---
+[INFO] Using Eclipse Workspace: null
+[INFO] Adding default classpath container: org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8
+[INFO] File C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial\.project already exists.
+       Additional settings will be preserved, run mvn eclipse:clean if you want old settings to be removed.
+[INFO] Wrote Eclipse project for "pruebas-selenium" to C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial.
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.416 s
+[INFO] Finished at: 2018-03-22T20:09:43+01:00
+[INFO] Final Memory: 17M/221M
+[INFO] ------------------------------------------------------------------------
+[Boolean condition] checking [true] against [^(1|y|yes|t|true|on|run)$] (origin token: ${Firefox})
+Run condition [Boolean condition] enabling perform for step [Ejecutar un comando de Windows]
+[Run_Tests_Local_Secuencial] $ cmd /c call C:\Users\sergiog\AppData\Local\Temp\jenkins9107616016224046358.bat
+
+C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial>mvn -Dtest=unir.net.tfgii.selenium.tests.Login,unir.net.tfgii.selenium.tests.Registro -DdriverProvider=MozillaFirefoxDriver -Dexecution=local -Dhost=localhost test 
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Selenium Tests 1.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ pruebas-selenium ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ pruebas-selenium ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ pruebas-selenium ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ pruebas-selenium ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ pruebas-selenium ---
+[INFO] Surefire report directory: C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+2018-03-22 20:09:47.630 unir.net.tfgii.selenium.drivers.MozillaFirefoxDriver DEBUG - Inicializando driver Firefox:C:\SoftDesarrollo\SeleniumWebdriver\geckodriver.exe
+1521745788200	geckodriver	INFO	geckodriver 0.19.0
+1521745788212	geckodriver	INFO	Listening on 127.0.0.1:30293
+1521745788732	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\sergiog\\AppData\\Local\\Temp\\rust_mozprofile.veA8OXlfluVg"
+Unable to read VR Path Registry from C:\Users\sergiog\AppData\Local\openvr\openvrpaths.vrpath
+1521745789526	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\sergiog\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\sergiog\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\sergiog\AppData\Local\openvr\openvrpaths.vrpath
+[Child 6884, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6884, Chrome_ChildThread] WARNING: pipe error: 109: fileUnable to read VR Path Registry from C:\Users\sergiog\AppData\Local\openvr\openvrpaths.vrpath
+1521745793551	Marionette	INFO	Listening on port 56087
+1521745793990	Marionette	WARN	TLS certificate errors will be ignored for this session
+1521745794056	Marionette	DEBUG	Register listener.js for window 4294967297
+mar 22, 2018 8:09:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+2018-03-22 20:09:57.642 unir.net.tfgii.selenium.init.SeleniumDriverOperations DEBUG - Driver inicializado correctamente
+2018-03-22 20:09:57.649 unir.net.tfgii.selenium.tests.Login DEBUG - INICIO- Caso de Prueba de Login
+La url de inicio es: http://www.sgc-tfgii.es/index.html
+1521745797675	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1521745797962	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1521745797962	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1521745799046	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.sgc-tfgii.es/index.html"
+1521745799493	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.sgc-tfgii.es/index.html"
+2018-03-22 20:09:59.531 unir.net.tfgii.selenium.tests.Login DEBUG - 01 -Cargamos la página de login
+2018-03-22 20:09:59.589 unir.net.tfgii.selenium.tests.Login DEBUG - 02 -Esperamos que cargue la página de login
+2018-03-22 20:09:59.596 unir.net.tfgii.selenium.tests.Login DEBUG - 03 -Comprobamos que es la pagina de login
+JavaScript error: http://www.sgc-tfgii.es/index.html, line 1: SyntaxError: expected expression, got '.'
+1521745799704	Marionette	DEBUG	Received DOM event "beforeunload" for "http://www.sgc-tfgii.es/index.html"
+1521745800765	Marionette	DEBUG	Received DOM event "pagehide" for "http://www.sgc-tfgii.es/index.html"
+1521745800767	Marionette	DEBUG	Received DOM event "unload" for "http://www.sgc-tfgii.es/index.html"
+1521745800843	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.sgc-tfgii.es/listado.html"
+1521745800854	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.sgc-tfgii.es/listado.html"
+2018-03-22 20:10:35.911 unir.net.tfgii.selenium.pageobjects.PageObjectLoginPage DEBUG - Logamos con user: UnirTFGII y pwd: Proxy element for: DefaultElementLocator 'By.id: pwd'
+2018-03-22 20:10:35.912 unir.net.tfgii.selenium.tests.Login DEBUG - 04 -Hacemos Login con user: UnirTFGII
+2018-03-22 20:10:35.946 unir.net.tfgii.selenium.tests.Login DEBUG - 05 -Esperamos que cargue la página principal
+2018-03-22 20:10:35.952 unir.net.tfgii.selenium.tests.Login DEBUG - 06 -Comprobamos que es la pagina principal 
+1521745835990	Marionette	DEBUG	Received DOM event "popstate" for "http://www.sgc-tfgii.es/listado.html#jenkins"
+2018-03-22 20:10:40.996 unir.net.tfgii.selenium.tests.Login DEBUG - 07 -Hacemos click en la seccion Jenkins 
+1521745841015	Marionette	DEBUG	Received DOM event "beforeunload" for "http://www.sgc-tfgii.es/listado.html#jenkins"
+1521745841039	Marionette	DEBUG	Received DOM event "pagehide" for "http://www.sgc-tfgii.es/listado.html#jenkins"
+1521745841040	Marionette	DEBUG	Received DOM event "unload" for "http://www.sgc-tfgii.es/listado.html#jenkins"
+1521745841119	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.sgc-tfgii.es/index.html"
+1521745841134	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.sgc-tfgii.es/index.html"
+2018-03-22 20:10:46.140 unir.net.tfgii.selenium.tests.Login DEBUG - 08 -Salir
+2018-03-22 20:10:46.140 unir.net.tfgii.selenium.tests.Login DEBUG - FIN- TEST OK
+2018-03-22 20:10:46.145 unir.net.tfgii.selenium.tests.base.BaseTestCase DEBUG - Cerrando el driver
+[Parent 10840, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2018-03-22 20:10:46.396 unir.net.tfgii.selenium.drivers.MozillaFirefoxDriver DEBUG - Inicializando driver Firefox:C:\SoftDesarrollo\SeleniumWebdriver\geckodriver.exe
+1521745846533	geckodriver	INFO	geckodriver 0.19.0
+1521745846539	geckodriver	INFO	Listening on 127.0.0.1:3547
+1521745847056	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\sergiog\\AppData\\Local\\Temp\\rust_mozprofile.StUqZjKXPi5k"
+Unable to read VR Path Registry from C:\Users\sergiog\AppData\Local\openvr\openvrpaths.vrpath
+1521745847849	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\sergiog\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\sergiog\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\sergiog\AppData\Local\openvr\openvrpaths.vrpath
+[Child 760, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 760, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\sergiog\AppData\Local\openvr\openvrpaths.vrpath
+1521745851262	Marionette	INFO	Listening on port 56155
+1521745852329	Marionette	WARN	TLS certificate errors will be ignored for this session
+1521745852381	Marionette	DEBUG	Register listener.js for window 4294967297
+mar 22, 2018 8:10:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+2018-03-22 20:10:55.917 unir.net.tfgii.selenium.init.SeleniumDriverOperations DEBUG - Driver inicializado correctamente
+2018-03-22 20:10:55.920 unir.net.tfgii.selenium.tests.Registro DEBUG - INICIO- Caso de Prueba de Registro
+La url de inicio es: http://www.sgc-tfgii.es/index.html
+1521745855934	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1521745856679	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1521745856679	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1521745858458	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.sgc-tfgii.es/index.html"
+1521745859028	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.sgc-tfgii.es/index.html"
+2018-03-22 20:10:59.042 unir.net.tfgii.selenium.tests.Registro DEBUG - 01 -Cargamos la página de login
+2018-03-22 20:10:59.087 unir.net.tfgii.selenium.tests.Registro DEBUG - 02 -Esperamos que cargue la página de login
+2018-03-22 20:10:59.093 unir.net.tfgii.selenium.tests.Registro DEBUG - 03 -Comprobamos que es la pagina de login
+1521745859136	Marionette	DEBUG	Received DOM event "beforeunload" for "http://www.sgc-tfgii.es/index.html"
+1521745859211	Marionette	DEBUG	Received DOM event "pagehide" for "http://www.sgc-tfgii.es/index.html"
+1521745859218	Marionette	DEBUG	Received DOM event "unload" for "http://www.sgc-tfgii.es/index.html"
+1521745859312	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.sgc-tfgii.es/register.html"
+1521745859325	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.sgc-tfgii.es/register.html"
+2018-03-22 20:10:59.336 unir.net.tfgii.selenium.pageobjects.PageObjectLoginPage DEBUG - Vamos al registro de usuarios
+2018-03-22 20:10:59.344 unir.net.tfgii.selenium.tests.Registro DEBUG - 04 -Vamos al registro de usuarios
+2018-03-22 20:10:59.398 unir.net.tfgii.selenium.tests.Registro DEBUG - 05 -Esperamos que cargue la página de registro
+2018-03-22 20:10:59.405 unir.net.tfgii.selenium.tests.Registro DEBUG - 06 -Comprobamos que es la pagina de registro 
+1521745864646	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521745865070	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521745865387	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+2018-03-22 20:11:11.023 unir.net.tfgii.selenium.pageobjects.PageObjectRegisterPage DEBUG - Registro rellenado con usuario: sergiogc
+2018-03-22 20:11:11.023 unir.net.tfgii.selenium.tests.Registro DEBUG - 07 -Datos formulario registro rellenados
+JavaScript error: http://www.sgc-tfgii.es/register.html, line 1: SyntaxError: expected expression, got '.'
+1521745871063	Marionette	DEBUG	Received DOM event "beforeunload" for "http://www.sgc-tfgii.es/register.html"
+1521745871132	Marionette	DEBUG	Received DOM event "pagehide" for "http://www.sgc-tfgii.es/register.html"
+1521745871133	Marionette	DEBUG	Received DOM event "unload" for "http://www.sgc-tfgii.es/register.html"
+1521745871221	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.sgc-tfgii.es/listado.html?email=sgc%40gmail.com&sexo=male"
+1521745871339	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.sgc-tfgii.es/listado.html?email=sgc%40gmail.com&sexo=male"
+2018-03-22 20:11:16.354 unir.net.tfgii.selenium.pageobjects.PageObjectRegisterPage DEBUG - Realizamos el registro. 
+2018-03-22 20:11:16.355 unir.net.tfgii.selenium.tests.Registro DEBUG - 08 -Enviar Registrado
+1521745876364	Marionette	DEBUG	Received DOM event "beforeunload" for "http://www.sgc-tfgii.es/listado.html?email=sgc%40gmail.com&sexo=male"
+1521745876379	Marionette	DEBUG	Received DOM event "pagehide" for "http://www.sgc-tfgii.es/listado.html?email=sgc%40gmail.com&sexo=male"
+1521745876379	Marionette	DEBUG	Received DOM event "unload" for "http://www.sgc-tfgii.es/listado.html?email=sgc%40gmail.com&sexo=male"
+1521745876457	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.sgc-tfgii.es/index.html"
+1521745876462	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.sgc-tfgii.es/index.html"
+2018-03-22 20:11:21.467 unir.net.tfgii.selenium.tests.Registro DEBUG - 09 -Salir
+2018-03-22 20:11:21.467 unir.net.tfgii.selenium.tests.Registro DEBUG - FIN- TEST OK
+2018-03-22 20:11:21.470 unir.net.tfgii.selenium.tests.base.BaseTestCase DEBUG - Cerrando el driver
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 94.979 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:37 min
+[INFO] Finished at: 2018-03-22T20:11:22+01:00
+[INFO] Final Memory: 15M/217M
+[INFO] ------------------------------------------------------------------------
+[Boolean condition] checking [true] against [^(1|y|yes|t|true|on|run)$] (origin token: ${Chrome})
+Run condition [Boolean condition] enabling perform for step [Ejecutar un comando de Windows]
+[Run_Tests_Local_Secuencial] $ cmd /c call C:\Users\sergiog\AppData\Local\Temp\jenkins779217578896161317.bat
+
+C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial>mvn -Dtest=unir.net.tfgii.selenium.tests.Login,unir.net.tfgii.selenium.tests.Registro -DdriverProvider=GoogleChromeDriver -Dexecution=local -Dhost=localhost test 
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Selenium Tests 1.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ pruebas-selenium ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ pruebas-selenium ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ pruebas-selenium ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ pruebas-selenium ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ pruebas-selenium ---
+[INFO] Surefire report directory: C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+2018-03-22 20:11:26.490 unir.net.tfgii.selenium.drivers.GoogleChromeDriver DEBUG - Inicializando driver Google Chrome.
+Starting ChromeDriver 2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91) on port 24009
+Only local connections are allowed.
+mar 22, 2018 8:11:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+2018-03-22 20:11:29.974 unir.net.tfgii.selenium.init.SeleniumDriverOperations DEBUG - Driver inicializado correctamente
+2018-03-22 20:11:29.988 unir.net.tfgii.selenium.tests.Login DEBUG - INICIO- Caso de Prueba de Login
+La url de inicio es: http://www.sgc-tfgii.es/index.html
+2018-03-22 20:11:30.306 unir.net.tfgii.selenium.tests.Login DEBUG - 01 -Cargamos la página de login
+2018-03-22 20:11:30.355 unir.net.tfgii.selenium.tests.Login DEBUG - 02 -Esperamos que cargue la página de login
+2018-03-22 20:11:30.371 unir.net.tfgii.selenium.tests.Login DEBUG - 03 -Comprobamos que es la pagina de login
+2018-03-22 20:12:05.751 unir.net.tfgii.selenium.pageobjects.PageObjectLoginPage DEBUG - Logamos con user: UnirTFGII y pwd: Proxy element for: DefaultElementLocator 'By.id: pwd'
+2018-03-22 20:12:05.753 unir.net.tfgii.selenium.tests.Login DEBUG - 04 -Hacemos Login con user: UnirTFGII
+2018-03-22 20:12:05.788 unir.net.tfgii.selenium.tests.Login DEBUG - 05 -Esperamos que cargue la página principal
+2018-03-22 20:12:05.804 unir.net.tfgii.selenium.tests.Login DEBUG - 06 -Comprobamos que es la pagina principal 
+2018-03-22 20:12:10.872 unir.net.tfgii.selenium.tests.Login DEBUG - 07 -Hacemos click en la seccion Jenkins 
+2018-03-22 20:12:15.963 unir.net.tfgii.selenium.tests.Login DEBUG - 08 -Salir
+2018-03-22 20:12:15.964 unir.net.tfgii.selenium.tests.Login DEBUG - FIN- TEST OK
+2018-03-22 20:12:15.965 unir.net.tfgii.selenium.tests.base.BaseTestCase DEBUG - Cerrando el driver
+2018-03-22 20:12:16.628 unir.net.tfgii.selenium.drivers.GoogleChromeDriver DEBUG - Inicializando driver Google Chrome.
+Starting ChromeDriver 2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91) on port 30468
+Only local connections are allowed.
+mar 22, 2018 8:12:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+2018-03-22 20:12:19.555 unir.net.tfgii.selenium.init.SeleniumDriverOperations DEBUG - Driver inicializado correctamente
+2018-03-22 20:12:19.556 unir.net.tfgii.selenium.tests.Registro DEBUG - INICIO- Caso de Prueba de Registro
+La url de inicio es: http://www.sgc-tfgii.es/index.html
+2018-03-22 20:12:19.831 unir.net.tfgii.selenium.tests.Registro DEBUG - 01 -Cargamos la página de login
+2018-03-22 20:12:19.872 unir.net.tfgii.selenium.tests.Registro DEBUG - 02 -Esperamos que cargue la página de login
+2018-03-22 20:12:19.888 unir.net.tfgii.selenium.tests.Registro DEBUG - 03 -Comprobamos que es la pagina de login
+2018-03-22 20:12:20.005 unir.net.tfgii.selenium.pageobjects.PageObjectLoginPage DEBUG - Vamos al registro de usuarios
+2018-03-22 20:12:20.013 unir.net.tfgii.selenium.tests.Registro DEBUG - 04 -Vamos al registro de usuarios
+2018-03-22 20:12:20.050 unir.net.tfgii.selenium.tests.Registro DEBUG - 05 -Esperamos que cargue la página de registro
+2018-03-22 20:12:20.066 unir.net.tfgii.selenium.tests.Registro DEBUG - 06 -Comprobamos que es la pagina de registro 
+2018-03-22 20:12:30.964 unir.net.tfgii.selenium.pageobjects.PageObjectRegisterPage DEBUG - Registro rellenado con usuario: sergiogc
+2018-03-22 20:12:30.964 unir.net.tfgii.selenium.tests.Registro DEBUG - 07 -Datos formulario registro rellenados
+2018-03-22 20:12:36.714 unir.net.tfgii.selenium.pageobjects.PageObjectRegisterPage DEBUG - Realizamos el registro. 
+2018-03-22 20:12:36.716 unir.net.tfgii.selenium.tests.Registro DEBUG - 08 -Enviar Registrado
+2018-03-22 20:12:41.785 unir.net.tfgii.selenium.tests.Registro DEBUG - 09 -Salir
+2018-03-22 20:12:41.786 unir.net.tfgii.selenium.tests.Registro DEBUG - FIN- TEST OK
+2018-03-22 20:12:41.788 unir.net.tfgii.selenium.tests.base.BaseTestCase DEBUG - Cerrando el driver
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 76.733 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:19 min
+[INFO] Finished at: 2018-03-22T20:12:42+01:00
+[INFO] Final Memory: 12M/222M
+[INFO] ------------------------------------------------------------------------
+[Boolean condition] checking [true] against [^(1|y|yes|t|true|on|run)$] (origin token: ${Edge})
+Run condition [Boolean condition] enabling perform for step [Ejecutar un comando de Windows]
+[Run_Tests_Local_Secuencial] $ cmd /c call C:\Users\sergiog\AppData\Local\Temp\jenkins8974992658685226005.bat
+
+C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial>mvn -Dtest=unir.net.tfgii.selenium.tests.Login,unir.net.tfgii.selenium.tests.Registro -DdriverProvider=MicrosoftEdgeDriver -Dexecution=local -Dhost=localhost test 
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Selenium Tests 1.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ pruebas-selenium ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ pruebas-selenium ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ pruebas-selenium ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ pruebas-selenium ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ pruebas-selenium ---
+[INFO] Surefire report directory: C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+2018-03-22 20:12:46.839 unir.net.tfgii.selenium.drivers.MicrosoftEdgeDriver DEBUG - Inicializando driver Microsoft Edge.
+[20:12:47.254] - Listening on http://localhost:21487/ 
+mar 22, 2018 8:12:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+2018-03-22 20:12:48.784 unir.net.tfgii.selenium.init.SeleniumDriverOperations DEBUG - Driver inicializado correctamente
+2018-03-22 20:12:48.799 unir.net.tfgii.selenium.tests.Login DEBUG - INICIO- Caso de Prueba de Login
+La url de inicio es: http://www.sgc-tfgii.es/index.html
+2018-03-22 20:12:48.918 unir.net.tfgii.selenium.tests.Login DEBUG - 01 -Cargamos la página de login
+2018-03-22 20:12:48.942 unir.net.tfgii.selenium.tests.Login DEBUG - 02 -Esperamos que cargue la página de login
+2018-03-22 20:12:48.947 unir.net.tfgii.selenium.tests.Login DEBUG - 03 -Comprobamos que es la pagina de login
+2018-03-22 20:13:24.084 unir.net.tfgii.selenium.pageobjects.PageObjectLoginPage DEBUG - Logamos con user: UnirTFGII y pwd: Proxy element for: DefaultElementLocator 'By.id: pwd'
+2018-03-22 20:13:24.086 unir.net.tfgii.selenium.tests.Login DEBUG - 04 -Hacemos Login con user: UnirTFGII
+2018-03-22 20:13:24.095 unir.net.tfgii.selenium.tests.Login DEBUG - 05 -Esperamos que cargue la página principal
+2018-03-22 20:13:24.099 unir.net.tfgii.selenium.tests.Login DEBUG - 06 -Comprobamos que es la pagina principal 
+2018-03-22 20:13:29.139 unir.net.tfgii.selenium.tests.Login DEBUG - 07 -Hacemos click en la seccion Jenkins 
+2018-03-22 20:13:34.223 unir.net.tfgii.selenium.tests.Login DEBUG - 08 -Salir
+2018-03-22 20:13:34.224 unir.net.tfgii.selenium.tests.Login DEBUG - FIN- TEST OK
+2018-03-22 20:13:34.228 unir.net.tfgii.selenium.tests.base.BaseTestCase DEBUG - Cerrando el driver
+[20:13:36.547] - Stopping server.
+2018-03-22 20:13:37.064 unir.net.tfgii.selenium.drivers.MicrosoftEdgeDriver DEBUG - Inicializando driver Microsoft Edge.
+[20:13:37.201] - Listening on http://localhost:43885/ 
+mar 22, 2018 8:13:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+2018-03-22 20:13:38.305 unir.net.tfgii.selenium.init.SeleniumDriverOperations DEBUG - Driver inicializado correctamente
+2018-03-22 20:13:38.306 unir.net.tfgii.selenium.tests.Registro DEBUG - INICIO- Caso de Prueba de Registro
+La url de inicio es: http://www.sgc-tfgii.es/index.html
+2018-03-22 20:13:38.391 unir.net.tfgii.selenium.tests.Registro DEBUG - 01 -Cargamos la página de login
+2018-03-22 20:13:38.412 unir.net.tfgii.selenium.tests.Registro DEBUG - 02 -Esperamos que cargue la página de login
+2018-03-22 20:13:38.416 unir.net.tfgii.selenium.tests.Registro DEBUG - 03 -Comprobamos que es la pagina de login
+2018-03-22 20:13:38.444 unir.net.tfgii.selenium.pageobjects.PageObjectLoginPage DEBUG - Vamos al registro de usuarios
+2018-03-22 20:13:38.455 unir.net.tfgii.selenium.tests.Registro DEBUG - 04 -Vamos al registro de usuarios
+2018-03-22 20:13:38.688 unir.net.tfgii.selenium.tests.Registro DEBUG - 05 -Esperamos que cargue la página de registro
+2018-03-22 20:13:38.698 unir.net.tfgii.selenium.tests.Registro DEBUG - 06 -Comprobamos que es la pagina de registro 
+2018-03-22 20:13:48.948 unir.net.tfgii.selenium.pageobjects.PageObjectRegisterPage DEBUG - Registro rellenado con usuario: sergiogc
+2018-03-22 20:13:48.949 unir.net.tfgii.selenium.tests.Registro DEBUG - 07 -Datos formulario registro rellenados
+2018-03-22 20:13:53.995 unir.net.tfgii.selenium.pageobjects.PageObjectRegisterPage DEBUG - Realizamos el registro. 
+2018-03-22 20:13:53.997 unir.net.tfgii.selenium.tests.Registro DEBUG - 08 -Enviar Registrado
+2018-03-22 20:13:59.076 unir.net.tfgii.selenium.tests.Registro DEBUG - 09 -Salir
+2018-03-22 20:13:59.076 unir.net.tfgii.selenium.tests.Registro DEBUG - FIN- TEST OK
+2018-03-22 20:13:59.079 unir.net.tfgii.selenium.tests.base.BaseTestCase DEBUG - Cerrando el driver
+[20:14:01.404] - Stopping server.
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 75.982 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:18 min
+[INFO] Finished at: 2018-03-22T20:14:02+01:00
+[INFO] Final Memory: 15M/221M
+[INFO] ------------------------------------------------------------------------
+[Boolean condition] checking [true] against [^(1|y|yes|t|true|on|run)$] (origin token: ${PhantomJS})
+Run condition [Boolean condition] enabling perform for step [Ejecutar un comando de Windows]
+[Run_Tests_Local_Secuencial] $ cmd /c call C:\Users\sergiog\AppData\Local\Temp\jenkins4178862970805342790.bat
+
+C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial>mvn -Dtest=unir.net.tfgii.selenium.tests.Login,unir.net.tfgii.selenium.tests.Registro -DdriverProvider=PhantomJSDriver -Dexecution=local -Dhost=localhost test  
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Selenium Tests 1.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ pruebas-selenium ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ pruebas-selenium ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ pruebas-selenium ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ pruebas-selenium ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ pruebas-selenium ---
+[INFO] Surefire report directory: C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+Inicializando driver PhantomJS:C:\SoftDesarrollo\SeleniumWebdriver\phantomjs-1.9.7-windows\phantomjs.exe
+2018-03-22 20:14:06.443 unir.net.tfgii.selenium.drivers.PhantomJSDriver DEBUG - Inicializando driver PhantomJS
+mar 22, 2018 8:14:06 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFORMACIÓN: executable: C:\SoftDesarrollo\SeleniumWebdriver\phantomjs-1.9.7-windows\phantomjs.exe
+mar 22, 2018 8:14:06 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFORMACIÓN: port: 39798
+mar 22, 2018 8:14:06 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFORMACIÓN: arguments: [--ignore-ssl-errors=true, --ssl-protocol=tlsv1, --web-security=false, --webdriver-loglevel=OFF, --webdriver-loglevel=NONE, --webdriver=39798, --webdriver-logfile=C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial\phantomjsdriver.log]
+mar 22, 2018 8:14:06 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFORMACIÓN: environment: {}
+PhantomJS is launching GhostDriver...
+mar 22, 2018 8:14:08 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+2018-03-22 20:14:08.028 unir.net.tfgii.selenium.init.SeleniumDriverOperations DEBUG - Driver inicializado correctamente
+2018-03-22 20:14:08.032 unir.net.tfgii.selenium.tests.Login DEBUG - INICIO- Caso de Prueba de Login
+La url de inicio es: http://www.sgc-tfgii.es/index.html
+2018-03-22 20:14:20.746 unir.net.tfgii.selenium.tests.Login DEBUG - 01 -Cargamos la página de login
+2018-03-22 20:14:20.783 unir.net.tfgii.selenium.tests.Login DEBUG - 02 -Esperamos que cargue la página de login
+2018-03-22 20:14:20.794 unir.net.tfgii.selenium.tests.Login DEBUG - 03 -Comprobamos que es la pagina de login
+2018-03-22 20:14:56.694 unir.net.tfgii.selenium.pageobjects.PageObjectLoginPage DEBUG - Logamos con user: UnirTFGII y pwd: Proxy element for: DefaultElementLocator 'By.id: pwd'
+2018-03-22 20:14:56.696 unir.net.tfgii.selenium.tests.Login DEBUG - 04 -Hacemos Login con user: UnirTFGII
+2018-03-22 20:14:56.726 unir.net.tfgii.selenium.tests.Login DEBUG - 05 -Esperamos que cargue la página principal
+2018-03-22 20:14:56.743 unir.net.tfgii.selenium.tests.Login DEBUG - 06 -Comprobamos que es la pagina principal 
+2018-03-22 20:15:01.786 unir.net.tfgii.selenium.tests.Login DEBUG - 07 -Hacemos click en la seccion Jenkins 
+2018-03-22 20:15:07.813 unir.net.tfgii.selenium.tests.Login DEBUG - 08 -Salir
+2018-03-22 20:15:07.813 unir.net.tfgii.selenium.tests.Login DEBUG - FIN- TEST OK
+2018-03-22 20:15:07.816 unir.net.tfgii.selenium.tests.base.BaseTestCase DEBUG - Cerrando el driver
+Inicializando driver PhantomJS:C:\SoftDesarrollo\SeleniumWebdriver\phantomjs-1.9.7-windows\phantomjs.exe
+2018-03-22 20:15:08.377 unir.net.tfgii.selenium.drivers.PhantomJSDriver DEBUG - Inicializando driver PhantomJS
+mar 22, 2018 8:15:08 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFORMACIÓN: executable: C:\SoftDesarrollo\SeleniumWebdriver\phantomjs-1.9.7-windows\phantomjs.exe
+mar 22, 2018 8:15:08 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFORMACIÓN: port: 46394
+mar 22, 2018 8:15:08 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFORMACIÓN: arguments: [--ignore-ssl-errors=true, --ssl-protocol=tlsv1, --web-security=false, --webdriver-loglevel=OFF, --webdriver-loglevel=NONE, --webdriver=46394, --webdriver-logfile=C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial\phantomjsdriver.log]
+mar 22, 2018 8:15:08 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFORMACIÓN: environment: {}
+PhantomJS is launching GhostDriver...
+mar 22, 2018 8:15:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+2018-03-22 20:15:09.469 unir.net.tfgii.selenium.init.SeleniumDriverOperations DEBUG - Driver inicializado correctamente
+2018-03-22 20:15:09.470 unir.net.tfgii.selenium.tests.Registro DEBUG - INICIO- Caso de Prueba de Registro
+La url de inicio es: http://www.sgc-tfgii.es/index.html
+2018-03-22 20:15:12.638 unir.net.tfgii.selenium.tests.Registro DEBUG - 01 -Cargamos la página de login
+2018-03-22 20:15:12.670 unir.net.tfgii.selenium.tests.Registro DEBUG - 02 -Esperamos que cargue la página de login
+2018-03-22 20:15:12.681 unir.net.tfgii.selenium.tests.Registro DEBUG - 03 -Comprobamos que es la pagina de login
+2018-03-22 20:15:12.933 unir.net.tfgii.selenium.pageobjects.PageObjectLoginPage DEBUG - Vamos al registro de usuarios
+2018-03-22 20:15:12.938 unir.net.tfgii.selenium.tests.Registro DEBUG - 04 -Vamos al registro de usuarios
+2018-03-22 20:15:12.967 unir.net.tfgii.selenium.tests.Registro DEBUG - 05 -Esperamos que cargue la página de registro
+2018-03-22 20:15:12.978 unir.net.tfgii.selenium.tests.Registro DEBUG - 06 -Comprobamos que es la pagina de registro 
+2018-03-22 20:15:23.447 unir.net.tfgii.selenium.pageobjects.PageObjectRegisterPage DEBUG - Registro rellenado con usuario: sergiogc
+2018-03-22 20:15:23.447 unir.net.tfgii.selenium.tests.Registro DEBUG - 07 -Datos formulario registro rellenados
+2018-03-22 20:15:29.386 unir.net.tfgii.selenium.pageobjects.PageObjectRegisterPage DEBUG - Realizamos el registro. 
+2018-03-22 20:15:29.387 unir.net.tfgii.selenium.tests.Registro DEBUG - 08 -Enviar Registrado
+2018-03-22 20:15:35.193 unir.net.tfgii.selenium.tests.Registro DEBUG - 09 -Salir
+2018-03-22 20:15:35.194 unir.net.tfgii.selenium.tests.Registro DEBUG - FIN- TEST OK
+2018-03-22 20:15:35.198 unir.net.tfgii.selenium.tests.base.BaseTestCase DEBUG - Cerrando el driver
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 90.186 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:32 min
+[INFO] Finished at: 2018-03-22T20:15:36+01:00
+[INFO] Final Memory: 12M/222M
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS

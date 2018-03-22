@@ -1,0 +1,47 @@
+Lanzada por el usuario [8mha:////4ASAjq7C/sSB4sIzq+4BVAAZsrwMTV3jKz30sL1zmxUIAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Ejecutando.en el espacio de trabajo C:\Users\sergiog\.jenkins\workspace\Run_Tests_Remote_Paralell
+Cloning the remote Git repository
+Cloning repository https://github.com/sglezcasco/sgc-tfgii.git
+ > git.exe init C:\Users\sergiog\.jenkins\workspace\Run_Tests_Remote_Paralell # timeout=10
+Fetching upstream changes from https://github.com/sglezcasco/sgc-tfgii.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://github.com/sglezcasco/sgc-tfgii.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe config remote.origin.url https://github.com/sglezcasco/sgc-tfgii.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/sglezcasco/sgc-tfgii.git # timeout=10
+Fetching upstream changes from https://github.com/sglezcasco/sgc-tfgii.git
+ > git.exe fetch --tags --progress https://github.com/sglezcasco/sgc-tfgii.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 8843aea6a27c25066260f202cc8bbea303227d70 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 8843aea6a27c25066260f202cc8bbea303227d70
+Commit message: "update download jenkins powershell script"
+First time build. Skipping changelog.
+[Run_Tests_Remote_Paralell] $ cmd /c call C:\Users\sergiog\AppData\Local\Temp\jenkins4179115634729627150.bat
+
+C:\Users\sergiog\.jenkins\workspace\Run_Tests_Remote_Paralell>mvn eclipse:eclipse 
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Selenium Tests 1.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> maven-eclipse-plugin:2.10:eclipse (default-cli) > generate-resources @ pruebas-selenium >>>
+[INFO] 
+[INFO] <<< maven-eclipse-plugin:2.10:eclipse (default-cli) < generate-resources @ pruebas-selenium <<<
+[INFO] 
+[INFO] --- maven-eclipse-plugin:2.10:eclipse (default-cli) @ pruebas-selenium ---
+[INFO] Using Eclipse Workspace: null
+[INFO] Adding default classpath container: org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8
+[INFO] Wrote settings to C:\Users\sergiog\.jenkins\workspace\Run_Tests_Remote_Paralell\.settings\org.eclipse.jdt.core.prefs
+[INFO] Wrote Eclipse project for "pruebas-selenium" to C:\Users\sergiog\.jenkins\workspace\Run_Tests_Remote_Paralell.
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:02 min
+[INFO] Finished at: 2018-03-19T01:01:23+01:00
+[INFO] Final Memory: 12M/124M
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS

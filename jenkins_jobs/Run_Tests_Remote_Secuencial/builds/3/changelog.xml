@@ -1,0 +1,89 @@
+commit 82875a017b1715bca35760eec2c87a27d23ba747
+tree 14bc43d7d58028ffba1ff476fb432d62de15a995
+parent 60dbe4dac106ecd2ff6e7d63b83f303fb9b4f003
+author sglezcasco <sergiogonzalezcasco@gmail.com> 2018-03-22 19:41:50 +0100
+committer sglezcasco <sergiogonzalezcasco@gmail.com> 2018-03-22 19:41:50 +0100
+
+    changes to include new attribute test
+
+
+
+:100644 000000 eb356afa6eb5f7528e2bde3756140d3cdf6b931c 0000000000000000000000000000000000000000 D	powershell_scripts/powershell_scripts/install_chrome.ps1
+:100644 000000 1fad533dcfad5db83ab28888ee579a4d5f016e41 0000000000000000000000000000000000000000 D	powershell_scripts/powershell_scripts/install_edge.ps1
+:100644 000000 5dd27586ebd62bb77685d79ff14e1d878c5adb59 0000000000000000000000000000000000000000 D	powershell_scripts/powershell_scripts/install_firefox.ps1
+:100644 000000 a3d2b9c81217be888bf8012d27f5394feca158ff 0000000000000000000000000000000000000000 D	powershell_scripts/powershell_scripts/install_java8.ps1
+:100644 000000 c5612f77cfe918d3025ea95ea3c4abbc8846f442 0000000000000000000000000000000000000000 D	powershell_scripts/powershell_scripts/install_jenkins.ps1
+:100644 000000 6f0c02d5a1116815cc811daa828ef061b30864b8 0000000000000000000000000000000000000000 D	powershell_scripts/powershell_scripts/install_seleniumGrid.ps1
+:100644 000000 329d69283820ffd3f67a730e9514193dedbb142f 0000000000000000000000000000000000000000 D	powershell_scripts/powershell_scripts/start_chrome_node.ps1
+:100644 000000 4552775ca135c9fb6b997e845e8e8ed2a1088f27 0000000000000000000000000000000000000000 D	powershell_scripts/powershell_scripts/start_edge_node.ps1
+:100644 000000 0f2494802193700641854cfc3de16affc0939680 0000000000000000000000000000000000000000 D	powershell_scripts/powershell_scripts/start_firefox_node.ps1
+:100644 100644 00fb8a116c496c3a6e926b8e4a4e8a4d2c8307a6 83468833c016c44a99e19bab76f9da7ca8ba6970 M	src/test/java/unir/net/tfgii/selenium/drivers/GoogleChromeDriver.java
+:100644 100644 016d0cd6d1b49a3274bd95eab04d1b100f053c3b a0678b3923d306eb02a7c1db0685e8d447a645c1 M	src/test/java/unir/net/tfgii/selenium/drivers/MicrosoftEdgeDriver.java
+:100644 100644 08df9f434534d5ec4d48644bb4a3acf9dfc1a7bb 4a1f35645aa4c2cb6a46c2360e6b30c5f1287085 M	src/test/java/unir/net/tfgii/selenium/drivers/MozillaFirefoxDriver.java
+:100644 100644 de9eb098311e3dcb84700d6298efd9bd873e9853 391b6fffae7d1a8a6b4057f2c5f6c899ad0e70cd M	src/test/java/unir/net/tfgii/selenium/drivers/PhantomJSDriver.java
+:100644 100644 d1cc6fa802dc4d6b2e65b8f6830eca0e6f240459 78ce1d9f47d17ae9cf13fe6f4b6978db22990b45 M	src/test/java/unir/net/tfgii/selenium/drivers/base/SeleniumDriverProvider.java
+:100644 100644 0f4b538d6a9f7ac145abccd9702945859a99ab53 c38ddada08093c761a8232e757ad6f7e03fd1416 M	src/test/java/unir/net/tfgii/selenium/init/SeleniumDriverOperations.java
+:100644 100644 3379ea85886f118d3ef08f026f236527c6bb539d 6fa7e3a3b74c0efd9da35bb3626fa7999a550c3f M	src/test/resources/testng.xml
+:100644 100644 688c0168b74d76611f9fd37f17a590cda88a259d e8b2813e547ec83aa45a327a4147db53cd6b03c8 M	src/test/resources/testng_remote_parallel_all.xml
+commit 1c144bfd48e264dc6e5d3d8f2b14a174f296eeba
+tree b3ca240987256b8308ef52059c7c45e1a80f30ad
+parent e63db0eb75e1a383376692dd6f4b1f9ada2e6b3e
+author sglezcasco <sergiogonzalezcasco@gmail.com> 2018-03-22 18:35:31 +0100
+committer sglezcasco <sergiogonzalezcasco@gmail.com> 2018-03-22 18:35:31 +0100
+
+    fix paralell tests
+
+
+
+:100644 100644 3b66abbadda331071d6390fe50975cdd27b71887 f55ffc28e0e855cd5fb1da0f71b1def33c0ae09d M	pom.xml
+:100644 100644 fdca2346732d10e7cf97e34e629acd098331efc2 688c0168b74d76611f9fd37f17a590cda88a259d M	src/test/resources/testng_remote_parallel_all.xml
+commit 2ba0e162764780328310366edb7e8dc19adea27d
+tree 873c24ef2507baa5d0df62f074bbede18df861e2
+parent 8843aea6a27c25066260f202cc8bbea303227d70
+author sglezcasco <36644895+sglezcasco@users.noreply.github.com> 2018-03-22 13:45:04 +0000
+committer GitHub <noreply@github.com> 2018-03-22 13:45:04 +0000
+
+    Update README.md
+
+
+
+:100644 100644 90fc4f1cfad738cb5844999a945bac3f365f5ea0 fe725334715091a098c9632121c42f17561985c4 M	README.md
+commit 8843aea6a27c25066260f202cc8bbea303227d70
+tree 41a575193cdb060bc2a10ec49121ddaa805627f2
+parent 9ae6f48f89b87a97c7f113c229eb4303639fd629
+author sglezcasco <36644895+sglezcasco@users.noreply.github.com> 2018-03-18 23:56:01 +0100
+committer GitHub <noreply@github.com> 2018-03-18 23:56:01 +0100
+
+    update download jenkins powershell script
+
+
+
+:000000 100644 0000000000000000000000000000000000000000 eb356afa6eb5f7528e2bde3756140d3cdf6b931c A	powershell_scripts/powershell_scripts/install_chrome.ps1
+:000000 100644 0000000000000000000000000000000000000000 1fad533dcfad5db83ab28888ee579a4d5f016e41 A	powershell_scripts/powershell_scripts/install_edge.ps1
+:000000 100644 0000000000000000000000000000000000000000 5dd27586ebd62bb77685d79ff14e1d878c5adb59 A	powershell_scripts/powershell_scripts/install_firefox.ps1
+:000000 100644 0000000000000000000000000000000000000000 a3d2b9c81217be888bf8012d27f5394feca158ff A	powershell_scripts/powershell_scripts/install_java8.ps1
+:000000 100644 0000000000000000000000000000000000000000 c5612f77cfe918d3025ea95ea3c4abbc8846f442 A	powershell_scripts/powershell_scripts/install_jenkins.ps1
+:000000 100644 0000000000000000000000000000000000000000 6f0c02d5a1116815cc811daa828ef061b30864b8 A	powershell_scripts/powershell_scripts/install_seleniumGrid.ps1
+:000000 100644 0000000000000000000000000000000000000000 329d69283820ffd3f67a730e9514193dedbb142f A	powershell_scripts/powershell_scripts/start_chrome_node.ps1
+:000000 100644 0000000000000000000000000000000000000000 4552775ca135c9fb6b997e845e8e8ed2a1088f27 A	powershell_scripts/powershell_scripts/start_edge_node.ps1
+:000000 100644 0000000000000000000000000000000000000000 0f2494802193700641854cfc3de16affc0939680 A	powershell_scripts/powershell_scripts/start_firefox_node.ps1
+commit 9ae6f48f89b87a97c7f113c229eb4303639fd629
+tree f1de1d60a54ef5d465c477060a384b7a8ed40a00
+parent 634aa09871a9b18a96eeec3dcf86235a056718f3
+author sglezcasco <36644895+sglezcasco@users.noreply.github.com> 2018-03-18 23:54:58 +0100
+committer GitHub <noreply@github.com> 2018-03-18 23:54:58 +0100
+
+    powershell scripts to configure virtual machines
+
+    Include scripts for install and configure browsers (Firefox, Chrome,
+    Edge), Selenium Grid, Jenkins..
+
+:000000 100644 0000000000000000000000000000000000000000 eb356afa6eb5f7528e2bde3756140d3cdf6b931c A	powershell_scripts/install_chrome.ps1
+:000000 100644 0000000000000000000000000000000000000000 1fad533dcfad5db83ab28888ee579a4d5f016e41 A	powershell_scripts/install_edge.ps1
+:000000 100644 0000000000000000000000000000000000000000 5dd27586ebd62bb77685d79ff14e1d878c5adb59 A	powershell_scripts/install_firefox.ps1
+:000000 100644 0000000000000000000000000000000000000000 a3d2b9c81217be888bf8012d27f5394feca158ff A	powershell_scripts/install_java8.ps1
+:000000 100644 0000000000000000000000000000000000000000 111ff6bda50dc940f3c0eef6bab6db7d0909b4de A	powershell_scripts/install_jenkins.ps1
+:000000 100644 0000000000000000000000000000000000000000 6f0c02d5a1116815cc811daa828ef061b30864b8 A	powershell_scripts/install_seleniumGrid.ps1
+:000000 100644 0000000000000000000000000000000000000000 329d69283820ffd3f67a730e9514193dedbb142f A	powershell_scripts/start_chrome_node.ps1
+:000000 100644 0000000000000000000000000000000000000000 4552775ca135c9fb6b997e845e8e8ed2a1088f27 A	powershell_scripts/start_edge_node.ps1
+:000000 100644 0000000000000000000000000000000000000000 0f2494802193700641854cfc3de16affc0939680 A	powershell_scripts/start_firefox_node.ps1

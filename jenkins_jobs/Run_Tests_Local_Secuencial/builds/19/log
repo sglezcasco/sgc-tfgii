@@ -1,0 +1,163 @@
+Lanzada por el usuario [8mha:////4ASAjq7C/sSB4sIzq+4BVAAZsrwMTV3jKz30sL1zmxUIAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Ejecutando.en el espacio de trabajo C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/sglezcasco/sgc-tfgii.git # timeout=10
+Fetching upstream changes from https://github.com/sglezcasco/sgc-tfgii.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://github.com/sglezcasco/sgc-tfgii.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision e63db0eb75e1a383376692dd6f4b1f9ada2e6b3e (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f e63db0eb75e1a383376692dd6f4b1f9ada2e6b3e
+Commit message: "Scripts for  build , start and stop docker windows"
+ > git.exe rev-list --no-walk 8075e5acbb14f72255744e60a0e45b0965b8ef8c # timeout=10
+Run condition [Boolean condition] enabling prebuild for step [Ejecutar un comando de Windows]
+Run condition [Boolean condition] enabling prebuild for step [Ejecutar un comando de Windows]
+Run condition [Boolean condition] enabling prebuild for step [Ejecutar un comando de Windows]
+Run condition [Boolean condition] enabling prebuild for step [Ejecutar un comando de Windows]
+[Run_Tests_Local_Secuencial] $ cmd /c call C:\Users\sergiog\AppData\Local\Temp\jenkins1824745157018259437.bat
+
+C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial>mvn eclipse:eclipse 
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Selenium Tests 1.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> maven-eclipse-plugin:2.10:eclipse (default-cli) > generate-resources @ pruebas-selenium >>>
+[INFO] 
+[INFO] <<< maven-eclipse-plugin:2.10:eclipse (default-cli) < generate-resources @ pruebas-selenium <<<
+[INFO] 
+[INFO] --- maven-eclipse-plugin:2.10:eclipse (default-cli) @ pruebas-selenium ---
+[INFO] Using Eclipse Workspace: null
+[INFO] Adding default classpath container: org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8
+[INFO] File C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial\.project already exists.
+       Additional settings will be preserved, run mvn eclipse:clean if you want old settings to be removed.
+[INFO] Wrote Eclipse project for "pruebas-selenium" to C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial.
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.458 s
+[INFO] Finished at: 2018-03-18T21:03:31+01:00
+[INFO] Final Memory: 15M/222M
+[INFO] ------------------------------------------------------------------------
+[Boolean condition] checking [true] against [^(1|y|yes|t|true|on|run)$] (origin token: ${Firefox})
+Run condition [Boolean condition] enabling perform for step [Ejecutar un comando de Windows]
+[Run_Tests_Local_Secuencial] $ cmd /c call C:\Users\sergiog\AppData\Local\Temp\jenkins1001360642998443138.bat
+
+C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial>mvn -Dtest=unir.net.tfgii.selenium.tests.Login,unir.net.tfgii.selenium.tests.Registro -DdriverProvider=MozillaFirefoxDriver -Dexecution=local test 
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Selenium Tests 1.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ pruebas-selenium ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ pruebas-selenium ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ pruebas-selenium ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ pruebas-selenium ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ pruebas-selenium ---
+[INFO] Surefire report directory: C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+2018-03-18 21:03:38.657 unir.net.tfgii.selenium.drivers.MozillaFirefoxDriver DEBUG - Inicializando driver Firefox:C:\SoftDesarrollo\SeleniumWebdriver\geckodriver.exe
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 7, Time elapsed: 2.025 sec <<< FAILURE!
+testBeforeClass(unir.net.tfgii.selenium.tests.Login)  Time elapsed: 1.731 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/apache/http/ssl/SSLContexts
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.getSocketFactory(SSLConnectionSocketFactory.java:174)
+	at org.openqa.selenium.remote.internal.HttpClientFactory.getClientConnectionManager(HttpClientFactory.java:71)
+	at org.openqa.selenium.remote.internal.HttpClientFactory.<init>(HttpClientFactory.java:57)
+	at org.openqa.selenium.remote.internal.HttpClientFactory.<init>(HttpClientFactory.java:60)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient$Factory.getDefaultHttpClientFactory(ApacheHttpClient.java:242)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient$Factory.<init>(ApacheHttpClient.java:219)
+	at org.openqa.selenium.remote.HttpCommandExecutor.getDefaultClientFactory(HttpCommandExecutor.java:93)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:72)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:59)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:50)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:158)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+	at unir.net.tfgii.selenium.drivers.MozillaFirefoxDriver.initDriver(MozillaFirefoxDriver.java:42)
+	at unir.net.tfgii.selenium.init.SeleniumDriverOperations.testBeforeClass(SeleniumDriverOperations.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:189)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:105)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
+
+
+Results :
+
+Failed tests: 
+  Login>SeleniumDriverOperations.testBeforeClass:54 » NoClassDefFound org/apache...
+
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 7
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.441 s
+[INFO] Finished at: 2018-03-18T21:03:40+01:00
+[INFO] Final Memory: 11M/221M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.14.1:test (default-test) on project pruebas-selenium: There are test failures.
+[ERROR] 
+[ERROR] Please refer to C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial\target\surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Build step 'Conditional step (single)' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,36 @@
+Lanzada por el usuario [8mha:////4ASAjq7C/sSB4sIzq+4BVAAZsrwMTV3jKz30sL1zmxUIAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Ejecutando.en el espacio de trabajo C:\Users\sergiog\.jenkins\workspace\Stop_VMs
+Cloning the remote Git repository
+Cloning repository https://github.com/sglezcasco/sgc-tfgii.git
+ > git.exe init C:\Users\sergiog\.jenkins\workspace\Stop_VMs # timeout=10
+Fetching upstream changes from https://github.com/sglezcasco/sgc-tfgii.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://github.com/sglezcasco/sgc-tfgii.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe config remote.origin.url https://github.com/sglezcasco/sgc-tfgii.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/sglezcasco/sgc-tfgii.git # timeout=10
+Fetching upstream changes from https://github.com/sglezcasco/sgc-tfgii.git
+ > git.exe fetch --tags --progress https://github.com/sglezcasco/sgc-tfgii.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 82875a017b1715bca35760eec2c87a27d23ba747 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 82875a017b1715bca35760eec2c87a27d23ba747
+Commit message: "changes to include new attribute test"
+ > git.exe rev-list --no-walk 8843aea6a27c25066260f202cc8bbea303227d70 # timeout=10
+[Stop_VMs] $ powershell.exe -NonInteractive -ExecutionPolicy ByPass "& 'C:\Users\sergiog\AppData\Local\Temp\jenkins5786632476295363779.ps1'"
+
+ADVERTENCIA: La m quina virtual ya se encuentra en el estado especificado.
+ADVERTENCIA: La m quina virtual ya se encuentra en el estado especificado.
+Name             State   CPUUsage(%) MemoryAssigned(M) Uptime           Status                Version
+----             -----   ----------- ----------------- ------           ------                -------
+MobyLinuxVM      Off     0           0                 00:00:00         Funcionamiento normal 8.2    
+W10_chrome_node  Running 1           694               00:08:24.0430000 Funcionamiento normal 8.2    
+W10_edge_node    Off     0           0                 00:00:00         Funcionamiento normal 8.2    
+W10_firefox_node Off     0           0                 00:00:00         Funcionamiento normal 8.2    
+MobyLinuxVM      Off     0           0                 00:00:00         Funcionamiento normal 8.2    
+W10_chrome_node  Off     0           0                 00:00:00         Combinando discos     8.2    
+W10_edge_node    Off     0           0                 00:00:00         Funcionamiento normal 8.2    
+W10_firefox_node Off     0           0                 00:00:00         Funcionamiento normal 8.2    
+
+

@@ -1,0 +1,136 @@
+Lanzada por el usuario [8mha:////4ASAjq7C/sSB4sIzq+4BVAAZsrwMTV3jKz30sL1zmxUIAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Ejecutando.en el espacio de trabajo C:\Users\sergiog\.jenkins\workspace\Run_Tests_Remote_Secuencial
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/sglezcasco/sgc-tfgii.git # timeout=10
+Fetching upstream changes from https://github.com/sglezcasco/sgc-tfgii.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://github.com/sglezcasco/sgc-tfgii.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 82875a017b1715bca35760eec2c87a27d23ba747 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 82875a017b1715bca35760eec2c87a27d23ba747
+Commit message: "changes to include new attribute test"
+ > git.exe rev-list --no-walk 82875a017b1715bca35760eec2c87a27d23ba747 # timeout=10
+Run condition [Boolean condition] enabling prebuild for step [Ejecutar un comando de Windows]
+Run condition [Boolean condition] enabling prebuild for step [Ejecutar un comando de Windows]
+Run condition [Boolean condition] enabling prebuild for step [Ejecutar un comando de Windows]
+Run condition [Boolean condition] enabling prebuild for step [Ejecutar un comando de Windows]
+[Run_Tests_Remote_Secuencial] $ cmd /c call C:\Users\sergiog\AppData\Local\Temp\jenkins1965628896405393898.bat
+
+C:\Users\sergiog\.jenkins\workspace\Run_Tests_Remote_Secuencial>mvn eclipse:eclipse 
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Selenium Tests 1.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> maven-eclipse-plugin:2.10:eclipse (default-cli) > generate-resources @ pruebas-selenium >>>
+[INFO] 
+[INFO] <<< maven-eclipse-plugin:2.10:eclipse (default-cli) < generate-resources @ pruebas-selenium <<<
+[INFO] 
+[INFO] --- maven-eclipse-plugin:2.10:eclipse (default-cli) @ pruebas-selenium ---
+[INFO] Using Eclipse Workspace: null
+[INFO] Adding default classpath container: org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8
+[INFO] File C:\Users\sergiog\.jenkins\workspace\Run_Tests_Remote_Secuencial\.project already exists.
+       Additional settings will be preserved, run mvn eclipse:clean if you want old settings to be removed.
+[INFO] Wrote Eclipse project for "pruebas-selenium" to C:\Users\sergiog\.jenkins\workspace\Run_Tests_Remote_Secuencial.
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.393 s
+[INFO] Finished at: 2018-03-22T21:33:48+01:00
+[INFO] Final Memory: 15M/222M
+[INFO] ------------------------------------------------------------------------
+[Boolean condition] checking [false] against [^(1|y|yes|t|true|on|run)$] (origin token: ${Firefox})
+Run condition [Boolean condition] preventing perform for step [Ejecutar un comando de Windows]
+[Boolean condition] checking [false] against [^(1|y|yes|t|true|on|run)$] (origin token: ${Chrome})
+Run condition [Boolean condition] preventing perform for step [Ejecutar un comando de Windows]
+[Boolean condition] checking [false] against [^(1|y|yes|t|true|on|run)$] (origin token: ${Edge})
+Run condition [Boolean condition] preventing perform for step [Ejecutar un comando de Windows]
+[Boolean condition] checking [true] against [^(1|y|yes|t|true|on|run)$] (origin token: ${PhantomJS})
+Run condition [Boolean condition] enabling perform for step [Ejecutar un comando de Windows]
+[Run_Tests_Remote_Secuencial] $ cmd /c call C:\Users\sergiog\AppData\Local\Temp\jenkins4069997820698830564.bat
+
+C:\Users\sergiog\.jenkins\workspace\Run_Tests_Remote_Secuencial>mvn -Dtest=unir.net.tfgii.selenium.tests.Login,unir.net.tfgii.selenium.tests.Registro -DdriverProvider=PhantomJSDriver -Dexecution=remote -Dhost=192.168.43.247 test  
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Selenium Tests 1.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ pruebas-selenium ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\sergiog\.jenkins\workspace\Run_Tests_Remote_Secuencial\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ pruebas-selenium ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ pruebas-selenium ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ pruebas-selenium ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ pruebas-selenium ---
+[INFO] Surefire report directory: C:\Users\sergiog\.jenkins\workspace\Run_Tests_Remote_Secuencial\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+2018-03-22 21:33:55.944 unir.net.tfgii.selenium.drivers.PhantomJSDriver DEBUG - Inicializando driver PhantomJS Remoto
+mar 22, 2018 9:33:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+2018-03-22 21:33:56.660 unir.net.tfgii.selenium.init.SeleniumDriverOperations DEBUG - Driver inicializado correctamente
+2018-03-22 21:33:56.668 unir.net.tfgii.selenium.tests.Login DEBUG - INICIO- Caso de Prueba de Login
+La url de inicio es: http://www.sgc-tfgii.es/index.html
+2018-03-22 21:33:57.707 unir.net.tfgii.selenium.tests.Login DEBUG - 01 -Cargamos la página de login
+2018-03-22 21:33:57.833 unir.net.tfgii.selenium.tests.Login DEBUG - 02 -Esperamos que cargue la página de login
+2018-03-22 21:33:57.882 unir.net.tfgii.selenium.tests.Login DEBUG - 03 -Comprobamos que es la pagina de login
+2018-03-22 21:34:33.583 unir.net.tfgii.selenium.pageobjects.PageObjectLoginPage DEBUG - Logamos con user: UnirTFGII y pwd: Proxy element for: DefaultElementLocator 'By.id: pwd'
+2018-03-22 21:34:33.590 unir.net.tfgii.selenium.tests.Login DEBUG - 04 -Hacemos Login con user: UnirTFGII
+2018-03-22 21:34:33.714 unir.net.tfgii.selenium.tests.Login DEBUG - 05 -Esperamos que cargue la página principal
+2018-03-22 21:34:33.763 unir.net.tfgii.selenium.tests.Login DEBUG - 06 -Comprobamos que es la pagina principal 
+2018-03-22 21:34:38.872 unir.net.tfgii.selenium.tests.Login DEBUG - 07 -Hacemos click en la seccion Jenkins 
+2018-03-22 21:34:55.853 unir.net.tfgii.selenium.tests.Login DEBUG - 08 -Salir
+2018-03-22 21:34:55.853 unir.net.tfgii.selenium.tests.Login DEBUG - FIN- TEST OK
+2018-03-22 21:34:55.854 unir.net.tfgii.selenium.tests.base.BaseTestCase DEBUG - Cerrando el driver
+2018-03-22 21:34:55.885 unir.net.tfgii.selenium.drivers.PhantomJSDriver DEBUG - Inicializando driver PhantomJS Remoto
+mar 22, 2018 9:34:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+2018-03-22 21:34:55.949 unir.net.tfgii.selenium.init.SeleniumDriverOperations DEBUG - Driver inicializado correctamente
+2018-03-22 21:34:55.949 unir.net.tfgii.selenium.tests.Registro DEBUG - INICIO- Caso de Prueba de Registro
+La url de inicio es: http://www.sgc-tfgii.es/index.html
+2018-03-22 21:34:56.225 unir.net.tfgii.selenium.tests.Registro DEBUG - 01 -Cargamos la página de login
+2018-03-22 21:34:56.350 unir.net.tfgii.selenium.tests.Registro DEBUG - 02 -Esperamos que cargue la página de login
+2018-03-22 21:34:56.396 unir.net.tfgii.selenium.tests.Registro DEBUG - 03 -Comprobamos que es la pagina de login
+2018-03-22 21:34:56.811 unir.net.tfgii.selenium.pageobjects.PageObjectLoginPage DEBUG - Vamos al registro de usuarios
+2018-03-22 21:34:56.829 unir.net.tfgii.selenium.tests.Registro DEBUG - 04 -Vamos al registro de usuarios
+2018-03-22 21:34:56.951 unir.net.tfgii.selenium.tests.Registro DEBUG - 05 -Esperamos que cargue la página de registro
+2018-03-22 21:34:56.998 unir.net.tfgii.selenium.tests.Registro DEBUG - 06 -Comprobamos que es la pagina de registro 
+2018-03-22 21:35:08.269 unir.net.tfgii.selenium.pageobjects.PageObjectRegisterPage DEBUG - Registro rellenado con usuario: sergiogc
+2018-03-22 21:35:08.270 unir.net.tfgii.selenium.tests.Registro DEBUG - 07 -Datos formulario registro rellenados
+2018-03-22 21:35:14.689 unir.net.tfgii.selenium.pageobjects.PageObjectRegisterPage DEBUG - Realizamos el registro. 
+2018-03-22 21:35:14.689 unir.net.tfgii.selenium.tests.Registro DEBUG - 08 -Enviar Registrado
+2018-03-22 21:35:24.766 unir.net.tfgii.selenium.tests.Registro DEBUG - 09 -Salir
+2018-03-22 21:35:24.766 unir.net.tfgii.selenium.tests.Registro DEBUG - FIN- TEST OK
+2018-03-22 21:35:24.768 unir.net.tfgii.selenium.tests.base.BaseTestCase DEBUG - Cerrando el driver
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 90.243 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:33 min
+[INFO] Finished at: 2018-03-22T21:35:25+01:00
+[INFO] Final Memory: 12M/221M
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS

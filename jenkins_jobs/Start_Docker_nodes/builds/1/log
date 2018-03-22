@@ -1,0 +1,81 @@
+Lanzada por el usuario [8mha:////4ASAjq7C/sSB4sIzq+4BVAAZsrwMTV3jKz30sL1zmxUIAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Ejecutando.en el espacio de trabajo C:\Users\sergiog\.jenkins\workspace\Start_Docker_nodes
+Cloning the remote Git repository
+Cloning repository https://github.com/sglezcasco/sgc-tfgii.git
+ > git.exe init C:\Users\sergiog\.jenkins\workspace\Start_Docker_nodes # timeout=10
+Fetching upstream changes from https://github.com/sglezcasco/sgc-tfgii.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://github.com/sglezcasco/sgc-tfgii.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe config remote.origin.url https://github.com/sglezcasco/sgc-tfgii.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/sglezcasco/sgc-tfgii.git # timeout=10
+Fetching upstream changes from https://github.com/sglezcasco/sgc-tfgii.git
+ > git.exe fetch --tags --progress https://github.com/sglezcasco/sgc-tfgii.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision e63db0eb75e1a383376692dd6f4b1f9ada2e6b3e (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f e63db0eb75e1a383376692dd6f4b1f9ada2e6b3e
+Commit message: "Scripts for  build , start and stop docker windows"
+First time build. Skipping changelog.
+[Start_Docker_nodes] $ cmd /c call C:\Users\sergiog\AppData\Local\Temp\jenkins1339402694661910678.bat
+
+C:\Users\sergiog\.jenkins\workspace\Start_Docker_nodes>docker -v 
+Docker version 17.09.0-ce, build afdb6d4
+
+C:\Users\sergiog\.jenkins\workspace\Start_Docker_nodes>docker-compose -v 
+docker-compose version 1.16.1, build 6d1ac219
+
+C:\Users\sergiog\.jenkins\workspace\Start_Docker_nodes>docker images 
+REPOSITORY                    TAG                 IMAGE ID            CREATED             SIZE
+phantomjs_servernode          latest              8fcfced9b93f        29 hours ago        10.9GB
+hub_server                    latest              1b57c8a04c41        2 days ago          10.9GB
+base_server                   latest              aa30122e19a6        2 days ago          10.8GB
+microsoft/windowsservercore   latest              8d57c0984795        5 days ago          10.5GB
+
+C:\Users\sergiog\.jenkins\workspace\Start_Docker_nodes>cd Scripts_DockerWindows 
+
+C:\Users\sergiog\.jenkins\workspace\Start_Docker_nodes\Scripts_DockerWindows>docker ps -a 
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+
+C:\Users\sergiog\.jenkins\workspace\Start_Docker_nodes\Scripts_DockerWindows>docker-compose ps 
+Name   Command   State   Ports
+------------------------------
+
+C:\Users\sergiog\.jenkins\workspace\Start_Docker_nodes\Scripts_DockerWindows>docker-compose up 
+Creating network "scriptsdockerwindows_default" with the default driver
+Creating selenium-hub ... 
+Creating selenium-phantomjs ... 
+Creating selenium-hub
+Creating selenium-phantomjs
+[1A[2KCreating selenium-phantomjs ... [32mdone[0m[1B[1A[2KCreating selenium-hub ... [32mdone[0m[1BAttaching to selenium-phantomjs, selenium-hub
+[33mselenium-hub      |[0m 11:33:35.398 INFO - Selenium build info: version: '3.7.1', revision: '8a0099a'
+[33mselenium-hub      |[0m 11:33:35.398 INFO - Launching Selenium Grid hub
+[33mselenium-hub      |[0m 2018-03-18 11:33:36.808:INFO::main: Logging initialized @2109ms to org.seleniumhq.jetty9.util.log.StdErrLog
+[33mselenium-hub      |[0m 11:33:36.870 INFO - Will listen on 4444
+[33mselenium-hub      |[0m 2018-03-18 11:33:36.964:INFO:osjs.Server:main: jetty-9.4.5.v20170502
+[33mselenium-hub      |[0m 2018-03-18 11:33:37.104:INFO:osjs.session:main: DefaultSessionIdManager workerName=node0
+[33mselenium-hub      |[0m 2018-03-18 11:33:37.104:INFO:osjs.session:main: No SessionScavenger set, using defaults
+[33mselenium-hub      |[0m 2018-03-18 11:33:37.120:INFO:osjs.session:main: Scavenging every 660000ms
+[33mselenium-hub      |[0m 2018-03-18 11:33:37.136:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@5fdba6f9{/,null,AVAILABLE}
+[33mselenium-hub      |[0m 2018-03-18 11:33:37.167:INFO:osjs.AbstractConnector:main: Started ServerConnector@543e710e{HTTP/1.1,[http/1.1]}{0.0.0.0:4444}
+[33mselenium-hub      |[0m 2018-03-18 11:33:37.167:INFO:osjs.Server:main: Started @2470ms
+[33mselenium-hub      |[0m 11:33:37.167 INFO - Nodes should register to http://192.168.200.18:4444/grid/register/
+[33mselenium-hub      |[0m 11:33:37.167 INFO - Selenium Grid hub is up and running
+[36mselenium-phantomjs |[0m PhantomJS is launching GhostDriver...
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-18T19:33:50.190Z] GhostDriver - Main - running on port 8083
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-18T19:33:50.190Z] GhostDriver - Main - registering to Selenium HUB 'http://192.168.43.247:4444' using '192.168.203.194:8083'
+[33mselenium-hub      |[0m 11:33:50.605 INFO - Registered a node http://192.168.203.194:8083
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-18T19:33:50.640Z] HUB Register - register - Registered with grid hub: http://192.168.43.247:4444/ (ok)
+[33mselenium-hub exited with code 1073807364
+[0m[36mselenium-phantomjs exited with code 1073807364
+[0m
+C:\Users\sergiog\.jenkins\workspace\Start_Docker_nodes\Scripts_DockerWindows>docker-compose ps 
+Name   Command   State   Ports
+------------------------------
+
+C:\Users\sergiog\.jenkins\workspace\Start_Docker_nodes\Scripts_DockerWindows>docker ps -a 
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+
+C:\Users\sergiog\.jenkins\workspace\Start_Docker_nodes\Scripts_DockerWindows>exit 0 
+Finished: SUCCESS

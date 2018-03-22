@@ -1,0 +1,94 @@
+Lanzada por el usuario [8mha:////4ASAjq7C/sSB4sIzq+4BVAAZsrwMTV3jKz30sL1zmxUIAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Ejecutando.en el espacio de trabajo C:\Users\sergiog\.jenkins\workspace\Start_VM_nodes
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/sglezcasco/sgc-tfgii.git # timeout=10
+Fetching upstream changes from https://github.com/sglezcasco/sgc-tfgii.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://github.com/sglezcasco/sgc-tfgii.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 8843aea6a27c25066260f202cc8bbea303227d70 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 8843aea6a27c25066260f202cc8bbea303227d70
+Commit message: "update download jenkins powershell script"
+ > git.exe rev-list --no-walk 8843aea6a27c25066260f202cc8bbea303227d70 # timeout=10
+Run condition [Boolean condition] enabling prebuild for step [Windows PowerShell]
+Run condition [Boolean condition] enabling prebuild for step [Windows PowerShell]
+Run condition [Boolean condition] enabling prebuild for step [Windows PowerShell]
+[Boolean condition] checking [true] against [^(1|y|yes|t|true|on|run)$] (origin token: ${VM_firefox})
+Run condition [Boolean condition] enabling perform for step [Windows PowerShell]
+[Start_VM_nodes] $ powershell.exe -NonInteractive -ExecutionPolicy ByPass "& 'C:\Users\sergiog\AppData\Local\Temp\jenkins5840517702220192829.ps1'"
+
+Name             State   CPUUsage(%) MemoryAssigned(M) Uptime           Status                Version
+----             -----   ----------- ----------------- ------           ------                -------
+MobyLinuxVM      Off     0           0                 00:00:00         Funcionamiento normal 8.2    
+W10_chrome_node  Off     0           0                 00:00:00         Funcionamiento normal 8.2    
+W10_edge_node    Off     0           0                 00:00:00         Funcionamiento normal 8.2    
+W10_firefox_node Off     0           0                 00:00:00         Funcionamiento normal 8.2    
+MobyLinuxVM      Off     0           0                 00:00:00         Funcionamiento normal 8.2    
+W10_chrome_node  Off     0           0                 00:00:00         Funcionamiento normal 8.2    
+W10_edge_node    Off     0           0                 00:00:00         Funcionamiento normal 8.2    
+W10_firefox_node Running 0           1536              00:01:30.1580000 Funcionamiento normal 8.2    
+
+
+[Boolean condition] checking [true] against [^(1|y|yes|t|true|on|run)$] (origin token: ${VM_chrome})
+Run condition [Boolean condition] enabling perform for step [Windows PowerShell]
+[Start_VM_nodes] $ powershell.exe -NonInteractive -ExecutionPolicy ByPass "& 'C:\Users\sergiog\AppData\Local\Temp\jenkins2464060758301669034.ps1'"
+
+Name             State   CPUUsage(%) MemoryAssigned(M) Uptime           Status                Version
+----             -----   ----------- ----------------- ------           ------                -------
+MobyLinuxVM      Off     0           0                 00:00:00         Funcionamiento normal 8.2    
+W10_chrome_node  Off     0           0                 00:00:00         Funcionamiento normal 8.2    
+W10_edge_node    Off     0           0                 00:00:00         Funcionamiento normal 8.2    
+W10_firefox_node Running 2           1536              00:01:31.7200000 Funcionamiento normal 8.2    
+MobyLinuxVM      Off     0           0                 00:00:00         Funcionamiento normal 8.2    
+W10_chrome_node  Running 5           1536              00:01:30.1830000 Funcionamiento normal 8.2    
+W10_edge_node    Off     0           0                 00:00:00         Funcionamiento normal 8.2    
+W10_firefox_node Running 5           608               00:04:34.9990000 Funcionamiento normal 8.2    
+
+
+[Boolean condition] checking [true] against [^(1|y|yes|t|true|on|run)$] (origin token: ${VM_edge})
+Run condition [Boolean condition] enabling perform for step [Windows PowerShell]
+[Start_VM_nodes] $ powershell.exe -NonInteractive -ExecutionPolicy ByPass "& 'C:\Users\sergiog\AppData\Local\Temp\jenkins4780608646229850993.ps1'"
+
+Name             State   CPUUsage(%) MemoryAssigned(M) Uptime           Status                Version
+----             -----   ----------- ----------------- ------           ------                -------
+MobyLinuxVM      Off     0           0                 00:00:00         Funcionamiento normal 8.2    
+W10_chrome_node  Running 3           1536              00:01:31.6390000 Funcionamiento normal 8.2    
+W10_edge_node    Off     0           0                 00:00:00         Funcionamiento normal 8.2    
+W10_firefox_node Running 1           608               00:04:36.5660000 Funcionamiento normal 8.2    
+Start-VM : No se pudo iniciar 'W10_edge_node'.
+Synthetic SCSI Controller (Identificador de instancia 99A0C830-5A51-4488-AF41-9E86BA67AAD3): no se pudo iniciar. 
+Error: 'La cadena de discos duros virtuales est  da¤ada. Los identificadores del disco duro virtual principal y el 
+disco de diferenciaci¢n no coinciden.'.
+No se pudo abrir el disco virtual "C:\Users\Public\Documents\Hyper-V\Virtual Hard 
+Disks3\W10_nodo_firefox_96D42F1D-C7C9-4B65-9152-AB3083278C61.avhdx" debido a un problema al intentar abrir un disco 
+virtual en la cadena de diferenciaci¢n, "C:\Users\Public\Documents\Hyper-V\Virtual Hard Disks3\W10_nodo_firefox.vhdx": 
+"La cadena de discos duros virtuales est  da¤ada. No coinciden los identificadores del disco duro virtual primario y 
+el disco de diferenciaci¢n.".
+No pudo iniciarse 'W10_edge_node'. (Id. de m quina virtual A23FEF83-7F28-49DC-9951-7447453B19B6)
+'W10_edge_node' Synthetic SCSI Controller (Identificador de instancia 99A0C830-5A51-4488-AF41-9E86BA67AAD3): no se 
+pudo conectar. Error: 'La cadena de discos duros virtuales est  da¤ada. Los identificadores del disco duro virtual 
+principal y el disco de diferenciaci¢n no coinciden.' (0xC03A000E). (Identificador de la m quina virtual: 
+A23FEF83-7F28-49DC-9951-7447453B19B6)
+"W10_edge_node": no se pudo abrir el disco virtual "C:\Users\Public\Documents\Hyper-V\Virtual Hard 
+Disks3\W10_nodo_firefox_96D42F1D-C7C9-4B65-9152-AB3083278C61.avhdx" debido a un problema al intentar abrir un disco 
+virtual en la cadena de diferenciaci¢n, "C:\Users\Public\Documents\Hyper-V\Virtual Hard Disks3\W10_nodo_firefox.vhdx" 
+(al que hace referencia "C:\Users\Public\Documents\Hyper-V\Virtual Hard 
+Disks3\W10_nodo_firefox_96D42F1D-C7C9-4B65-9152-AB3083278C61.avhdx"): "La cadena de discos duros virtuales est  
+da¤ada. No coinciden los identificadores del disco duro virtual primario y el disco de diferenciaci¢n." (0xC03A000E). 
+(Id. de m quina virtual: A23FEF83-7F28-49DC-9951-7447453B19B6)
+En C:\Users\sergiog\AppData\Local\Temp\jenkins4780608646229850993.ps1: 3 Car cter: 1
++ Start-VM -Name W10_edge_node
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Start-VM], VirtualizationException
+    + FullyQualifiedErrorId : Unspecified,Microsoft.HyperV.PowerShell.Commands.StartVM
+ 
+MobyLinuxVM      Off     0           0                 00:00:00         Funcionamiento normal 8.2    
+W10_chrome_node  Running 0           1536              00:05:11.7240000 Funcionamiento normal 8.2    
+W10_edge_node    Off     0           0                 00:00:00         Funcionamiento normal 8.2    
+W10_firefox_node Running 1           800               00:08:16.5700000 Funcionamiento normal 8.2    
+
+
+Finished: SUCCESS

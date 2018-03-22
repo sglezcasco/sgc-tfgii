@@ -1,0 +1,203 @@
+Lanzada por el usuario [8mha:////4ASAjq7C/sSB4sIzq+4BVAAZsrwMTV3jKz30sL1zmxUIAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Ejecutando.en el espacio de trabajo C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/sglezcasco/sgc-tfgii.git # timeout=10
+Fetching upstream changes from https://github.com/sglezcasco/sgc-tfgii.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://github.com/sglezcasco/sgc-tfgii.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 634aa09871a9b18a96eeec3dcf86235a056718f3 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 634aa09871a9b18a96eeec3dcf86235a056718f3
+Commit message: "update httpcore dependencies in pom.xml"
+ > git.exe rev-list --no-walk 634aa09871a9b18a96eeec3dcf86235a056718f3 # timeout=10
+Run condition [Boolean condition] enabling prebuild for step [Ejecutar un comando de Windows]
+Run condition [Boolean condition] enabling prebuild for step [Ejecutar un comando de Windows]
+Run condition [Boolean condition] enabling prebuild for step [Ejecutar un comando de Windows]
+Run condition [Boolean condition] enabling prebuild for step [Ejecutar un comando de Windows]
+[Run_Tests_Local_Secuencial] $ cmd /c call C:\Users\sergiog\AppData\Local\Temp\jenkins7990254956180949423.bat
+
+C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial>mvn eclipse:eclipse 
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Selenium Tests 1.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> maven-eclipse-plugin:2.10:eclipse (default-cli) > generate-resources @ pruebas-selenium >>>
+[INFO] 
+[INFO] <<< maven-eclipse-plugin:2.10:eclipse (default-cli) < generate-resources @ pruebas-selenium <<<
+[INFO] 
+[INFO] --- maven-eclipse-plugin:2.10:eclipse (default-cli) @ pruebas-selenium ---
+[INFO] Using Eclipse Workspace: null
+[INFO] Adding default classpath container: org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8
+[INFO] File C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial\.project already exists.
+       Additional settings will be preserved, run mvn eclipse:clean if you want old settings to be removed.
+[INFO] Wrote Eclipse project for "pruebas-selenium" to C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial.
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.801 s
+[INFO] Finished at: 2018-03-18T21:45:01+01:00
+[INFO] Final Memory: 19M/217M
+[INFO] ------------------------------------------------------------------------
+[Boolean condition] checking [true] against [^(1|y|yes|t|true|on|run)$] (origin token: ${Firefox})
+Run condition [Boolean condition] enabling perform for step [Ejecutar un comando de Windows]
+[Run_Tests_Local_Secuencial] $ cmd /c call C:\Users\sergiog\AppData\Local\Temp\jenkins4107442992160395783.bat
+
+C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial>mvn -Dtest=unir.net.tfgii.selenium.tests.Login,unir.net.tfgii.selenium.tests.Registro -DdriverProvider=MozillaFirefoxDriver -Dexecution=local test 
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Selenium Tests 1.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ pruebas-selenium ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ pruebas-selenium ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ pruebas-selenium ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ pruebas-selenium ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ pruebas-selenium ---
+[INFO] Surefire report directory: C:\Users\sergiog\.jenkins\workspace\Run_Tests_Local_Secuencial\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+2018-03-18 21:45:06.186 unir.net.tfgii.selenium.drivers.MozillaFirefoxDriver DEBUG - Inicializando driver Firefox:C:\SoftDesarrollo\SeleniumWebdriver\geckodriver.exe
+1521405906803	geckodriver	INFO	geckodriver 0.19.0
+1521405906821	geckodriver	INFO	Listening on 127.0.0.1:15642
+1521405907481	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\sergiog\\AppData\\Local\\Temp\\rust_mozprofile.M48AFWNxxjHd"
+Unable to read VR Path Registry from C:\Users\sergiog\AppData\Local\openvr\openvrpaths.vrpath
+1521405908374	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\sergiog\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\sergiog\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\sergiog\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 12272, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\sergiog\AppData\Local\openvr\openvrpaths.vrpath
+1521405911931	Marionette	INFO	Listening on port 55350
+1521405912749	Marionette	WARN	TLS certificate errors will be ignored for this session
+1521405912809	Marionette	DEBUG	Register listener.js for window 4294967297
+mar 18, 2018 9:45:12 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+2018-03-18 21:45:16.517 unir.net.tfgii.selenium.init.SeleniumDriverOperations DEBUG - Driver inicializado correctamente
+2018-03-18 21:45:16.540 unir.net.tfgii.selenium.tests.Login DEBUG - INICIO- Caso de Prueba de Login
+La url de inicio es: http://www.sgc-tfgii.es/index.html
+1521405916580	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1521405916754	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1521405916755	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1521405917917	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.sgc-tfgii.es/index.html"
+1521405918439	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.sgc-tfgii.es/index.html"
+2018-03-18 21:45:18.505 unir.net.tfgii.selenium.tests.Login DEBUG - 01 -Cargamos la página de login
+2018-03-18 21:45:18.617 unir.net.tfgii.selenium.tests.Login DEBUG - 02 -Esperamos que cargue la página de login
+2018-03-18 21:45:18.629 unir.net.tfgii.selenium.tests.Login DEBUG - 03 -Comprobamos que es la pagina de login
+JavaScript error: http://www.sgc-tfgii.es/index.html, line 1: SyntaxError: expected expression, got '.'
+1521405918766	Marionette	DEBUG	Received DOM event "beforeunload" for "http://www.sgc-tfgii.es/index.html"
+1521405919622	Marionette	DEBUG	Received DOM event "pagehide" for "http://www.sgc-tfgii.es/index.html"
+1521405919624	Marionette	DEBUG	Received DOM event "unload" for "http://www.sgc-tfgii.es/index.html"
+1521405919736	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.sgc-tfgii.es/listado.html"
+1521405919751	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.sgc-tfgii.es/listado.html"
+2018-03-18 21:45:54.857 unir.net.tfgii.selenium.pageobjects.PageObjectLoginPage DEBUG - Logamos con user: UnirTFGII y pwd: Proxy element for: DefaultElementLocator 'By.id: pwd'
+2018-03-18 21:45:54.859 unir.net.tfgii.selenium.tests.Login DEBUG - 04 -Hacemos Login con user: UnirTFGII
+2018-03-18 21:45:54.988 unir.net.tfgii.selenium.tests.Login DEBUG - 05 -Esperamos que cargue la página principal
+2018-03-18 21:45:54.994 unir.net.tfgii.selenium.tests.Login DEBUG - 06 -Comprobamos que es la pagina principal 
+1521405955030	Marionette	DEBUG	Received DOM event "popstate" for "http://www.sgc-tfgii.es/listado.html#jenkins"
+2018-03-18 21:46:00.038 unir.net.tfgii.selenium.tests.Login DEBUG - 07 -Hacemos click en la seccion Jenkins 
+1521405960043	Marionette	DEBUG	Received DOM event "beforeunload" for "http://www.sgc-tfgii.es/listado.html#jenkins"
+1521405960061	Marionette	DEBUG	Received DOM event "pagehide" for "http://www.sgc-tfgii.es/listado.html#jenkins"
+1521405960061	Marionette	DEBUG	Received DOM event "unload" for "http://www.sgc-tfgii.es/listado.html#jenkins"
+1521405960163	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.sgc-tfgii.es/index.html"
+1521405960197	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.sgc-tfgii.es/index.html"
+2018-03-18 21:46:05.202 unir.net.tfgii.selenium.tests.Login DEBUG - 08 -Salir
+2018-03-18 21:46:05.203 unir.net.tfgii.selenium.tests.Login DEBUG - FIN- TEST OK
+2018-03-18 21:46:05.208 unir.net.tfgii.selenium.tests.base.BaseTestCase DEBUG - Cerrando el driver
+2018-03-18 21:46:05.521 unir.net.tfgii.selenium.drivers.MozillaFirefoxDriver DEBUG - Inicializando driver Firefox:C:\SoftDesarrollo\SeleniumWebdriver\geckodriver.exe
+1521405966022	geckodriver	INFO	geckodriver 0.19.0
+1521405966038	geckodriver	INFO	Listening on 127.0.0.1:18942
+1521405966170	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\sergiog\\AppData\\Local\\Temp\\rust_mozprofile.3c3Bx0vBqFRY"
+Unable to read VR Path Registry from C:\Users\sergiog\AppData\Local\openvr\openvrpaths.vrpath
+1521405967074	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\sergiog\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\sergiog\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\sergiog\AppData\Local\openvr\openvrpaths.vrpath
+[Child 12320, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\sergiog\AppData\Local\openvr\openvrpaths.vrpath
+1521405972233	Marionette	INFO	Listening on port 55428
+1521405972796	Marionette	WARN	TLS certificate errors will be ignored for this session
+1521405972890	Marionette	DEBUG	Register listener.js for window 4294967297
+mar 18, 2018 9:46:12 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+2018-03-18 21:46:16.433 unir.net.tfgii.selenium.init.SeleniumDriverOperations DEBUG - Driver inicializado correctamente
+2018-03-18 21:46:16.434 unir.net.tfgii.selenium.tests.Registro DEBUG - INICIO- Caso de Prueba de Registro
+La url de inicio es: http://www.sgc-tfgii.es/index.html
+1521405976442	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1521405976614	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1521405976615	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1521405978099	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.sgc-tfgii.es/index.html"
+1521405978970	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.sgc-tfgii.es/index.html"
+2018-03-18 21:46:19.038 unir.net.tfgii.selenium.tests.Registro DEBUG - 01 -Cargamos la página de login
+2018-03-18 21:46:19.086 unir.net.tfgii.selenium.tests.Registro DEBUG - 02 -Esperamos que cargue la página de login
+2018-03-18 21:46:19.093 unir.net.tfgii.selenium.tests.Registro DEBUG - 03 -Comprobamos que es la pagina de login
+1521405979138	Marionette	DEBUG	Received DOM event "beforeunload" for "http://www.sgc-tfgii.es/index.html"
+1521405979279	Marionette	DEBUG	Received DOM event "pagehide" for "http://www.sgc-tfgii.es/index.html"
+1521405979285	Marionette	DEBUG	Received DOM event "unload" for "http://www.sgc-tfgii.es/index.html"
+1521405979472	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.sgc-tfgii.es/register.html"
+1521405979480	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.sgc-tfgii.es/register.html"
+2018-03-18 21:46:19.482 unir.net.tfgii.selenium.pageobjects.PageObjectLoginPage DEBUG - Vamos al registro de usuarios
+2018-03-18 21:46:19.489 unir.net.tfgii.selenium.tests.Registro DEBUG - 04 -Vamos al registro de usuarios
+2018-03-18 21:46:19.540 unir.net.tfgii.selenium.tests.Registro DEBUG - 05 -Esperamos que cargue la página de registro
+2018-03-18 21:46:19.547 unir.net.tfgii.selenium.tests.Registro DEBUG - 06 -Comprobamos que es la pagina de registro 
+1521405984810	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521405985271	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521405985669	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+2018-03-18 21:46:31.196 unir.net.tfgii.selenium.pageobjects.PageObjectRegisterPage DEBUG - Registro rellenado con usuario: sergiogc
+2018-03-18 21:46:31.196 unir.net.tfgii.selenium.tests.Registro DEBUG - 07 -Datos formulario registro rellenados
+JavaScript error: http://www.sgc-tfgii.es/register.html, line 1: SyntaxError: expected expression, got '.'
+1521405991265	Marionette	DEBUG	Received DOM event "beforeunload" for "http://www.sgc-tfgii.es/register.html"
+1521405991856	Marionette	DEBUG	Received DOM event "pagehide" for "http://www.sgc-tfgii.es/register.html"
+1521405991861	Marionette	DEBUG	Received DOM event "unload" for "http://www.sgc-tfgii.es/register.html"
+1521405992044	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.sgc-tfgii.es/listado.html?email=sgc%40gmail.com&sexo=male"
+1521405992054	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.sgc-tfgii.es/listado.html?email=sgc%40gmail.com&sexo=male"
+2018-03-18 21:46:37.058 unir.net.tfgii.selenium.pageobjects.PageObjectRegisterPage DEBUG - Realizamos el registro. 
+2018-03-18 21:46:37.058 unir.net.tfgii.selenium.tests.Registro DEBUG - 08 -Enviar Registrado
+1521405997065	Marionette	DEBUG	Received DOM event "beforeunload" for "http://www.sgc-tfgii.es/listado.html?email=sgc%40gmail.com&sexo=male"
+1521405997081	Marionette	DEBUG	Received DOM event "pagehide" for "http://www.sgc-tfgii.es/listado.html?email=sgc%40gmail.com&sexo=male"
+1521405997081	Marionette	DEBUG	Received DOM event "unload" for "http://www.sgc-tfgii.es/listado.html?email=sgc%40gmail.com&sexo=male"
+1521405997162	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.sgc-tfgii.es/index.html"
+1521405997167	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.sgc-tfgii.es/index.html"
+2018-03-18 21:46:42.172 unir.net.tfgii.selenium.tests.Registro DEBUG - 09 -Salir
+2018-03-18 21:46:42.173 unir.net.tfgii.selenium.tests.Registro DEBUG - FIN- TEST OK
+2018-03-18 21:46:42.175 unir.net.tfgii.selenium.tests.base.BaseTestCase DEBUG - Cerrando el driver
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 97.112 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:39 min
+[INFO] Finished at: 2018-03-18T21:46:42+01:00
+[INFO] Final Memory: 14M/222M
+[INFO] ------------------------------------------------------------------------
+[Boolean condition] checking [false] against [^(1|y|yes|t|true|on|run)$] (origin token: ${Chrome})
+Run condition [Boolean condition] preventing perform for step [Ejecutar un comando de Windows]
+[Boolean condition] checking [false] against [^(1|y|yes|t|true|on|run)$] (origin token: ${Edge})
+Run condition [Boolean condition] preventing perform for step [Ejecutar un comando de Windows]
+[Boolean condition] checking [false] against [^(1|y|yes|t|true|on|run)$] (origin token: ${PhantomJS})
+Run condition [Boolean condition] preventing perform for step [Ejecutar un comando de Windows]
+Finished: SUCCESS

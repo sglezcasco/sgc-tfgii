@@ -1,0 +1,11 @@
+commit 634aa09871a9b18a96eeec3dcf86235a056718f3
+tree bf393284478401c8ac4046a77dec1bf96ed0388d
+parent e63db0eb75e1a383376692dd6f4b1f9ada2e6b3e
+author sglezcasco <36644895+sglezcasco@users.noreply.github.com> 2018-03-18 21:32:43 +0100
+committer GitHub <noreply@github.com> 2018-03-18 21:32:43 +0100
+
+    update httpcore dependencies in pom.xml
+
+
+
+:100644 100644 3b66abbadda331071d6390fe50975cdd27b71887 bff6ccdaafa9894ffc4473d1fed6b9dc1f5a26af M	pom.xml

@@ -1,0 +1,97 @@
+Lanzada por el usuario [8mha:////4ASAjq7C/sSB4sIzq+4BVAAZsrwMTV3jKz30sL1zmxUIAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Ejecutando.en el espacio de trabajo C:\Users\sergiog\.jenkins\workspace\Start_VM_node@3
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/sglezcasco/sgc-tfgii.git # timeout=10
+Fetching upstream changes from https://github.com/sglezcasco/sgc-tfgii.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://github.com/sglezcasco/sgc-tfgii.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 8843aea6a27c25066260f202cc8bbea303227d70 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 8843aea6a27c25066260f202cc8bbea303227d70
+Commit message: "update download jenkins powershell script"
+ > git.exe rev-list --no-walk 8843aea6a27c25066260f202cc8bbea303227d70 # timeout=10
+Run condition [Boolean condition] enabling prebuild for step [Windows PowerShell]
+Run condition [Boolean condition] enabling prebuild for step [Windows PowerShell]
+Run condition [Boolean condition] enabling prebuild for step [Windows PowerShell]
+[Boolean condition] checking [false] against [^(1|y|yes|t|true|on|run)$] (origin token: ${W10_firefox_node})
+Run condition [Boolean condition] preventing perform for step [Windows PowerShell]
+[Boolean condition] checking [false] against [^(1|y|yes|t|true|on|run)$] (origin token: ${W10_chrome_node})
+Run condition [Boolean condition] preventing perform for step [Windows PowerShell]
+[Boolean condition] checking [true] against [^(1|y|yes|t|true|on|run)$] (origin token: ${W10_edge_node})
+Run condition [Boolean condition] enabling perform for step [Windows PowerShell]
+[Start_VM_node@3] $ powershell.exe -NonInteractive -ExecutionPolicy ByPass "& 'C:\Users\sergiog\AppData\Local\Temp\jenkins7567103654229061809.ps1'"
+System.Security.SecureString
+
+ Id Name            ComputerName    ComputerType    State         ConfigurationName     Availability
+ -- ----            ------------    ------------    -----         -----------------     ------------
+  1 WinRM1          W10_edge_node   VirtualMachine  Opened                                 Available
+  1 WinRM1          W10_edge_node   VirtualMachine  Opened                                 Available
+openjdk version "1.8.0_162"
+    + CategoryInfo          : NotSpecified: (openjdk version "1.8.0_162":String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+    + PSComputerName        : W10_edge_node
+ 
+OpenJDK Runtime Environment (Zulu 8.27.0.7-win64) (build 1.8.0_162-b01)
+OpenJDK 64-Bit Server VM (Zulu 8.27.0.7-win64) (build 25.162-b01, mixed mode)
+22:02:41.539 INFO - Selenium build info: version: '3.7.1', revision: '8a0099a'
+    + CategoryInfo          : NotSpecified: (22:02:41.539 IN...sion: '8a0099a':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+    + PSComputerName        : W10_edge_node
+ 
+22:02:41.539 INFO - Launching a Selenium Grid node
+2018-03-20 22:03:09.148:INFO::main: Logging initialized @28580ms to org.seleniumhq.jetty9.util.log.StdErrLog
+NotSpecified: (:) [], RemoteException
+22:03:11.039 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+22:03:11.742 INFO - Driver provider class org.openqa.selenium.safari.SafariDriver registration is skipped:
+ registration capabilities Capabilities {browserName: safari, platform: MAC, version: } does not match the current 
+platform WIN10
+22:03:13.055 INFO - Using the passthrough mode handler
+2018-03-20 22:03:14.164:INFO:osjs.Server:main: jetty-9.4.5.v20170502
+NotSpecified: (:) [], RemoteException
+2018-03-20 22:03:14.774:WARN:osjs.SecurityHandler:main: 
+ServletContext@o.s.j.s.ServletContextHandler@1aafa419{/,null,STARTING} has uncovered http methods for path: /
+2018-03-20 22:03:14.836:INFO:osjsh.ContextHandler:main: Started 
+o.s.j.s.ServletContextHandler@1aafa419{/,null,AVAILABLE}
+2018-03-20 22:03:16.648:INFO:osjs.AbstractConnector:main: Started 
+ServerConnector@702657cc{HTTP/1.1,[http/1.1]}{0.0.0.0:5555}
+NotSpecified: (:) [], RemoteException
+2018-03-20 22:03:16.648:INFO:osjs.Server:main: Started @36085ms
+NotSpecified: (:) [], RemoteException
+22:03:16.648 INFO - Selenium Grid node is up and ready to register to the hub
+22:03:16.898 INFO - Starting auto registration thread. Will try to register every 5000 ms.
+22:03:16.914 INFO - Registering the node to the hub: http://192.168.43.247:4444/grid/register
+22:03:17.320 INFO - The node is registered to the hub and ready to use
+22:04:38.748 INFO - Registering the node to the hub: http://192.168.43.247:4444/grid/register
+22:04:38.795 INFO - The node is registered to the hub and ready to use
+22:05:59.533 INFO - Registering the node to the hub: http://192.168.43.247:4444/grid/register
+22:05:59.580 INFO - The node is registered to the hub and ready to use
+22:07:20.403 INFO - Registering the node to the hub: http://192.168.43.247:4444/grid/register
+22:07:20.434 INFO - The node is registered to the hub and ready to use
+22:08:41.144 INFO - Registering the node to the hub: http://192.168.43.247:4444/grid/register
+22:08:41.190 INFO - The node is registered to the hub and ready to use
+22:10:01.850 INFO - Registering the node to the hub: http://192.168.43.247:4444/grid/register
+22:10:01.897 INFO - The node is registered to the hub and ready to use
+22:11:22.430 INFO - Registering the node to the hub: http://192.168.43.247:4444/grid/register
+22:11:22.472 INFO - The node is registered to the hub and ready to use
+22:12:43.083 INFO - Registering the node to the hub: http://192.168.43.247:4444/grid/register
+22:12:43.136 INFO - The node is registered to the hub and ready to use
+22:14:03.779 INFO - Registering the node to the hub: http://192.168.43.247:4444/grid/register
+22:14:03.795 INFO - The node is registered to the hub and ready to use
+22:15:24.527 INFO - Registering the node to the hub: http://192.168.43.247:4444/grid/register
+22:15:24.581 INFO - The node is registered to the hub and ready to use
+22:16:45.211 INFO - Registering the node to the hub: http://192.168.43.247:4444/grid/register
+22:16:45.257 INFO - The node is registered to the hub and ready to use
+22:18:05.818 INFO - Registering the node to the hub: http://192.168.43.247:4444/grid/register
+22:18:05.871 INFO - The node is registered to the hub and ready to use
+22:19:26.478 INFO - Registering the node to the hub: http://192.168.43.247:4444/grid/register
+22:19:26.525 INFO - The node is registered to the hub and ready to use
+22:20:47.140 INFO - Registering the node to the hub: http://192.168.43.247:4444/grid/register
+22:20:47.205 INFO - The node is registered to the hub and ready to use
+22:22:07.773 INFO - Registering the node to the hub: http://192.168.43.247:4444/grid/register
+22:22:07.788 INFO - The node is registered to the hub and ready to use
+
+
+Finished: SUCCESS

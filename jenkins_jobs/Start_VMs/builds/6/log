@@ -1,0 +1,99 @@
+Lanzada por el usuario [8mha:////4ASAjq7C/sSB4sIzq+4BVAAZsrwMTV3jKz30sL1zmxUIAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Ejecutando.en el espacio de trabajo C:\Users\sergiog\.jenkins\workspace\Start_VM_nodes
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/sglezcasco/sgc-tfgii.git # timeout=10
+Fetching upstream changes from https://github.com/sglezcasco/sgc-tfgii.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://github.com/sglezcasco/sgc-tfgii.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 8843aea6a27c25066260f202cc8bbea303227d70 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 8843aea6a27c25066260f202cc8bbea303227d70
+Commit message: "update download jenkins powershell script"
+ > git.exe rev-list --no-walk 634aa09871a9b18a96eeec3dcf86235a056718f3 # timeout=10
+Run condition [Boolean condition] enabling prebuild for step [Windows PowerShell]
+Run condition [Boolean condition] enabling prebuild for step [Windows PowerShell]
+Run condition [Boolean condition] enabling prebuild for step [Windows PowerShell]
+[Boolean condition] checking [true] against [^(1|y|yes|t|true|on|run)$] (origin token: ${VM_firefox})
+Run condition [Boolean condition] enabling perform for step [Windows PowerShell]
+[Start_VM_nodes] $ powershell.exe -NonInteractive -ExecutionPolicy ByPass "& 'C:\Users\sergiog\AppData\Local\Temp\jenkins3456505355428086031.ps1'"
+Get-VM : No dispone del permiso necesario para completar esta tarea. P¢ngase en contacto con el administrador de la 
+directiva de autorizaci¢n del equipo 'DESKTOP-BB2IEAS'.
+En C:\Users\sergiog\AppData\Local\Temp\jenkins3456505355428086031.ps1: 1 Car cter: 1
++ Get-VM
++ ~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Get-VM], VirtualizationException
+    + FullyQualifiedErrorId : Unspecified,Microsoft.HyperV.PowerShell.Commands.GetVM
+ 
+Start-VM : No dispone del permiso necesario para completar esta tarea. P¢ngase en contacto con el administrador de la 
+directiva de autorizaci¢n del equipo 'DESKTOP-BB2IEAS'.
+En C:\Users\sergiog\AppData\Local\Temp\jenkins3456505355428086031.ps1: 2 Car cter: 1
++ Start-VM -Name W10_firefox_node
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Start-VM], VirtualizationException
+    + FullyQualifiedErrorId : Unspecified,Microsoft.HyperV.PowerShell.Commands.StartVM
+ 
+Get-VM : No dispone del permiso necesario para completar esta tarea. P¢ngase en contacto con el administrador de la 
+directiva de autorizaci¢n del equipo 'DESKTOP-BB2IEAS'.
+En C:\Users\sergiog\AppData\Local\Temp\jenkins3456505355428086031.ps1: 3 Car cter: 1
++ Get-VM
++ ~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Get-VM], VirtualizationException
+    + FullyQualifiedErrorId : Unspecified,Microsoft.HyperV.PowerShell.Commands.GetVM
+ 
+[Boolean condition] checking [true] against [^(1|y|yes|t|true|on|run)$] (origin token: ${VM_chrome})
+Run condition [Boolean condition] enabling perform for step [Windows PowerShell]
+[Start_VM_nodes] $ powershell.exe -NonInteractive -ExecutionPolicy ByPass "& 'C:\Users\sergiog\AppData\Local\Temp\jenkins5304372780673528751.ps1'"
+Get-VM : No dispone del permiso necesario para completar esta tarea. P¢ngase en contacto con el administrador de la 
+directiva de autorizaci¢n del equipo 'DESKTOP-BB2IEAS'.
+En C:\Users\sergiog\AppData\Local\Temp\jenkins5304372780673528751.ps1: 1 Car cter: 1
++ Get-VM
++ ~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Get-VM], VirtualizationException
+    + FullyQualifiedErrorId : Unspecified,Microsoft.HyperV.PowerShell.Commands.GetVM
+ 
+Start-VM : No dispone del permiso necesario para completar esta tarea. P¢ngase en contacto con el administrador de la 
+directiva de autorizaci¢n del equipo 'DESKTOP-BB2IEAS'.
+En C:\Users\sergiog\AppData\Local\Temp\jenkins5304372780673528751.ps1: 2 Car cter: 1
++ Start-VM -Name W10_chrome_node
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Start-VM], VirtualizationException
+    + FullyQualifiedErrorId : Unspecified,Microsoft.HyperV.PowerShell.Commands.StartVM
+ 
+Get-VM : No dispone del permiso necesario para completar esta tarea. P¢ngase en contacto con el administrador de la 
+directiva de autorizaci¢n del equipo 'DESKTOP-BB2IEAS'.
+En C:\Users\sergiog\AppData\Local\Temp\jenkins5304372780673528751.ps1: 3 Car cter: 1
++ Get-VM
++ ~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Get-VM], VirtualizationException
+    + FullyQualifiedErrorId : Unspecified,Microsoft.HyperV.PowerShell.Commands.GetVM
+ 
+[Boolean condition] checking [true] against [^(1|y|yes|t|true|on|run)$] (origin token: ${VM_edge})
+Run condition [Boolean condition] enabling perform for step [Windows PowerShell]
+[Start_VM_nodes] $ powershell.exe -NonInteractive -ExecutionPolicy ByPass "& 'C:\Users\sergiog\AppData\Local\Temp\jenkins458755817695964895.ps1'"
+Get-VM : No dispone del permiso necesario para completar esta tarea. P¢ngase en contacto con el administrador de la 
+directiva de autorizaci¢n del equipo 'DESKTOP-BB2IEAS'.
+En C:\Users\sergiog\AppData\Local\Temp\jenkins458755817695964895.ps1: 1 Car cter: 1
++ Get-VM
++ ~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Get-VM], VirtualizationException
+    + FullyQualifiedErrorId : Unspecified,Microsoft.HyperV.PowerShell.Commands.GetVM
+ 
+Start-VM : No dispone del permiso necesario para completar esta tarea. P¢ngase en contacto con el administrador de la 
+directiva de autorizaci¢n del equipo 'DESKTOP-BB2IEAS'.
+En C:\Users\sergiog\AppData\Local\Temp\jenkins458755817695964895.ps1: 2 Car cter: 1
++ Start-VM -Name W10_edge_node
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Start-VM], VirtualizationException
+    + FullyQualifiedErrorId : Unspecified,Microsoft.HyperV.PowerShell.Commands.StartVM
+ 
+Get-VM : No dispone del permiso necesario para completar esta tarea. P¢ngase en contacto con el administrador de la 
+directiva de autorizaci¢n del equipo 'DESKTOP-BB2IEAS'.
+En C:\Users\sergiog\AppData\Local\Temp\jenkins458755817695964895.ps1: 3 Car cter: 1
++ Get-VM
++ ~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Get-VM], VirtualizationException
+    + FullyQualifiedErrorId : Unspecified,Microsoft.HyperV.PowerShell.Commands.GetVM
+ 

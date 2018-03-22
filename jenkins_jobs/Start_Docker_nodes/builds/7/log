@@ -1,0 +1,1204 @@
+Lanzada por el usuario [8mha:////4ASAjq7C/sSB4sIzq+4BVAAZsrwMTV3jKz30sL1zmxUIAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Ejecutando.en el espacio de trabajo C:\Users\sergiog\.jenkins\workspace\Start_Docker_nodes
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/sglezcasco/sgc-tfgii.git # timeout=10
+Fetching upstream changes from https://github.com/sglezcasco/sgc-tfgii.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://github.com/sglezcasco/sgc-tfgii.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 82875a017b1715bca35760eec2c87a27d23ba747 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 82875a017b1715bca35760eec2c87a27d23ba747
+Commit message: "changes to include new attribute test"
+ > git.exe rev-list --no-walk 82875a017b1715bca35760eec2c87a27d23ba747 # timeout=10
+[Start_Docker_nodes] $ cmd /c call C:\Users\sergiog\AppData\Local\Temp\jenkins6230959852048917575.bat
+
+C:\Users\sergiog\.jenkins\workspace\Start_Docker_nodes>docker -v 
+Docker version 17.09.0-ce, build afdb6d4
+
+C:\Users\sergiog\.jenkins\workspace\Start_Docker_nodes>docker-compose -v 
+docker-compose version 1.16.1, build 6d1ac219
+
+C:\Users\sergiog\.jenkins\workspace\Start_Docker_nodes>docker images 
+REPOSITORY                    TAG                 IMAGE ID            CREATED             SIZE
+phantomjs_servernode          latest              8fcfced9b93f        5 days ago          10.9GB
+hub_server                    latest              1b57c8a04c41        6 days ago          10.9GB
+base_server                   latest              aa30122e19a6        6 days ago          10.8GB
+microsoft/windowsservercore   latest              8d57c0984795        9 days ago          10.5GB
+portainer/portainer           latest              27e35cea6796        11 days ago         1.13GB
+
+C:\Users\sergiog\.jenkins\workspace\Start_Docker_nodes>cd C:\Users\sergiog\.jenkins\workspace\Start_Docker_nodes/Scripts_DockerWindows 
+
+C:\Users\sergiog\.jenkins\workspace\Start_Docker_nodes\Scripts_DockerWindows>docker-compose ps 
+Name   Command   State   Ports
+------------------------------
+
+C:\Users\sergiog\.jenkins\workspace\Start_Docker_nodes\Scripts_DockerWindows>docker-compose up 
+Creating network "scriptsdockerwindows_default" with the default driver
+Creating selenium-phantomjs ... 
+Creating selenium-hub ... 
+Creating selenium-phantomjs
+Creating selenium-hub
+[1A[2KCreating selenium-phantomjs ... [32mdone[0m[1B[1A[2KCreating selenium-hub ... [32mdone[0m[1BAttaching to selenium-phantomjs, selenium-hub
+[33mselenium-hub      |[0m 11:36:57.099 INFO - Selenium build info: version: '3.7.1', revision: '8a0099a'
+[33mselenium-hub      |[0m 11:36:57.114 INFO - Launching Selenium Grid hub
+[33mselenium-hub      |[0m 2018-03-22 11:36:59.301:INFO::main: Logging initialized @3190ms to org.seleniumhq.jetty9.util.log.StdErrLog
+[33mselenium-hub      |[0m 11:36:59.348 INFO - Will listen on 4444
+[33mselenium-hub      |[0m 2018-03-22 11:36:59.457:INFO:osjs.Server:main: jetty-9.4.5.v20170502
+[33mselenium-hub      |[0m 2018-03-22 11:36:59.520:INFO:osjs.session:main: DefaultSessionIdManager workerName=node0
+[33mselenium-hub      |[0m 2018-03-22 11:36:59.520:INFO:osjs.session:main: No SessionScavenger set, using defaults
+[33mselenium-hub      |[0m 2018-03-22 11:36:59.520:INFO:osjs.session:main: Scavenging every 660000ms
+[33mselenium-hub      |[0m 2018-03-22 11:36:59.535:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@5fdba6f9{/,null,AVAILABLE}
+[33mselenium-hub      |[0m 2018-03-22 11:36:59.582:INFO:osjs.AbstractConnector:main: Started ServerConnector@543e710e{HTTP/1.1,[http/1.1]}{0.0.0.0:4444}
+[33mselenium-hub      |[0m 2018-03-22 11:36:59.582:INFO:osjs.Server:main: Started @3457ms
+[33mselenium-hub      |[0m 11:36:59.582 INFO - Nodes should register to http://172.17.70.210:4444/grid/register/
+[33mselenium-hub      |[0m 11:36:59.582 INFO - Selenium Grid hub is up and running
+[36mselenium-phantomjs |[0m PhantomJS is launching GhostDriver...
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T19:37:37.937Z] GhostDriver - Main - running on port 8083
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T19:37:37.937Z] GhostDriver - Main - registering to Selenium HUB 'http://192.168.43.247:4444' using '172.17.64.184:8083'
+[33mselenium-hub      |[0m 11:37:38.601 INFO - Registered a node http://172.17.64.184:8083
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T19:37:38.610Z] HUB Register - register - Registered with grid hub: http://192.168.43.247:4444/ (ok)
+[33mselenium-hub      |[0m 11:49:25.683 INFO - Registered a node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 11:49:26.862 INFO - Registered a node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 11:49:45.957 INFO - Marking the node http://192.168.43.85:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 11:49:46.916 INFO - Marking the node http://169.254.3.218:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 11:50:46.045 INFO - Unregistering the node http://192.168.43.85:5555 because it's been down for 60088 milliseconds
+[33mselenium-hub      |[0m 11:50:46.045 WARN - Cleaning up stale test sessions on the unregistered node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 11:50:47.010 INFO - Unregistering the node http://169.254.3.218:5555 because it's been down for 60094 milliseconds
+[33mselenium-hub      |[0m 11:50:47.010 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 11:50:47.140 INFO - Registered a node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 11:50:47.875 INFO - Registered a node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 11:51:07.169 INFO - Marking the node http://192.168.43.85:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 11:51:07.903 INFO - Marking the node http://169.254.3.218:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 11:51:42.747 INFO - Registered a node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 11:52:02.796 INFO - Marking the node http://169.254.152.198:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 11:52:07.268 INFO - Unregistering the node http://192.168.43.85:5555 because it's been down for 60099 milliseconds
+[33mselenium-hub      |[0m 11:52:07.268 WARN - Cleaning up stale test sessions on the unregistered node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 11:52:07.744 INFO - Registered a node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 11:52:08.170 INFO - Unregistering the node http://169.254.3.218:5555 because it's been down for 60267 milliseconds
+[33mselenium-hub      |[0m 11:52:08.170 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 11:52:09.166 INFO - Registered a node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 11:52:27.837 INFO - Marking the node http://192.168.43.85:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 11:52:29.194 INFO - Marking the node http://169.254.3.218:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 11:53:02.911 INFO - Unregistering the node http://169.254.152.198:5555 because it's been down for 60115 milliseconds
+[33mselenium-hub      |[0m 11:53:02.911 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 11:53:03.907 INFO - Registered a node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 11:53:23.932 INFO - Marking the node http://169.254.152.198:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 11:53:27.956 INFO - Unregistering the node http://192.168.43.85:5555 because it's been down for 60119 milliseconds
+[33mselenium-hub      |[0m 11:53:27.956 WARN - Cleaning up stale test sessions on the unregistered node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 11:53:28.512 INFO - Registered a node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 11:53:29.308 INFO - Unregistering the node http://169.254.3.218:5555 because it's been down for 60114 milliseconds
+[33mselenium-hub      |[0m 11:53:29.308 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 11:53:29.812 INFO - Registered a node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 11:53:48.545 INFO - Marking the node http://192.168.43.85:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 11:53:49.845 INFO - Marking the node http://169.254.3.218:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 11:54:24.021 INFO - Unregistering the node http://169.254.152.198:5555 because it's been down for 60089 milliseconds
+[33mselenium-hub      |[0m 11:54:24.021 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 11:54:24.484 INFO - Registered a node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 11:54:44.518 INFO - Marking the node http://169.254.152.198:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 11:54:48.628 INFO - Unregistering the node http://192.168.43.85:5555 because it's been down for 60083 milliseconds
+[33mselenium-hub      |[0m 11:54:48.628 WARN - Cleaning up stale test sessions on the unregistered node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 11:54:49.182 INFO - Registered a node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 11:54:49.949 INFO - Unregistering the node http://169.254.3.218:5555 because it's been down for 60104 milliseconds
+[33mselenium-hub      |[0m 11:54:49.949 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 11:54:50.453 INFO - Registered a node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 11:55:09.206 INFO - Marking the node http://192.168.43.85:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 11:55:10.481 INFO - Marking the node http://169.254.3.218:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 11:55:44.619 INFO - Unregistering the node http://169.254.152.198:5555 because it's been down for 60101 milliseconds
+[33mselenium-hub      |[0m 11:55:44.619 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 11:55:45.141 INFO - Registered a node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 11:56:05.179 INFO - Marking the node http://169.254.152.198:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 11:56:09.295 INFO - Unregistering the node http://192.168.43.85:5555 because it's been down for 60089 milliseconds
+[33mselenium-hub      |[0m 11:56:09.295 WARN - Cleaning up stale test sessions on the unregistered node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 11:56:09.825 INFO - Registered a node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 11:56:10.574 INFO - Unregistering the node http://169.254.3.218:5555 because it's been down for 60093 milliseconds
+[33mselenium-hub      |[0m 11:56:10.574 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 11:56:11.114 INFO - Registered a node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 11:56:29.842 INFO - Marking the node http://192.168.43.85:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 11:56:31.147 INFO - Marking the node http://169.254.3.218:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 11:57:05.257 INFO - Unregistering the node http://169.254.152.198:5555 because it's been down for 60078 milliseconds
+[33mselenium-hub      |[0m 11:57:05.257 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 11:57:05.756 INFO - Registered a node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 11:57:25.810 INFO - Marking the node http://169.254.152.198:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 11:57:29.952 INFO - Unregistering the node http://192.168.43.85:5555 because it's been down for 60110 milliseconds
+[33mselenium-hub      |[0m 11:57:29.952 WARN - Cleaning up stale test sessions on the unregistered node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 11:57:30.413 INFO - Registered a node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 11:57:31.236 INFO - Unregistering the node http://169.254.3.218:5555 because it's been down for 60089 milliseconds
+[33mselenium-hub      |[0m 11:57:31.236 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 11:57:31.732 INFO - Registered a node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 11:57:50.441 INFO - Marking the node http://192.168.43.85:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 11:57:51.762 INFO - Marking the node http://169.254.3.218:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 11:58:25.893 INFO - Unregistering the node http://169.254.152.198:5555 because it's been down for 60083 milliseconds
+[33mselenium-hub      |[0m 11:58:25.893 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 11:58:26.386 INFO - Registered a node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 11:58:46.419 INFO - Marking the node http://169.254.152.198:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 11:58:50.535 INFO - Unregistering the node http://192.168.43.85:5555 because it's been down for 60094 milliseconds
+[33mselenium-hub      |[0m 11:58:50.535 WARN - Cleaning up stale test sessions on the unregistered node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 11:58:50.984 INFO - Registered a node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 11:58:51.846 INFO - Unregistering the node http://169.254.3.218:5555 because it's been down for 60084 milliseconds
+[33mselenium-hub      |[0m 11:58:51.846 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 11:58:52.378 INFO - Registered a node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 11:59:11.008 INFO - Marking the node http://192.168.43.85:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 11:59:12.408 INFO - Marking the node http://169.254.3.218:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 11:59:46.513 INFO - Unregistering the node http://169.254.152.198:5555 because it's been down for 60094 milliseconds
+[33mselenium-hub      |[0m 11:59:46.513 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 11:59:47.053 INFO - Registered a node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 12:00:07.091 INFO - Marking the node http://169.254.152.198:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:00:11.092 INFO - Unregistering the node http://192.168.43.85:5555 because it's been down for 60084 milliseconds
+[33mselenium-hub      |[0m 12:00:11.092 WARN - Cleaning up stale test sessions on the unregistered node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:00:11.609 INFO - Registered a node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:00:12.470 INFO - Unregistering the node http://169.254.3.218:5555 because it's been down for 60062 milliseconds
+[33mselenium-hub      |[0m 12:00:12.470 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:00:13.126 INFO - Registered a node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:00:31.644 INFO - Marking the node http://192.168.43.85:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:00:33.148 INFO - Marking the node http://169.254.3.218:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:01:07.190 INFO - Unregistering the node http://169.254.152.198:5555 because it's been down for 60099 milliseconds
+[33mselenium-hub      |[0m 12:01:07.190 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 12:01:07.652 INFO - Registered a node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 12:01:27.664 INFO - Marking the node http://169.254.152.198:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:01:31.727 INFO - Unregistering the node http://192.168.43.85:5555 because it's been down for 60083 milliseconds
+[33mselenium-hub      |[0m 12:01:31.727 WARN - Cleaning up stale test sessions on the unregistered node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:01:32.309 INFO - Registered a node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:01:33.263 INFO - Unregistering the node http://169.254.3.218:5555 because it's been down for 60115 milliseconds
+[33mselenium-hub      |[0m 12:01:33.263 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:01:34.199 INFO - Registered a node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:01:52.347 INFO - Marking the node http://192.168.43.85:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:01:54.235 INFO - Marking the node http://169.254.3.218:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:02:27.747 INFO - Unregistering the node http://169.254.152.198:5555 because it's been down for 60083 milliseconds
+[33mselenium-hub      |[0m 12:02:27.747 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 12:02:28.237 INFO - Registered a node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 12:02:48.273 INFO - Marking the node http://169.254.152.198:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:02:52.441 INFO - Unregistering the node http://192.168.43.85:5555 because it's been down for 60094 milliseconds
+[33mselenium-hub      |[0m 12:02:52.441 WARN - Cleaning up stale test sessions on the unregistered node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:02:52.965 INFO - Registered a node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:02:54.329 INFO - Unregistering the node http://169.254.3.218:5555 because it's been down for 60094 milliseconds
+[33mselenium-hub      |[0m 12:02:54.329 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:02:54.874 INFO - Registered a node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:03:13.025 INFO - Marking the node http://192.168.43.85:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:03:14.905 INFO - Marking the node http://169.254.3.218:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:03:48.508 INFO - Unregistering the node http://169.254.152.198:5555 because it's been down for 60235 milliseconds
+[33mselenium-hub      |[0m 12:03:48.508 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 12:03:48.904 INFO - Registered a node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 12:04:08.925 INFO - Marking the node http://169.254.152.198:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:04:13.103 INFO - Unregistering the node http://192.168.43.85:5555 because it's been down for 60078 milliseconds
+[33mselenium-hub      |[0m 12:04:13.103 WARN - Cleaning up stale test sessions on the unregistered node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:04:13.585 INFO - Registered a node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:04:14.996 INFO - Unregistering the node http://169.254.3.218:5555 because it's been down for 60091 milliseconds
+[33mselenium-hub      |[0m 12:04:14.996 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:04:15.557 INFO - Registered a node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:04:33.623 INFO - Marking the node http://192.168.43.85:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:04:35.589 INFO - Marking the node http://169.254.3.218:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:05:09.023 INFO - Unregistering the node http://169.254.152.198:5555 because it's been down for 60098 milliseconds
+[33mselenium-hub      |[0m 12:05:09.023 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 12:05:09.732 INFO - Registered a node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 12:05:29.748 INFO - Marking the node http://169.254.152.198:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:05:33.717 INFO - Unregistering the node http://192.168.43.85:5555 because it's been down for 60094 milliseconds
+[33mselenium-hub      |[0m 12:05:33.717 WARN - Cleaning up stale test sessions on the unregistered node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:05:34.210 INFO - Registered a node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:05:35.678 INFO - Unregistering the node http://169.254.3.218:5555 because it's been down for 60089 milliseconds
+[33mselenium-hub      |[0m 12:05:35.678 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:05:36.181 INFO - Registered a node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:05:54.233 INFO - Marking the node http://192.168.43.85:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:05:56.204 INFO - Marking the node http://169.254.3.218:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:06:29.905 INFO - Unregistering the node http://169.254.152.198:5555 because it's been down for 60157 milliseconds
+[33mselenium-hub      |[0m 12:06:29.905 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 12:06:30.213 INFO - Registered a node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 12:06:30.625 INFO - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m 12:06:50.415 INFO - Marking the node http://169.254.152.198:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:06:54.531 INFO - Unregistering the node http://192.168.43.85:5555 because it's been down for 60298 milliseconds
+[33mselenium-hub      |[0m 12:06:54.531 WARN - Cleaning up stale test sessions on the unregistered node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:06:54.887 INFO - Registered a node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:06:56.974 INFO - Unregistering the node http://169.254.3.218:5555 because it's been down for 60770 milliseconds
+[33mselenium-hub      |[0m 12:06:56.974 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:06:57.064 INFO - Registered a node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:06:57.064 INFO - Trying to create a new session on test slot {seleniumProtocol=WebDriver, browserName=firefox, maxInstances=1, platform=WINDOWS}
+[33mselenium-hub      |[0m 12:07:15.145 INFO - Marking the node http://192.168.43.85:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:07:17.112 INFO - Marking the node http://169.254.3.218:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:07:22.609 INFO - Error forwarding the new session Error forwarding the request Connect to 169.254.3.218:5555 [/169.254.3.218] failed: Connection timed out: connect
+[33mselenium-hub      |[0m org.openqa.grid.internal.exception.NewSessionException: Error forwarding the request Connect to 169.254.3.218:5555 [/169.254.3.218] failed: Connection timed out: connect
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:93)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:113)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:84)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:68)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:841)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.Server.handle(Server.java:564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:317)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:251)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:110)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable.invokePreferred(Invocable.java:128)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:199)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+[33mselenium-hub      |[0m 	at java.lang.Thread.run(Thread.java:748)
+[33mselenium-hub      |[0m Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 169.254.3.218:5555 [/169.254.3.218] failed: Connection timed out: connect
+[33mselenium-hub      |[0m 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.TestSession.sendRequestToNode(TestSession.java:454)
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.TestSession.forward(TestSession.java:235)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:90)
+[33mselenium-hub      |[0m 	... 31 more
+[33mselenium-hub      |[0m Caused by: java.net.ConnectException: Connection timed out: connect
+[33mselenium-hub      |[0m 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+[33mselenium-hub      |[0m 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+[33mselenium-hub      |[0m 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+[33mselenium-hub      |[0m 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+[33mselenium-hub      |[0m 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+[33mselenium-hub      |[0m 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+[33mselenium-hub      |[0m 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+[33mselenium-hub      |[0m 	at java.net.Socket.connect(Socket.java:589)
+[33mselenium-hub      |[0m 	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+[33mselenium-hub      |[0m 	... 43 more
+[33mselenium-hub      |[0m 12:07:26.565 INFO - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m 12:07:50.577 INFO - Unregistering the node http://169.254.152.198:5555 because it's been down for 60162 milliseconds
+[33mselenium-hub      |[0m 12:07:50.577 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 12:07:51.054 INFO - Registered a node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 12:08:11.103 INFO - Marking the node http://169.254.152.198:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:08:15.219 INFO - Unregistering the node http://192.168.43.85:5555 because it's been down for 60074 milliseconds
+[33mselenium-hub      |[0m 12:08:15.219 WARN - Cleaning up stale test sessions on the unregistered node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:08:16.503 INFO - Registered a node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:08:17.316 INFO - Unregistering the node http://169.254.3.218:5555 because it's been down for 60204 milliseconds
+[33mselenium-hub      |[0m 12:08:17.316 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:08:18.563 INFO - Registered a node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:08:18.575 INFO - Trying to create a new session on test slot {seleniumProtocol=WebDriver, browserName=firefox, maxInstances=1, platform=WINDOWS}
+[33mselenium-hub      |[0m 12:08:36.531 INFO - Marking the node http://192.168.43.85:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:08:38.602 INFO - Marking the node http://169.254.3.218:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:08:39.598 INFO - Error forwarding the new session Error forwarding the request Connect to 169.254.3.218:5555 [/169.254.3.218] failed: Connection timed out: connect
+[33mselenium-hub      |[0m org.openqa.grid.internal.exception.NewSessionException: Error forwarding the request Connect to 169.254.3.218:5555 [/169.254.3.218] failed: Connection timed out: connect
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:93)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:113)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:84)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:68)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:841)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.Server.handle(Server.java:564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:317)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:251)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:110)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable.invokePreferred(Invocable.java:128)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:199)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+[33mselenium-hub      |[0m 	at java.lang.Thread.run(Thread.java:748)
+[33mselenium-hub      |[0m Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 169.254.3.218:5555 [/169.254.3.218] failed: Connection timed out: connect
+[33mselenium-hub      |[0m 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.TestSession.sendRequestToNode(TestSession.java:454)
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.TestSession.forward(TestSession.java:235)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:90)
+[33mselenium-hub      |[0m 	... 31 more
+[33mselenium-hub      |[0m Caused by: java.net.ConnectException: Connection timed out: connect
+[33mselenium-hub      |[0m 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+[33mselenium-hub      |[0m 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+[33mselenium-hub      |[0m 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+[33mselenium-hub      |[0m 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+[33mselenium-hub      |[0m 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+[33mselenium-hub      |[0m 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+[33mselenium-hub      |[0m 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+[33mselenium-hub      |[0m 	at java.net.Socket.connect(Socket.java:589)
+[33mselenium-hub      |[0m 	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+[33mselenium-hub      |[0m 	... 43 more
+[33mselenium-hub      |[0m 12:09:11.208 INFO - Unregistering the node http://169.254.152.198:5555 because it's been down for 60105 milliseconds
+[33mselenium-hub      |[0m 12:09:11.208 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 12:09:11.627 INFO - Registered a node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 12:09:31.655 INFO - Marking the node http://169.254.152.198:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:09:36.630 INFO - Unregistering the node http://192.168.43.85:5555 because it's been down for 60099 milliseconds
+[33mselenium-hub      |[0m 12:09:36.630 WARN - Cleaning up stale test sessions on the unregistered node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:09:37.165 INFO - Registered a node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:09:38.691 INFO - Unregistering the node http://169.254.3.218:5555 because it's been down for 60089 milliseconds
+[33mselenium-hub      |[0m 12:09:38.691 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:09:39.252 INFO - Registered a node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:09:57.193 INFO - Marking the node http://192.168.43.85:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:09:59.280 INFO - Marking the node http://169.254.3.218:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:10:25.091 INFO - Got a request to create a new session: Capabilities {browserName: phantomjs, javascriptEnabled: true, phantomjs.cli.args: [--ignore-ssl-errors=true, --ssl-protocol=tlsv1, --web-security=false, --webdriver-loglevel=OFF, --webdriver-loglevel=NONE], takesScreenshot: false, version: }
+[33mselenium-hub      |[0m 12:10:25.091 INFO - Trying to create a new session on test slot {seleniumProtocol=WebDriver, browserName=phantomjs, maxInstances=1}
+[33mselenium-hub      |[0m 12:10:31.738 INFO - Unregistering the node http://169.254.152.198:5555 because it's been down for 60083 milliseconds
+[33mselenium-hub      |[0m 12:10:31.738 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 12:10:32.352 INFO - Registered a node http://169.254.152.198:5555
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T20:10:40.552Z] Session [10b378d0-2e0d-11e8-b46d-d35df97f47da] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.7 Safari/534.34","webSecurityEnabled":true}
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T20:10:40.651Z] Session [10b378d0-2e0d-11e8-b46d-d35df97f47da] - page.customHeaders:  - {}
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T20:10:40.651Z] Session [10b378d0-2e0d-11e8-b46d-d35df97f47da] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"1.9.7","driverName":"ghostdriver","driverVersion":"1.1.0","platform":"windows-8-32bit","javascriptEnabled":true,"takesScreenshot":false,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T20:10:40.651Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 10b378d0-2e0d-11e8-b46d-d35df97f47da
+[33mselenium-hub      |[0m 12:10:52.390 INFO - Marking the node http://169.254.152.198:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:10:57.381 INFO - Unregistering the node http://192.168.43.85:5555 because it's been down for 60188 milliseconds
+[33mselenium-hub      |[0m 12:10:57.381 WARN - Cleaning up stale test sessions on the unregistered node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:10:57.814 INFO - Registered a node http://192.168.43.85:5555
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:10:58.057Z] Session [10b378d0-2e0d-11e8-b46d-d35df97f47da] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating '$$$1.fn')
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:10:58.057Z] Session [10b378d0-2e0d-11e8-b46d-d35df97f47da] - page.onError - stack:
+[36mselenium-phantomjs |[0m   setTransitionEndSupport (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:116)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:191)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:193)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:9)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:3893)
+[33mselenium-hub      |[0m 12:10:59.374 INFO - Unregistering the node http://169.254.3.218:5555 because it's been down for 60094 milliseconds
+[33mselenium-hub      |[0m 12:10:59.374 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:10:59.851 INFO - Registered a node http://169.254.3.218:5555
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:11:07.737Z] Session [10b378d0-2e0d-11e8-b46d-d35df97f47da] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating '$$$1.fn')
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:11:07.737Z] Session [10b378d0-2e0d-11e8-b46d-d35df97f47da] - page.onError - stack:
+[36mselenium-phantomjs |[0m   setTransitionEndSupport (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:116)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:191)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:193)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:9)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:3893)
+[33mselenium-hub      |[0m 12:11:17.855 INFO - Marking the node http://192.168.43.85:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:11:19.873 INFO - Marking the node http://169.254.3.218:5555 as down: cannot reach the node for 2 tries
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:11:43.823Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1521749503782
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:11:51.251Z] Session [10b378d0-2e0d-11e8-b46d-d35df97f47da] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating '$$$1.fn')
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:11:51.251Z] Session [10b378d0-2e0d-11e8-b46d-d35df97f47da] - page.onError - stack:
+[36mselenium-phantomjs |[0m   setTransitionEndSupport (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:116)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:191)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:193)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:9)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:3893)
+[33mselenium-hub      |[0m 12:11:52.536 INFO - Unregistering the node http://169.254.152.198:5555 because it's been down for 60146 milliseconds
+[33mselenium-hub      |[0m 12:11:52.536 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 12:11:53.411 INFO - Registered a node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 12:11:56.327 INFO - Got a request to create a new session: Capabilities {browserName: phantomjs, javascriptEnabled: true, phantomjs.cli.args: [--ignore-ssl-errors=true, --ssl-protocol=tlsv1, --web-security=false, --webdriver-loglevel=OFF, --webdriver-loglevel=NONE], takesScreenshot: false, version: }
+[33mselenium-hub      |[0m 12:11:56.327 INFO - Trying to create a new session on test slot {seleniumProtocol=WebDriver, browserName=phantomjs, maxInstances=1}
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T20:11:56.385Z] Session [451affd0-2e0d-11e8-b46d-d35df97f47da] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.7 Safari/534.34","webSecurityEnabled":true}
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T20:11:56.385Z] Session [451affd0-2e0d-11e8-b46d-d35df97f47da] - page.customHeaders:  - {}
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T20:11:56.385Z] Session [451affd0-2e0d-11e8-b46d-d35df97f47da] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"1.9.7","driverName":"ghostdriver","driverVersion":"1.1.0","platform":"windows-8-32bit","javascriptEnabled":true,"takesScreenshot":false,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T20:11:56.386Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 451affd0-2e0d-11e8-b46d-d35df97f47da
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:11:56.691Z] Session [451affd0-2e0d-11e8-b46d-d35df97f47da] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating '$$$1.fn')
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:11:56.691Z] Session [451affd0-2e0d-11e8-b46d-d35df97f47da] - page.onError - stack:
+[36mselenium-phantomjs |[0m   setTransitionEndSupport (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:116)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:191)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:193)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:9)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:3893)
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:11:57.209Z] Session [451affd0-2e0d-11e8-b46d-d35df97f47da] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating '$$$1.fn')
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:11:57.210Z] Session [451affd0-2e0d-11e8-b46d-d35df97f47da] - page.onError - stack:
+[36mselenium-phantomjs |[0m   setTransitionEndSupport (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:116)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:191)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:193)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:9)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:3893)
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:12:10.868Z] Session [451affd0-2e0d-11e8-b46d-d35df97f47da] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating '$$$1.fn')
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:12:10.868Z] Session [451affd0-2e0d-11e8-b46d-d35df97f47da] - page.onError - stack:
+[36mselenium-phantomjs |[0m   setTransitionEndSupport (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:116)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:191)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:193)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:9)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:3893)
+[33mselenium-hub      |[0m 12:12:13.550 INFO - Marking the node http://169.254.152.198:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:12:17.964 INFO - Unregistering the node http://192.168.43.85:5555 because it's been down for 60109 milliseconds
+[33mselenium-hub      |[0m 12:12:17.964 WARN - Cleaning up stale test sessions on the unregistered node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:12:18.596 INFO - Registered a node http://192.168.43.85:5555
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:12:19.082Z] Session [451affd0-2e0d-11e8-b46d-d35df97f47da] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating '$$$1.fn')
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:12:19.082Z] Session [451affd0-2e0d-11e8-b46d-d35df97f47da] - page.onError - stack:
+[36mselenium-phantomjs |[0m   setTransitionEndSupport (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:116)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:191)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:193)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:9)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:3893)
+[33mselenium-hub      |[0m 12:12:19.957 INFO - Unregistering the node http://169.254.3.218:5555 because it's been down for 60084 milliseconds
+[33mselenium-hub      |[0m 12:12:19.957 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:12:20.476 INFO - Registered a node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:12:38.742 INFO - Marking the node http://192.168.43.85:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:12:40.498 INFO - Marking the node http://169.254.3.218:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:13:13.665 INFO - Unregistering the node http://169.254.152.198:5555 because it's been down for 60115 milliseconds
+[33mselenium-hub      |[0m 12:13:13.665 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 12:13:14.026 INFO - Registered a node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 12:13:29.703 INFO - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m 12:13:34.055 INFO - Marking the node http://169.254.152.198:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:13:38.857 INFO - Unregistering the node http://192.168.43.85:5555 because it's been down for 60115 milliseconds
+[33mselenium-hub      |[0m 12:13:38.857 WARN - Cleaning up stale test sessions on the unregistered node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:13:39.194 INFO - Registered a node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:13:40.566 INFO - Unregistering the node http://169.254.3.218:5555 because it's been down for 60068 milliseconds
+[33mselenium-hub      |[0m 12:13:40.566 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:13:41.106 INFO - Registered a node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:13:41.106 INFO - Trying to create a new session on test slot {seleniumProtocol=WebDriver, browserName=firefox, maxInstances=1, platform=WINDOWS}
+[33mselenium-hub      |[0m 12:13:59.225 INFO - Marking the node http://192.168.43.85:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:14:01.123 INFO - Marking the node http://169.254.3.218:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:14:02.130 INFO - Error forwarding the new session Error forwarding the request Connect to 169.254.3.218:5555 [/169.254.3.218] failed: Connection timed out: connect
+[33mselenium-hub      |[0m org.openqa.grid.internal.exception.NewSessionException: Error forwarding the request Connect to 169.254.3.218:5555 [/169.254.3.218] failed: Connection timed out: connect
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:93)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:113)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:84)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:68)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:841)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.Server.handle(Server.java:564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:317)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:251)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:110)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable.invokePreferred(Invocable.java:128)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:199)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+[33mselenium-hub      |[0m 	at java.lang.Thread.run(Thread.java:748)
+[33mselenium-hub      |[0m Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 169.254.3.218:5555 [/169.254.3.218] failed: Connection timed out: connect
+[33mselenium-hub      |[0m 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.TestSession.sendRequestToNode(TestSession.java:454)
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.TestSession.forward(TestSession.java:235)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:90)
+[33mselenium-hub      |[0m 	... 31 more
+[33mselenium-hub      |[0m Caused by: java.net.ConnectException: Connection timed out: connect
+[33mselenium-hub      |[0m 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+[33mselenium-hub      |[0m 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+[33mselenium-hub      |[0m 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+[33mselenium-hub      |[0m 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+[33mselenium-hub      |[0m 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+[33mselenium-hub      |[0m 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+[33mselenium-hub      |[0m 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+[33mselenium-hub      |[0m 	at java.net.Socket.connect(Socket.java:589)
+[33mselenium-hub      |[0m 	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+[33mselenium-hub      |[0m 	... 43 more
+[33mselenium-hub      |[0m 12:14:02.237 INFO - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m 12:14:34.148 INFO - Unregistering the node http://169.254.152.198:5555 because it's been down for 60093 milliseconds
+[33mselenium-hub      |[0m 12:14:34.148 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 12:14:34.615 INFO - Registered a node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 12:14:54.669 INFO - Marking the node http://169.254.152.198:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:14:59.362 INFO - Unregistering the node http://192.168.43.85:5555 because it's been down for 60137 milliseconds
+[33mselenium-hub      |[0m 12:14:59.362 WARN - Cleaning up stale test sessions on the unregistered node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:14:59.780 INFO - Registered a node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:15:01.207 INFO - Unregistering the node http://169.254.3.218:5555 because it's been down for 60084 milliseconds
+[33mselenium-hub      |[0m 12:15:01.207 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:15:01.683 INFO - Registered a node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:15:01.683 INFO - Trying to create a new session on test slot {seleniumProtocol=WebDriver, browserName=firefox, maxInstances=1, platform=WINDOWS}
+[33mselenium-hub      |[0m 12:15:19.819 INFO - Marking the node http://192.168.43.85:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:15:21.717 INFO - Marking the node http://169.254.3.218:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:15:22.718 INFO - Error forwarding the new session Error forwarding the request Connect to 169.254.3.218:5555 [/169.254.3.218] failed: Connection timed out: connect
+[33mselenium-hub      |[0m org.openqa.grid.internal.exception.NewSessionException: Error forwarding the request Connect to 169.254.3.218:5555 [/169.254.3.218] failed: Connection timed out: connect
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:93)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:113)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:84)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:68)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:841)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.Server.handle(Server.java:564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:317)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:251)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:110)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable.invokePreferred(Invocable.java:128)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:199)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+[33mselenium-hub      |[0m 	at java.lang.Thread.run(Thread.java:748)
+[33mselenium-hub      |[0m Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 169.254.3.218:5555 [/169.254.3.218] failed: Connection timed out: connect
+[33mselenium-hub      |[0m 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.TestSession.sendRequestToNode(TestSession.java:454)
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.TestSession.forward(TestSession.java:235)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:90)
+[33mselenium-hub      |[0m 	... 31 more
+[33mselenium-hub      |[0m Caused by: java.net.ConnectException: Connection timed out: connect
+[33mselenium-hub      |[0m 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+[33mselenium-hub      |[0m 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+[33mselenium-hub      |[0m 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+[33mselenium-hub      |[0m 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+[33mselenium-hub      |[0m 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+[33mselenium-hub      |[0m 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+[33mselenium-hub      |[0m 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+[33mselenium-hub      |[0m 	at java.net.Socket.connect(Socket.java:589)
+[33mselenium-hub      |[0m 	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+[33mselenium-hub      |[0m 	... 43 more
+[33mselenium-hub      |[0m 12:15:54.758 INFO - Unregistering the node http://169.254.152.198:5555 because it's been down for 60089 milliseconds
+[33mselenium-hub      |[0m 12:15:54.758 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 12:15:55.245 INFO - Registered a node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 12:16:15.283 INFO - Marking the node http://169.254.152.198:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:16:19.897 INFO - Unregistering the node http://192.168.43.85:5555 because it's been down for 60078 milliseconds
+[33mselenium-hub      |[0m 12:16:19.897 WARN - Cleaning up stale test sessions on the unregistered node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:16:20.395 INFO - Registered a node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:16:21.811 INFO - Unregistering the node http://169.254.3.218:5555 because it's been down for 60094 milliseconds
+[33mselenium-hub      |[0m 12:16:21.811 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:16:22.399 INFO - Registered a node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:16:40.439 INFO - Marking the node http://192.168.43.85:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:16:42.415 INFO - Marking the node http://169.254.3.218:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:17:15.393 INFO - Unregistering the node http://169.254.152.198:5555 because it's been down for 60110 milliseconds
+[33mselenium-hub      |[0m 12:17:15.393 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.152.198:5555
+[33mselenium-hub      |[0m 12:17:40.506 INFO - Unregistering the node http://192.168.43.85:5555 because it's been down for 60067 milliseconds
+[33mselenium-hub      |[0m 12:17:40.506 WARN - Cleaning up stale test sessions on the unregistered node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:17:42.515 INFO - Unregistering the node http://169.254.3.218:5555 because it's been down for 60100 milliseconds
+[33mselenium-hub      |[0m 12:17:42.515 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:17:42.998 INFO - Registered a node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:18:03.025 INFO - Marking the node http://169.254.3.218:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:19:03.108 INFO - Unregistering the node http://169.254.3.218:5555 because it's been down for 60083 milliseconds
+[33mselenium-hub      |[0m 12:19:03.108 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:22:46.250 INFO - Registered a node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:23:06.351 INFO - Marking the node http://169.254.3.218:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:23:59.519 INFO - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m 12:24:06.435 INFO - Unregistering the node http://169.254.3.218:5555 because it's been down for 60084 milliseconds
+[33mselenium-hub      |[0m 12:24:06.435 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:24:06.959 INFO - Registered a node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:24:06.959 INFO - Trying to create a new session on test slot {seleniumProtocol=WebDriver, browserName=firefox, maxInstances=1, platform=WINDOWS}
+[33mselenium-hub      |[0m 12:24:26.987 INFO - Marking the node http://169.254.3.218:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:24:27.983 INFO - Error forwarding the new session Error forwarding the request Connect to 169.254.3.218:5555 [/169.254.3.218] failed: Connection timed out: connect
+[33mselenium-hub      |[0m org.openqa.grid.internal.exception.NewSessionException: Error forwarding the request Connect to 169.254.3.218:5555 [/169.254.3.218] failed: Connection timed out: connect
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:93)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:113)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:84)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:68)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:841)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.Server.handle(Server.java:564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:317)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:251)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:110)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable.invokePreferred(Invocable.java:128)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:199)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+[33mselenium-hub      |[0m 	at java.lang.Thread.run(Thread.java:748)
+[33mselenium-hub      |[0m Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 169.254.3.218:5555 [/169.254.3.218] failed: Connection timed out: connect
+[33mselenium-hub      |[0m 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.TestSession.sendRequestToNode(TestSession.java:454)
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.TestSession.forward(TestSession.java:235)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:90)
+[33mselenium-hub      |[0m 	... 31 more
+[33mselenium-hub      |[0m Caused by: java.net.ConnectException: Connection timed out: connect
+[33mselenium-hub      |[0m 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+[33mselenium-hub      |[0m 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+[33mselenium-hub      |[0m 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+[33mselenium-hub      |[0m 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+[33mselenium-hub      |[0m 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+[33mselenium-hub      |[0m 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+[33mselenium-hub      |[0m 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+[33mselenium-hub      |[0m 	at java.net.Socket.connect(Socket.java:589)
+[33mselenium-hub      |[0m 	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+[33mselenium-hub      |[0m 	... 43 more
+[33mselenium-hub      |[0m 12:24:28.150 INFO - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m 12:25:27.060 INFO - Unregistering the node http://169.254.3.218:5555 because it's been down for 60073 milliseconds
+[33mselenium-hub      |[0m 12:25:27.060 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:25:27.631 INFO - Registered a node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:25:27.631 INFO - Trying to create a new session on test slot {seleniumProtocol=WebDriver, browserName=firefox, maxInstances=1, platform=WINDOWS}
+[33mselenium-hub      |[0m 12:25:47.649 INFO - Marking the node http://169.254.3.218:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:25:48.645 INFO - Error forwarding the new session Error forwarding the request Connect to 169.254.3.218:5555 [/169.254.3.218] failed: Connection timed out: connect
+[33mselenium-hub      |[0m org.openqa.grid.internal.exception.NewSessionException: Error forwarding the request Connect to 169.254.3.218:5555 [/169.254.3.218] failed: Connection timed out: connect
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:93)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:113)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:84)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:68)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:841)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.Server.handle(Server.java:564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:317)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:251)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:110)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable.invokePreferred(Invocable.java:128)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:199)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+[33mselenium-hub      |[0m 	at java.lang.Thread.run(Thread.java:748)
+[33mselenium-hub      |[0m Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 169.254.3.218:5555 [/169.254.3.218] failed: Connection timed out: connect
+[33mselenium-hub      |[0m 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.TestSession.sendRequestToNode(TestSession.java:454)
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.TestSession.forward(TestSession.java:235)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:90)
+[33mselenium-hub      |[0m 	... 31 more
+[33mselenium-hub      |[0m Caused by: java.net.ConnectException: Connection timed out: connect
+[33mselenium-hub      |[0m 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+[33mselenium-hub      |[0m 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+[33mselenium-hub      |[0m 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+[33mselenium-hub      |[0m 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+[33mselenium-hub      |[0m 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+[33mselenium-hub      |[0m 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+[33mselenium-hub      |[0m 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+[33mselenium-hub      |[0m 	at java.net.Socket.connect(Socket.java:589)
+[33mselenium-hub      |[0m 	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+[33mselenium-hub      |[0m 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+[33mselenium-hub      |[0m 	... 43 more
+[33mselenium-hub      |[0m 12:26:47.737 INFO - Unregistering the node http://169.254.3.218:5555 because it's been down for 60088 milliseconds
+[33mselenium-hub      |[0m 12:26:47.737 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:26:48.324 INFO - Registered a node http://169.254.3.218:5555
+[33mselenium-hub      |[0m 12:27:08.357 INFO - Marking the node http://169.254.3.218:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:27:30.304 INFO - Got a request to create a new session: Capabilities {browserName: phantomjs, javascriptEnabled: true, phantomjs.cli.args: [--ignore-ssl-errors=true, --ssl-protocol=tlsv1, --web-security=false, --webdriver-loglevel=OFF, --webdriver-loglevel=NONE], takesScreenshot: false, version: }
+[33mselenium-hub      |[0m 12:27:30.304 INFO - Trying to create a new session on test slot {seleniumProtocol=WebDriver, browserName=phantomjs, maxInstances=1}
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T20:27:30.342Z] Session [71c8c3d0-2e0f-11e8-b46d-d35df97f47da] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.7 Safari/534.34","webSecurityEnabled":true}
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T20:27:30.342Z] Session [71c8c3d0-2e0f-11e8-b46d-d35df97f47da] - page.customHeaders:  - {}
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T20:27:30.343Z] Session [71c8c3d0-2e0f-11e8-b46d-d35df97f47da] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"1.9.7","driverName":"ghostdriver","driverVersion":"1.1.0","platform":"windows-8-32bit","javascriptEnabled":true,"takesScreenshot":false,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T20:27:30.343Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 71c8c3d0-2e0f-11e8-b46d-d35df97f47da
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:27:31.045Z] Session [71c8c3d0-2e0f-11e8-b46d-d35df97f47da] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating '$$$1.fn')
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:27:31.045Z] Session [71c8c3d0-2e0f-11e8-b46d-d35df97f47da] - page.onError - stack:
+[36mselenium-phantomjs |[0m   setTransitionEndSupport (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:116)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:191)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:193)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:9)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:3893)
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:27:31.971Z] Session [71c8c3d0-2e0f-11e8-b46d-d35df97f47da] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating '$$$1.fn')
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:27:31.971Z] Session [71c8c3d0-2e0f-11e8-b46d-d35df97f47da] - page.onError - stack:
+[36mselenium-phantomjs |[0m   setTransitionEndSupport (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:116)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:191)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:193)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:9)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:3893)
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T20:27:38.099Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:28:07.161Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1521750487156
+[33mselenium-hub      |[0m 12:28:08.420 INFO - Unregistering the node http://169.254.3.218:5555 because it's been down for 60063 milliseconds
+[33mselenium-hub      |[0m 12:28:08.420 WARN - Cleaning up stale test sessions on the unregistered node http://169.254.3.218:5555
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:28:12.810Z] Session [71c8c3d0-2e0f-11e8-b46d-d35df97f47da] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating '$$$1.fn')
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:28:12.810Z] Session [71c8c3d0-2e0f-11e8-b46d-d35df97f47da] - page.onError - stack:
+[36mselenium-phantomjs |[0m   setTransitionEndSupport (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:116)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:191)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:193)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:9)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:3893)
+[33mselenium-hub      |[0m 12:28:17.957 INFO - Got a request to create a new session: Capabilities {browserName: phantomjs, javascriptEnabled: true, phantomjs.cli.args: [--ignore-ssl-errors=true, --ssl-protocol=tlsv1, --web-security=false, --webdriver-loglevel=OFF, --webdriver-loglevel=NONE], takesScreenshot: false, version: }
+[33mselenium-hub      |[0m 12:28:17.957 INFO - Trying to create a new session on test slot {seleniumProtocol=WebDriver, browserName=phantomjs, maxInstances=1}
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T20:28:18.062Z] Session [8e3894a0-2e0f-11e8-b46d-d35df97f47da] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.7 Safari/534.34","webSecurityEnabled":true}
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T20:28:18.062Z] Session [8e3894a0-2e0f-11e8-b46d-d35df97f47da] - page.customHeaders:  - {}
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T20:28:18.062Z] Session [8e3894a0-2e0f-11e8-b46d-d35df97f47da] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"1.9.7","driverName":"ghostdriver","driverVersion":"1.1.0","platform":"windows-8-32bit","javascriptEnabled":true,"takesScreenshot":false,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T20:28:18.063Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 8e3894a0-2e0f-11e8-b46d-d35df97f47da
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:28:21.361Z] Session [8e3894a0-2e0f-11e8-b46d-d35df97f47da] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating '$$$1.fn')
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:28:21.361Z] Session [8e3894a0-2e0f-11e8-b46d-d35df97f47da] - page.onError - stack:
+[36mselenium-phantomjs |[0m   setTransitionEndSupport (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:116)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:191)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:193)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:9)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:3893)
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:28:21.905Z] Session [8e3894a0-2e0f-11e8-b46d-d35df97f47da] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating '$$$1.fn')
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:28:21.905Z] Session [8e3894a0-2e0f-11e8-b46d-d35df97f47da] - page.onError - stack:
+[36mselenium-phantomjs |[0m   setTransitionEndSupport (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:116)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:191)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:193)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:9)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:3893)
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:28:33.671Z] Session [8e3894a0-2e0f-11e8-b46d-d35df97f47da] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating '$$$1.fn')
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:28:33.671Z] Session [8e3894a0-2e0f-11e8-b46d-d35df97f47da] - page.onError - stack:
+[36mselenium-phantomjs |[0m   setTransitionEndSupport (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:116)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:191)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:193)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:9)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:3893)
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:28:39.040Z] Session [8e3894a0-2e0f-11e8-b46d-d35df97f47da] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating '$$$1.fn')
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:28:39.040Z] Session [8e3894a0-2e0f-11e8-b46d-d35df97f47da] - page.onError - stack:
+[36mselenium-phantomjs |[0m   setTransitionEndSupport (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:116)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:191)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:193)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:9)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:3893)
+[33mselenium-hub      |[0m 12:32:24.492 INFO - Registered a node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:32:44.531 INFO - Marking the node http://192.168.43.85:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:33:44.609 INFO - Unregistering the node http://192.168.43.85:5555 because it's been down for 60078 milliseconds
+[33mselenium-hub      |[0m 12:33:44.609 WARN - Cleaning up stale test sessions on the unregistered node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:33:45.201 INFO - Registered a node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:33:56.563 INFO - Got a request to create a new session: Capabilities {browserName: phantomjs, javascriptEnabled: true, phantomjs.cli.args: [--ignore-ssl-errors=true, --ssl-protocol=tlsv1, --web-security=false, --webdriver-loglevel=OFF, --webdriver-loglevel=NONE], takesScreenshot: false, version: }
+[33mselenium-hub      |[0m 12:33:56.563 INFO - Trying to create a new session on test slot {seleniumProtocol=WebDriver, browserName=phantomjs, maxInstances=1}
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T20:33:56.573Z] Session [58018850-2e10-11e8-b46d-d35df97f47da] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.7 Safari/534.34","webSecurityEnabled":true}
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T20:33:56.573Z] Session [58018850-2e10-11e8-b46d-d35df97f47da] - page.customHeaders:  - {}
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T20:33:56.573Z] Session [58018850-2e10-11e8-b46d-d35df97f47da] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"1.9.7","driverName":"ghostdriver","driverVersion":"1.1.0","platform":"windows-8-32bit","javascriptEnabled":true,"takesScreenshot":false,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T20:33:56.573Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 58018850-2e10-11e8-b46d-d35df97f47da
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:33:57.616Z] Session [58018850-2e10-11e8-b46d-d35df97f47da] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating '$$$1.fn')
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:33:57.616Z] Session [58018850-2e10-11e8-b46d-d35df97f47da] - page.onError - stack:
+[36mselenium-phantomjs |[0m   setTransitionEndSupport (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:116)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:191)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:193)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:9)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:3893)
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:33:58.333Z] Session [58018850-2e10-11e8-b46d-d35df97f47da] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating '$$$1.fn')
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:33:58.333Z] Session [58018850-2e10-11e8-b46d-d35df97f47da] - page.onError - stack:
+[36mselenium-phantomjs |[0m   setTransitionEndSupport (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:116)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:191)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:193)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:9)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:3893)
+[33mselenium-hub      |[0m 12:34:05.224 INFO - Marking the node http://192.168.43.85:5555 as down: cannot reach the node for 2 tries
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:34:33.526Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1521750873504
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:34:50.735Z] Session [58018850-2e10-11e8-b46d-d35df97f47da] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating '$$$1.fn')
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:34:50.735Z] Session [58018850-2e10-11e8-b46d-d35df97f47da] - page.onError - stack:
+[36mselenium-phantomjs |[0m   setTransitionEndSupport (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:116)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:191)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:193)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:9)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:3893)
+[33mselenium-hub      |[0m 12:34:54.766 INFO - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m 12:34:54.766 INFO - Error forwarding the new session cannot find : Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m org.openqa.grid.common.exception.CapabilityNotPresentOnTheGridException: cannot find : Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.ProxySet.verifyAbilityToHandleDesiredCapabilities(ProxySet.java:180)
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.DefaultGridRegistry.addNewSessionRequest(DefaultGridRegistry.java:233)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:110)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:84)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:68)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:841)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.Server.handle(Server.java:564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:317)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:251)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:110)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable.invokePreferred(Invocable.java:128)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:199)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+[33mselenium-hub      |[0m 	at java.lang.Thread.run(Thread.java:748)
+[33mselenium-hub      |[0m 12:34:54.874 INFO - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m 12:34:54.874 INFO - Error forwarding the new session cannot find : Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m org.openqa.grid.common.exception.CapabilityNotPresentOnTheGridException: cannot find : Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.ProxySet.verifyAbilityToHandleDesiredCapabilities(ProxySet.java:180)
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.DefaultGridRegistry.addNewSessionRequest(DefaultGridRegistry.java:233)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:110)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:84)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:68)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:841)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.Server.handle(Server.java:564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:317)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:251)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:110)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable.invokePreferred(Invocable.java:128)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:199)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+[33mselenium-hub      |[0m 	at java.lang.Thread.run(Thread.java:748)
+[33mselenium-hub      |[0m 12:34:55.886 INFO - Got a request to create a new session: Capabilities {browserName: phantomjs, javascriptEnabled: true, phantomjs.cli.args: [--ignore-ssl-errors=true, --ssl-protocol=tlsv1, --web-security=false, --webdriver-loglevel=OFF, --webdriver-loglevel=NONE], takesScreenshot: false, version: }
+[33mselenium-hub      |[0m 12:34:55.886 INFO - Trying to create a new session on test slot {seleniumProtocol=WebDriver, browserName=phantomjs, maxInstances=1}
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T20:34:55.899Z] Session [7b5e1d40-2e10-11e8-b46d-d35df97f47da] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.7 Safari/534.34","webSecurityEnabled":true}
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T20:34:55.899Z] Session [7b5e1d40-2e10-11e8-b46d-d35df97f47da] - page.customHeaders:  - {}
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T20:34:55.899Z] Session [7b5e1d40-2e10-11e8-b46d-d35df97f47da] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"1.9.7","driverName":"ghostdriver","driverVersion":"1.1.0","platform":"windows-8-32bit","javascriptEnabled":true,"takesScreenshot":false,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[36mselenium-phantomjs |[0m [INFO  - 2018-03-22T20:34:55.900Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 7b5e1d40-2e10-11e8-b46d-d35df97f47da
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:34:56.158Z] Session [7b5e1d40-2e10-11e8-b46d-d35df97f47da] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating '$$$1.fn')
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:34:56.158Z] Session [7b5e1d40-2e10-11e8-b46d-d35df97f47da] - page.onError - stack:
+[36mselenium-phantomjs |[0m   setTransitionEndSupport (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:116)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:191)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:193)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:9)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:3893)
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:34:56.747Z] Session [7b5e1d40-2e10-11e8-b46d-d35df97f47da] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating '$$$1.fn')
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:34:56.747Z] Session [7b5e1d40-2e10-11e8-b46d-d35df97f47da] - page.onError - stack:
+[36mselenium-phantomjs |[0m   setTransitionEndSupport (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:116)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:191)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:193)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:9)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:3893)
+[33mselenium-hub      |[0m 12:35:05.307 INFO - Unregistering the node http://192.168.43.85:5555 because it's been down for 60083 milliseconds
+[33mselenium-hub      |[0m 12:35:05.307 WARN - Cleaning up stale test sessions on the unregistered node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:35:05.914 INFO - Registered a node http://192.168.43.85:5555
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:35:09.045Z] Session [7b5e1d40-2e10-11e8-b46d-d35df97f47da] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating '$$$1.fn')
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:35:09.045Z] Session [7b5e1d40-2e10-11e8-b46d-d35df97f47da] - page.onError - stack:
+[36mselenium-phantomjs |[0m   setTransitionEndSupport (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:116)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:191)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:193)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:9)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:3893)
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:35:19.679Z] Session [7b5e1d40-2e10-11e8-b46d-d35df97f47da] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating '$$$1.fn')
+[36mselenium-phantomjs |[0m [ERROR - 2018-03-22T20:35:19.679Z] Session [7b5e1d40-2e10-11e8-b46d-d35df97f47da] - page.onError - stack:
+[36mselenium-phantomjs |[0m   setTransitionEndSupport (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:116)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:191)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:193)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:9)
+[36mselenium-phantomjs |[0m   (anonymous function) (http://www.sgc-tfgii.es/bootstrap-4.0.0/js/bootstrap.js:3893)
+[33mselenium-hub      |[0m 12:35:25.938 INFO - Marking the node http://192.168.43.85:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 12:36:26.027 INFO - Unregistering the node http://192.168.43.85:5555 because it's been down for 60089 milliseconds
+[33mselenium-hub      |[0m 12:36:26.027 WARN - Cleaning up stale test sessions on the unregistered node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:38:45.691 INFO - Registered a node http://192.168.43.85:5555
+[33mselenium-hub      |[0m 12:39:19.044 INFO - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m 12:39:19.044 INFO - Error forwarding the new session cannot find : Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m org.openqa.grid.common.exception.CapabilityNotPresentOnTheGridException: cannot find : Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.ProxySet.verifyAbilityToHandleDesiredCapabilities(ProxySet.java:180)
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.DefaultGridRegistry.addNewSessionRequest(DefaultGridRegistry.java:233)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:110)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:84)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:68)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:841)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.Server.handle(Server.java:564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:317)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:251)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:110)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable.invokePreferred(Invocable.java:128)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:199)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+[33mselenium-hub      |[0m 	at java.lang.Thread.run(Thread.java:748)
+[33mselenium-hub      |[0m 12:39:19.147 INFO - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m 12:39:19.147 INFO - Error forwarding the new session cannot find : Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m org.openqa.grid.common.exception.CapabilityNotPresentOnTheGridException: cannot find : Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.ProxySet.verifyAbilityToHandleDesiredCapabilities(ProxySet.java:180)
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.DefaultGridRegistry.addNewSessionRequest(DefaultGridRegistry.java:233)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:110)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:84)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:68)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:841)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.Server.handle(Server.java:564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:317)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:251)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:110)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable.invokePreferred(Invocable.java:128)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:199)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+[33mselenium-hub      |[0m 	at java.lang.Thread.run(Thread.java:748)
+[33mselenium-hub      |[0m 12:44:11.215 INFO - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m 12:44:11.215 INFO - Error forwarding the new session cannot find : Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m org.openqa.grid.common.exception.CapabilityNotPresentOnTheGridException: cannot find : Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.ProxySet.verifyAbilityToHandleDesiredCapabilities(ProxySet.java:180)
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.DefaultGridRegistry.addNewSessionRequest(DefaultGridRegistry.java:233)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:110)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:84)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:68)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:841)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.Server.handle(Server.java:564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:317)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:251)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:110)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable.invokePreferred(Invocable.java:128)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:199)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+[33mselenium-hub      |[0m 	at java.lang.Thread.run(Thread.java:748)
+[33mselenium-hub      |[0m 12:44:11.327 INFO - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m 12:44:11.327 INFO - Error forwarding the new session cannot find : Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m org.openqa.grid.common.exception.CapabilityNotPresentOnTheGridException: cannot find : Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.ProxySet.verifyAbilityToHandleDesiredCapabilities(ProxySet.java:180)
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.DefaultGridRegistry.addNewSessionRequest(DefaultGridRegistry.java:233)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:110)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:84)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:68)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:841)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.Server.handle(Server.java:564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:317)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:251)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:110)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable.invokePreferred(Invocable.java:128)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:199)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+[33mselenium-hub      |[0m 	at java.lang.Thread.run(Thread.java:748)
+[33mselenium-hub      |[0m 12:44:54.445 INFO - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m 12:44:54.445 INFO - Error forwarding the new session cannot find : Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m org.openqa.grid.common.exception.CapabilityNotPresentOnTheGridException: cannot find : Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.ProxySet.verifyAbilityToHandleDesiredCapabilities(ProxySet.java:180)
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.DefaultGridRegistry.addNewSessionRequest(DefaultGridRegistry.java:233)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:110)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:84)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:68)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:841)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.Server.handle(Server.java:564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:317)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:251)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:110)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable.invokePreferred(Invocable.java:128)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:199)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+[33mselenium-hub      |[0m 	at java.lang.Thread.run(Thread.java:748)
+[33mselenium-hub      |[0m 12:44:54.555 INFO - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m 12:44:54.555 INFO - Error forwarding the new session cannot find : Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m org.openqa.grid.common.exception.CapabilityNotPresentOnTheGridException: cannot find : Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [-headless], prefs: {}}}
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.ProxySet.verifyAbilityToHandleDesiredCapabilities(ProxySet.java:180)
+[33mselenium-hub      |[0m 	at org.openqa.grid.internal.DefaultGridRegistry.addNewSessionRequest(DefaultGridRegistry.java:233)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:110)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:84)
+[33mselenium-hub      |[0m 	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:68)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+[33mselenium-hub      |[0m 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:841)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.Server.handle(Server.java:564)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:317)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:251)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:110)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable.invokePreferred(Invocable.java:128)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:199)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+[33mselenium-hub      |[0m 	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+[33mselenium-hub      |[0m 	at java.lang.Thread.run(Thread.java:748)
+[33mselenium-hub      |[0m 13:19:20.931 INFO - Marking the node http://192.168.43.85:5555 as down: cannot reach the node for 2 tries
+[33mselenium-hub      |[0m 13:20:21.014 INFO - Unregistering the node http://192.168.43.85:5555 because it's been down for 60083 milliseconds
+[33mselenium-hub      |[0m 13:20:21.014 WARN - Cleaning up stale test sessions on the unregistered node http://192.168.43.85:5555
+[36mselenium-phantomjs exited with code 1073807364
+[0m[33mselenium-hub exited with code 1073807364
+[0m
+C:\Users\sergiog\.jenkins\workspace\Start_Docker_nodes\Scripts_DockerWindows>docker-compose ps 
+Name   Command   State   Ports
+------------------------------
+
+C:\Users\sergiog\.jenkins\workspace\Start_Docker_nodes\Scripts_DockerWindows>exit 0 
+Finished: SUCCESS
